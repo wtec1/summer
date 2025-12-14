@@ -1,0 +1,892 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCE LMS - Elements and the Periodic Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .periodic-element {
+            transition: all 0.3s ease;
+        }
+        .periodic-element:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        .experiment-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .trend-arrow {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        .progress-bar {
+            transition: width 0.5s ease;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-50 to-blue-100 min-h-screen">
+    <!-- Header -->
+<header class="bg-white shadow-lg border-b-4 border-indigo-500">
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
+            
+            <!-- Left: Logo & Title -->
+            <div class="flex items-center space-x-4">
+                <div class="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold text-lg md:text-xl">JCE</span>
+                </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold text-gray-800">Chemistry</h1>
+                    <p class="text-gray-600 text-sm md:text-base">Unit 1: Elements and the Periodic Table</p>
+                </div>
+            </div>
+
+            <!-- Right: Progress -->
+            <div class="flex items-center space-x-3 w-full md:w-auto">
+                <span class="text-xs md:text-sm text-gray-600 whitespace-nowrap">Progress</span>
+                <div class="flex-1 md:flex-none w-full md:w-32 bg-gray-200 rounded-full h-2">
+                    <div id="progress-bar" class="progress-bar bg-gradient-to-r from-green-400 to-blue-500 h-2 rounded-full" style="width: 0%"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6">
+            <div class="flex space-x-8 overflow-x-auto py-3">
+                <button onclick="showSection('overview')" class="nav-btn whitespace-nowrap px-4 py-2 rounded-lg bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition">Overview</button>
+                <button onclick="showSection('trends')" class="nav-btn whitespace-nowrap px-4 py-2 rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300 transition">Periodic Trends</button>
+                <button onclick="showSection('alkali')" class="nav-btn whitespace-nowrap px-4 py-2 rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300 transition">Alkali Metals</button>
+                <button onclick="showSection('alkaline')" class="nav-btn whitespace-nowrap px-4 py-2 rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300 transition">Alkaline Earth</button>
+                <button onclick="showSection('halogens')" class="nav-btn whitespace-nowrap px-4 py-2 rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300 transition">Halogens</button>
+                <button onclick="showSection('noble')" class="nav-btn whitespace-nowrap px-4 py-2 rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300 transition">Noble Gases</button>
+                <button onclick="showSection('experiments')" class="nav-btn whitespace-nowrap px-4 py-2 rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300 transition">Experiments</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-8">
+        <!-- Overview Section -->
+        <div id="overview" class="section">
+            <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 fade-in">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6 text-center bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                    Elements and the Periodic Table
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl">
+                            <h3 class="text-xl font-semibold text-indigo-800 mb-3">Learning Objectives</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>Understand periodic trends</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>Classify elements by groups</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>Analyze chemical properties</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>Conduct virtual experiments</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-xl">
+                            <h3 class="text-xl font-semibold text-emerald-800 mb-3">Key Classifications</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-700">Metals</span>
+                                    <div class="w-4 h-4 bg-blue-500 rounded"></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-700">Non-metals</span>
+                                    <div class="w-4 h-4 bg-red-500 rounded"></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-700">Metalloids</span>
+                                    <div class="w-4 h-4 bg-yellow-500 rounded"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-6 rounded-xl">
+                        <h3 class="text-xl font-semibold text-purple-800 mb-4">Interactive Periodic Table Preview</h3>
+                        <div class="grid grid-cols-8 gap-1">
+                            <!-- Group 1 -->
+                            <div class="periodic-element bg-red-400 text-white p-2 rounded cursor-pointer text-center text-xs" onclick="showElementInfo('Li')">
+                                <div class="font-bold">Li</div>
+                                <div class="text-xs">3</div>
+                            </div>
+                            <div class="col-span-6"></div>
+                            <div class="periodic-element bg-green-400 text-white p-2 rounded cursor-pointer text-center text-xs" onclick="showElementInfo('F')">
+                                <div class="font-bold">Ne</div>
+                                <div class="text-xs">10</div>
+                            </div>
+                            
+                            <!-- Period 2 -->
+                            <div class="periodic-element bg-red-400 text-white p-2 rounded cursor-pointer text-center text-xs" onclick="showElementInfo('Na')">
+                                <div class="font-bold">Na</div>
+                                <div class="text-xs">11</div>
+                            </div>
+                            <div class="periodic-element bg-blue-400 text-white p-2 rounded cursor-pointer text-center text-xs" onclick="showElementInfo('Mg')">
+                                <div class="font-bold">Mg</div>
+                                <div class="text-xs">12</div>
+                            </div>
+                            <div class="col-span-4"></div>
+                            <div class="periodic-element bg-green-400 text-white p-2 rounded cursor-pointer text-center text-xs" onclick="showElementInfo('Cl')">
+                                <div class="font-bold">Cl</div>
+                                <div class="text-xs">17</div>
+                            </div>
+                            <div class="periodic-element bg-purple-400 text-white p-2 rounded cursor-pointer text-center text-xs" onclick="showElementInfo('Ar')">
+                                <div class="font-bold">Ar</div>
+                                <div class="text-xs">18</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-sm text-gray-600">
+                            <span class="inline-block w-3 h-3 bg-red-400 rounded mr-2"></span>Alkali Metals
+                            <span class="inline-block w-3 h-3 bg-blue-400 rounded mr-2 ml-4"></span>Alkaline Earth
+                            <span class="inline-block w-3 h-3 bg-green-400 rounded mr-2 ml-4"></span>Halogens
+                            <span class="inline-block w-3 h-3 bg-purple-400 rounded mr-2 ml-4"></span>Noble Gases
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Periodic Trends Section -->
+        <div id="trends" class="section hidden">
+            <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Periodic Trends</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Atomic Radius -->
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-semibold text-indigo-800 mb-4 flex items-center">
+                            <span class="w-3 h-3 bg-blue-500 rounded-full mr-3"></span>
+                            Atomic Radius
+                        </h3>
+                        <p class="text-gray-700 mb-4">The distance from the nucleus to the outermost electrons.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <span class="text-2xl trend-arrow">↓</span>
+                                <span class="ml-3 text-gray-700">Increases down a group (more energy levels)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-2xl trend-arrow">→</span>
+                                <span class="ml-3 text-gray-700">Decreases across a period (stronger nuclear charge)</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-4 bg-white rounded-lg">
+                            <p class="font-medium text-indigo-800">Example: Group 1</p>
+                            <p class="text-sm text-gray-600">Li < Na < K (increasing atomic radius)</p>
+                        </div>
+                    </div>
+
+                    <!-- Ionization Energy -->
+                    <div class="bg-gradient-to-br from-red-50 to-pink-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-semibold text-red-800 mb-4 flex items-center">
+                            <span class="w-3 h-3 bg-red-500 rounded-full mr-3"></span>
+                            Ionization Energy
+                        </h3>
+                        <p class="text-gray-700 mb-4">Energy required to remove an outermost electron.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <span class="text-2xl trend-arrow">↓</span>
+                                <span class="ml-3 text-gray-700">Decreases down a group (electrons further from nucleus)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-2xl trend-arrow">→</span>
+                                <span class="ml-3 text-gray-700">Increases across a period (stronger attraction)</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-4 bg-white rounded-lg">
+                            <p class="font-medium text-red-800">Inverse Relationship</p>
+                            <p class="text-sm text-gray-600">As atomic radius increases, ionization energy decreases</p>
+                        </div>
+                    </div>
+
+                    <!-- Electronegativity -->
+                    <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-semibold text-green-800 mb-4 flex items-center">
+                            <span class="w-3 h-3 bg-green-500 rounded-full mr-3"></span>
+                            Electronegativity
+                        </h3>
+                        <p class="text-gray-700 mb-4">Ability to attract shared electrons in a bond.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <span class="text-2xl trend-arrow">↓</span>
+                                <span class="ml-3 text-gray-700">Decreases down a group</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-2xl trend-arrow">→</span>
+                                <span class="ml-3 text-gray-700">Increases across a period</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Electron Affinity -->
+                    <div class="bg-gradient-to-br from-yellow-50 to-orange-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-semibold text-orange-800 mb-4 flex items-center">
+                            <span class="w-3 h-3 bg-yellow-500 rounded-full mr-3"></span>
+                            Electron Affinity
+                        </h3>
+                        <p class="text-gray-700 mb-4">Energy released when an atom gains an electron.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <span class="text-2xl trend-arrow">↓</span>
+                                <span class="ml-3 text-gray-700">Generally decreases down a group</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-2xl trend-arrow">→</span>
+                                <span class="ml-3 text-gray-700">Generally increases across a period</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alkali Metals Section -->
+        <div id="alkali" class="section hidden">
+            <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Group I - Alkali Metals</h2>
+                
+                <div class="grid lg:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-gradient-to-br from-red-100 to-red-200 p-6 rounded-xl text-center">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">Li</span>
+                        </div>
+                        <h3 class="font-bold text-red-800 mb-2">Lithium</h3>
+                        <p class="text-sm text-gray-700">Atomic Number: 3</p>
+                        <p class="text-sm text-gray-700">Scarlet flame color</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-yellow-100 to-yellow-200 p-6 rounded-xl text-center">
+                        <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">Na</span>
+                        </div>
+                        <h3 class="font-bold text-yellow-800 mb-2">Sodium</h3>
+                        <p class="text-sm text-gray-700">Atomic Number: 11</p>
+                        <p class="text-sm text-gray-700">Yellow flame color</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-purple-100 to-purple-200 p-6 rounded-xl text-center">
+                        <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">K</span>
+                        </div>
+                        <h3 class="font-bold text-purple-800 mb-2">Potassium</h3>
+                        <p class="text-sm text-gray-700">Atomic Number: 19</p>
+                        <p class="text-sm text-gray-700">Lilac flame color</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-semibold text-indigo-800 mb-4">Physical Properties</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>Soft metals (can be cut with knife)</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>Low melting and boiling points</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>Shiny when freshly cut</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>Low density (float on water)</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>Good conductors of heat and electricity</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-semibold text-emerald-800 mb-4">Chemical Properties</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-emerald-500 rounded-full mr-3"></span>Highly reactive (stored in oil)</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-emerald-500 rounded-full mr-3"></span>Form +1 ions easily</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-emerald-500 rounded-full mr-3"></span>React vigorously with water</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-emerald-500 rounded-full mr-3"></span>Tarnish quickly in air</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-emerald-500 rounded-full mr-3"></span>Reactivity increases down the group</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alkaline Earth Section -->
+        <div id="alkaline" class="section hidden">
+            <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Group II - Alkaline Earth Metals</h2>
+                
+                <div class="grid lg:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-gradient-to-br from-gray-100 to-gray-200 p-6 rounded-xl text-center">
+                        <div class="w-16 h-16 bg-gray-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-lg">Be</span>
+                        </div>
+                        <h3 class="font-bold text-gray-800 mb-2">Beryllium</h3>
+                        <p class="text-sm text-gray-700">Atomic Number: 4</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-green-100 to-green-200 p-6 rounded-xl text-center">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-lg">Mg</span>
+                        </div>
+                        <h3 class="font-bold text-green-800 mb-2">Magnesium</h3>
+                        <p class="text-sm text-gray-700">Atomic Number: 12</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-orange-100 to-orange-200 p-6 rounded-xl text-center">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-lg">Ca</span>
+                        </div>
+                        <h3 class="font-bold text-orange-800 mb-2">Calcium</h3>
+                        <p class="text-sm text-gray-700">Atomic Number: 20</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-red-100 to-red-200 p-6 rounded-xl text-center">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-lg">Sr</span>
+                        </div>
+                        <h3 class="font-bold text-red-800 mb-2">Strontium</h3>
+                        <p class="text-sm text-gray-700">Atomic Number: 38</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-semibold text-indigo-800 mb-4">Key Characteristics</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>Form +2 ions</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>Higher melting points than alkali metals</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>Less reactive than Group I</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>Reactivity increases down the group</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-semibold text-purple-800 mb-4">Common Uses</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>Mg: Lightweight alloys, pharmaceuticals</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>Ca: Cement production, antacids</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>Be: X-ray applications, aerospace</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Halogens Section -->
+        <div id="halogens" class="section hidden">
+            <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Group VII - Halogens</h2>
+                
+                <div class="grid lg:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-gradient-to-br from-yellow-100 to-yellow-200 p-6 rounded-xl text-center">
+                        <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">F</span>
+                        </div>
+                        <h3 class="font-bold text-yellow-800 mb-2">Fluorine</h3>
+                        <p class="text-sm text-gray-700">Gas - Pale yellow</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-green-100 to-green-200 p-6 rounded-xl text-center">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">Cl</span>
+                        </div>
+                        <h3 class="font-bold text-green-800 mb-2">Chlorine</h3>
+                        <p class="text-sm text-gray-700">Gas - Pale green-yellow</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-red-100 to-red-200 p-6 rounded-xl text-center">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">Br</span>
+                        </div>
+                        <h3 class="font-bold text-red-800 mb-2">Bromine</h3>
+                        <p class="text-sm text-gray-700">Liquid - Deep red</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-purple-100 to-purple-200 p-6 rounded-xl text-center">
+                        <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">I</span>
+                        </div>
+                        <h3 class="font-bold text-purple-800 mb-2">Iodine</h3>
+                        <p class="text-sm text-gray-700">Solid - Dark purple</p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-orange-50 to-red-50 p-6 rounded-xl mb-6">
+                    <h3 class="text-xl font-semibold text-red-800 mb-4">Uses of Halogens</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded-lg">
+                                <h4 class="font-medium text-yellow-800 mb-2">Fluorine Uses</h4>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• Toothpaste (prevents decay)</li>
+                                    <li>• Plastics manufacturing</li>
+                                    <li>• Refrigeration systems</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <h4 class="font-medium text-green-800 mb-2">Chlorine Uses</h4>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• Water treatment</li>
+                                    <li>• PVC production</li>
+                                    <li>• Bleaching agents</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded-lg">
+                                <h4 class="font-medium text-red-800 mb-2">Bromine Uses</h4>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• Photography</li>
+                                    <li>• Flame retardants</li>
+                                    <li>• Anti-knock agents</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <h4 class="font-medium text-purple-800 mb-2">Iodine Uses</h4>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• Medical disinfectant</li>
+                                    <li>• Table salt additive</li>
+                                    <li>• Starch testing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Noble Gases Section -->
+        <div id="noble" class="section hidden">
+            <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Group VIII - Noble Gases</h2>
+                
+                <div class="grid lg:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-6 rounded-xl text-center">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-lg">He</span>
+                        </div>
+                        <h3 class="font-bold text-blue-800 mb-2">Helium</h3>
+                        <p class="text-sm text-gray-700">Balloons, cooling</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-orange-100 to-orange-200 p-6 rounded-xl text-center">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-lg">Ne</span>
+                        </div>
+                        <h3 class="font-bold text-orange-800 mb-2">Neon</h3>
+                        <p class="text-sm text-gray-700">Advertising signs</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-indigo-100 to-indigo-200 p-6 rounded-xl text-center">
+                        <div class="w-16 h-16 bg-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-lg">Ar</span>
+                        </div>
+                        <h3 class="font-bold text-indigo-800 mb-2">Argon</h3>
+                        <p class="text-sm text-gray-700">Light bulbs, welding</p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-50 to-blue-50 p-6 rounded-xl">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Unique Properties</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-blue-500 rounded-full mr-3"></span>
+                                <span class="text-gray-700">Fully filled outer electron shells</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-blue-500 rounded-full mr-3"></span>
+                                <span class="text-gray-700">Very unreactive (inert)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-blue-500 rounded-full mr-3"></span>
+                                <span class="text-gray-700">Exist as monoatomic gases</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-indigo-500 rounded-full mr-3"></span>
+                                <span class="text-gray-700">Do not conduct electricity</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-indigo-500 rounded-full mr-3"></span>
+                                <span class="text-gray-700">Atomic size increases down group</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-indigo-500 rounded-full mr-3"></span>
+                                <span class="text-gray-700">Colorless and odorless</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experiments Section -->
+        <div id="experiments" class="section hidden">
+            <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Virtual Experiments</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Experiment 1 -->
+                    <div class="experiment-card rounded-xl p-6 text-white">
+                        <h3 class="text-xl font-bold mb-4">Experiment 1.3: Alkali Metals with Water</h3>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg mb-4">
+                            <p class="text-sm mb-3"><strong>Aim:</strong> Investigate reactions of Li, Na, K with water</p>
+                            <div class="space-y-2 text-sm">
+                                <div>🧪 <strong>Materials:</strong> Glass trough, tongs, universal indicator</div>
+                                <div>⚠️ <strong>Safety:</strong> Use tongs, observe from distance</div>
+                            </div>
+                        </div>
+                        <button onclick="runExperiment('water')" class="bg-white text-purple-800 px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition">
+                            Start Virtual Experiment
+                        </button>
+                    </div>
+
+                    <!-- Experiment 2 -->
+                    <div class="bg-gradient-to-br from-green-600 to-teal-600 rounded-xl p-6 text-white">
+                        <h3 class="text-xl font-bold mb-4">Experiment 1.4: Alkali Metals with Chlorine</h3>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg mb-4">
+                            <p class="text-sm mb-3"><strong>Aim:</strong> Observe reactions of Li, Na with chlorine gas</p>
+                            <div class="space-y-2 text-sm">
+                                <div>🧪 <strong>Materials:</strong> Deflagrating spoon, chlorine jars</div>
+                                <div>⚠️ <strong>Safety:</strong> Use fume cupboard, avoid K reaction</div>
+                            </div>
+                        </div>
+                        <button onclick="runExperiment('chlorine')" class="bg-white text-teal-800 px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition">
+                            Start Virtual Experiment
+                        </button>
+                    </div>
+
+                    <!-- Experiment 3 -->
+                    <div class="bg-gradient-to-br from-red-600 to-pink-600 rounded-xl p-6 text-white">
+                        <h3 class="text-xl font-bold mb-4">Experiment 1.5: Alkaline Earth with Air</h3>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg mb-4">
+                            <p class="text-sm mb-3"><strong>Aim:</strong> Compare Mg and Ca reactions with oxygen</p>
+                            <div class="space-y-2 text-sm">
+                                <div>🧪 <strong>Materials:</strong> Mg ribbon, Ca granules, Bunsen burner</div>
+                                <div>⚠️ <strong>Safety:</strong> Don't look directly at burning Mg</div>
+                            </div>
+                        </div>
+                        <button onclick="runExperiment('air')" class="bg-white text-pink-800 px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition">
+                            Start Virtual Experiment
+                        </button>
+                    </div>
+
+                    <!-- Experiment 4 -->
+                    <div class="bg-gradient-to-br from-yellow-600 to-orange-600 rounded-xl p-6 text-white">
+                        <h3 class="text-xl font-bold mb-4">Halogen Reactivity Test</h3>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg mb-4">
+                            <p class="text-sm mb-3"><strong>Aim:</strong> Compare halogen reactivity with metals</p>
+                            <div class="space-y-2 text-sm">
+                                <div>🧪 <strong>Materials:</strong> Various metals, halogen solutions</div>
+                                <div>⚠️ <strong>Safety:</strong> Handle halogens with care</div>
+                            </div>
+                        </div>
+                        <button onclick="runExperiment('halogens')" class="bg-white text-orange-800 px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition">
+                            Start Virtual Experiment
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experiment Results Modal -->
+            <div id="experiment-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+                <div class="bg-white rounded-2xl p-8 max-w-2xl w-full mx-4 max-h-96 overflow-y-auto">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 id="modal-title" class="text-2xl font-bold text-gray-800"></h3>
+                        <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                    </div>
+                    <div id="modal-content" class="space-y-4"></div>
+                    <div class="mt-6 flex justify-end">
+                        <button onclick="closeModal()" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Section -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Quick Assessment</h2>
+            
+            <div id="quiz-container" class="space-y-6">
+                <div class="quiz-question bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl">
+                    <h3 class="font-semibold text-gray-800 mb-4">1. Which property increases down Group I?</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q1" value="a" class="mr-3">
+                            <span>Ionization energy</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q1" value="b" class="mr-3">
+                            <span>Atomic radius</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q1" value="c" class="mr-3">
+                            <span>Electronegativity</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="quiz-question bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-xl">
+                    <h3 class="font-semibold text-gray-800 mb-4">2. What flame color does sodium produce?</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q2" value="a" class="mr-3">
+                            <span>Scarlet</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q2" value="b" class="mr-3">
+                            <span>Yellow</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q2" value="c" class="mr-3">
+                            <span>Lilac</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="checkAnswers()" class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-3 rounded-lg font-medium hover:from-purple-700 hover:to-indigo-700 transition mt-6">
+                Check Answers
+            </button>
+            
+            <div id="quiz-results" class="mt-4 hidden"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-2"> JCE Millennium eLearning Centre</p>
+            <p class="text-gray-400 text-sm">Interactive Chemistry Education Platform</p>
+        </div>
+    </footer>
+
+    <script>
+        let currentSection = 'overview';
+        let progress = 0;
+
+        // Navigation functionality
+        function showSection(section) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(s => {
+                s.classList.add('hidden');
+            });
+            
+            // Show selected section
+            document.getElementById(section).classList.remove('hidden');
+            
+            // Update navigation buttons
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('bg-indigo-600', 'text-white');
+                btn.classList.add('bg-gray-200', 'text-gray-700');
+            });
+            
+            event.target.classList.remove('bg-gray-200', 'text-gray-700');
+            event.target.classList.add('bg-indigo-600', 'text-white');
+            
+            currentSection = section;
+            updateProgress();
+            
+            // Add animation
+            document.getElementById(section).querySelectorAll('.fade-in').forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('visible');
+                }, index * 100);
+            });
+        }
+
+        // Progress tracking
+        function updateProgress() {
+            const sections = ['overview', 'trends', 'alkali', 'alkaline', 'halogens', 'noble', 'experiments'];
+            const sectionIndex = sections.indexOf(currentSection);
+            progress = Math.round(((sectionIndex + 1) / sections.length) * 100);
+            document.getElementById('progress-bar').style.width = progress + '%';
+        }
+
+        // Element info modal
+        function showElementInfo(element) {
+            const elementData = {
+                'Li': { name: 'Lithium', group: 'Alkali Metal', properties: 'Soft, silvery metal. Burns with scarlet flame.' },
+                'Na': { name: 'Sodium', group: 'Alkali Metal', properties: 'Soft, silvery metal. Burns with yellow flame.' },
+                'F': { name: 'Fluorine', group: 'Halogen', properties: 'Pale yellow gas. Most reactive halogen.' },
+                'Cl': { name: 'Chlorine', group: 'Halogen', properties: 'Pale green-yellow gas. Used in water treatment.' },
+                'Mg': { name: 'Magnesium', group: 'Alkaline Earth', properties: 'Silver-white metal. Burns with bright white light.' },
+                'Ar': { name: 'Argon', group: 'Noble Gas', properties: 'Colorless, odorless gas. Used in light bulbs.' }
+            };
+            
+            const data = elementData[element];
+            if (data) {
+                alert(`${data.name} (${element})\nGroup: ${data.group}\n${data.properties}`);
+            }
+        }
+
+        // Virtual experiment functionality
+        function runExperiment(type) {
+            const experiments = {
+                water: {
+                    title: 'Alkali Metals + Water',
+                    content: `
+                        <div class="space-y-4">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-blue-800 mb-2">Lithium + Water</h4>
+                                <p class="text-sm">Li reacts slowly, producing hydrogen gas and LiOH. Solution turns alkaline (pH > 7).</p>
+                                <p class="text-xs text-gray-600 mt-2">2Li(s) + 2H₂O(l) → 2LiOH(aq) + H₂(g)</p>
+                            </div>
+                            <div class="bg-yellow-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-yellow-800 mb-2">Sodium + Water</h4>
+                                <p class="text-sm">Na reacts vigorously with hissing sound. Heat produced may ignite hydrogen.</p>
+                                <p class="text-xs text-gray-600 mt-2">2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g)</p>
+                            </div>
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-purple-800 mb-2">Potassium + Water</h4>
+                                <p class="text-sm">K reacts explosively, igniting spontaneously. Most vigorous reaction.</p>
+                                <p class="text-xs text-gray-600 mt-2">2K(s) + 2H₂O(l) → 2KOH(aq) + H₂(g)</p>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-green-800 mb-2">Conclusion</h4>
+                                <p class="text-sm">Reactivity order: K > Na > Li (increases down the group)</p>
+                            </div>
+                        </div>
+                    `
+                },
+                chlorine: {
+                    title: 'Alkali Metals + Chlorine',
+                    content: `
+                        <div class="space-y-4">
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-red-800 mb-2">Lithium + Chlorine</h4>
+                                <p class="text-sm">Forms white solid lithium chloride (LiCl)</p>
+                                <p class="text-xs text-gray-600 mt-2">2Li(s) + Cl₂(g) → 2LiCl(s)</p>
+                            </div>
+                            <div class="bg-yellow-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-yellow-800 mb-2">Sodium + Chlorine</h4>
+                                <p class="text-sm">Forms white solid sodium chloride (NaCl) - common salt</p>
+                                <p class="text-xs text-gray-600 mt-2">2Na(s) + Cl₂(g) → 2NaCl(s)</p>
+                            </div>
+                            <div class="bg-orange-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-orange-800 mb-2">Safety Note</h4>
+                                <p class="text-sm">Potassium reacts explosively with chlorine - not demonstrated in lab</p>
+                            </div>
+                        </div>
+                    `
+                },
+                air: {
+                    title: 'Alkaline Earth Metals + Air',
+                    content: `
+                        <div class="space-y-4">
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-green-800 mb-2">Magnesium + Oxygen</h4>
+                                <p class="text-sm">Burns with brilliant white light, forming white MgO powder</p>
+                                <p class="text-xs text-gray-600 mt-2">2Mg(s) + O₂(g) → 2MgO(s)</p>
+                            </div>
+                            <div class="bg-orange-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-orange-800 mb-2">Calcium + Oxygen</h4>
+                                <p class="text-sm">Burns more readily than Mg, forming white CaO</p>
+                                <p class="text-xs text-gray-600 mt-2">2Ca(s) + O₂(g) → 2CaO(s)</p>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-blue-800 mb-2">Reactivity Trend</h4>
+                                <p class="text-sm">Reactivity increases down Group II: Be < Mg < Ca < Sr < Ba</p>
+                            </div>
+                        </div>
+                    `
+                },
+                halogens: {
+                    title: 'Halogen Reactivity Comparison',
+                    content: `
+                        <div class="space-y-4">
+                            <div class="bg-yellow-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-yellow-800 mb-2">Fluorine</h4>
+                                <p class="text-sm">Most reactive halogen - reacts explosively with most metals</p>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-green-800 mb-2">Chlorine</h4>
+                                <p class="text-sm">Very reactive - forms metal chlorides readily</p>
+                            </div>
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-red-800 mb-2">Bromine</h4>
+                                <p class="text-sm">Less reactive than chlorine - forms metal bromides</p>
+                            </div>
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-purple-800 mb-2">Iodine</h4>
+                                <p class="text-sm">Least reactive halogen - forms metal iodides slowly</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-gray-800 mb-2">Reactivity Order</h4>
+                                <p class="text-sm">F₂ > Cl₂ > Br₂ > I₂ (decreases down the group)</p>
+                            </div>
+                        </div>
+                    `
+                }
+            };
+            
+            const experiment = experiments[type];
+            document.getElementById('modal-title').textContent = experiment.title;
+            document.getElementById('modal-content').innerHTML = experiment.content;
+            document.getElementById('experiment-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('experiment-modal').classList.add('hidden');
+        }
+
+        // Quiz functionality
+        function checkAnswers() {
+            const answers = { q1: 'b', q2: 'b' };
+            let score = 0;
+            let total = Object.keys(answers).length;
+            
+            for (let question in answers) {
+                const selected = document.querySelector(`input[name="${question}"]:checked`);
+                if (selected && selected.value === answers[question]) {
+                    score++;
+                }
+            }
+            
+            const percentage = Math.round((score / total) * 100);
+            const resultsDiv = document.getElementById('quiz-results');
+            
+            resultsDiv.innerHTML = `
+                <div class="bg-${percentage >= 70 ? 'green' : 'red'}-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-${percentage >= 70 ? 'green' : 'red'}-800 mb-2">Results</h4>
+                    <p>You scored ${score}/${total} (${percentage}%)</p>
+                    <div class="mt-2 text-sm text-gray-700">
+                        <p>1. Atomic radius increases down Group I due to additional electron shells.</p>
+                        <p>2. Sodium burns with a characteristic yellow flame color.</p>
+                    </div>
+                </div>
+            `;
+            
+            resultsDiv.classList.remove('hidden');
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show overview section by default
+            showSection('overview');
+            
+            // Add fade-in animation to elements
+            document.querySelectorAll('.fade-in').forEach(el => {
+                el.classList.add('visible');
+            });
+        });
+    </script>
+</body>
+</html>
