@@ -1,0 +1,944 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 3: Density</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="icon" type="image/png" href="../img/WTEC1_LMS_512x512.png">
+
+    <!-- add once in <head> -->
+<style>
+  html { scroll-behavior: smooth; }
+</style>
+
+</head>
+<body class="bg-gray-200 text-gray-800">
+    <!-- Header -->
+    <header class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 flex justify-between text-white py-6 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">UNIT 3: DENSITY</h1>
+            <p class="text-blue-100">Understanding Mass, Volume, and Density</p>
+        </div>
+    </header>
+
+      <!-- mobile / desktop sidebar -->
+<aside class="fixed right-0 w-64 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform">
+  <nav class="p-4 space-y-2">
+     <a href="./phy.html" class="block px-3 py-2 rounded hover:bg-gray-700">Home</a>
+    <a href="./Q1.html" class="block px-3 py-2 rounded hover:bg-gray-700">Take Exams</a>
+    <a href="#quiz" class="block px-3 py-2 rounded hover:bg-gray-700">Take Quiz</a>
+    <a href="experiments.html" class="block px-3 py-2 rounded hover:bg-gray-700">Experiments</a>
+   
+  </nav>
+</aside>
+
+<!-- toggle button (mobile) -->
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 left-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+  Menu
+</button>
+
+
+   <!-- centered image -->
+        <div class="flex justify-center items-center my-4">
+        <img src="../img/lms.jpg"
+            alt="Illustration"
+            class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+        </div>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+
+            
+        
+        <!-- Definition Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">Definition and Basic Concepts</h2>
+            <p class="mb-4 leading-relaxed">
+                Density is defined as the mass of a substance per unit volume. It is a derived quantity that depends on both mass and volume. Density tells us how tightly matter is packed together in a substance.
+            </p>
+            
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 mb-4">
+                <h3 class="font-bold text-lg mb-2">Formula</h3>
+                <p class="text-2xl font-mono mb-2">ρ = m/V</p>
+                <p class="text-sm text-gray-600">Where:</p>
+                <ul class="list-disc list-inside text-sm text-gray-700 ml-2">
+                    <li>ρ (rho) = density</li>
+                    <li>m = mass</li>
+                    <li>V = volume</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded">
+                <h3 class="font-bold mb-2">SI Units</h3>
+                <ul class="list-disc list-inside text-gray-700 ml-2">
+                    <li><strong>Primary:</strong> kg/m³ (kilograms per cubic meter)</li>
+                    <li><strong>Also used:</strong> g/cm³ (grams per cubic centimeter)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson 1</h2>
+            <div class="aspect-video w-full">
+                <iframe 
+                    class="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/OVEimLZSw6I" 
+                    title="Density Lesson Video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        
+        <!-- Comparison of Densities Section -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+    <h2 class="text-2xl font-bold text-blue-600 mb-6">Comparison of Densities</h2>
+    
+    <div class="space-y-4">
+        <div class="bg-gray-800 text-white p-4 rounded-lg">
+            <h3 class="font-bold text-lg mb-2">🔲 Solids: Highest Density</h3>
+            <p class="mb-2">Particles are closely packed together</p>
+            <p class="text-yellow-300 font-semibold">Example: Iron = 7,800 kg/m³</p>
+        </div>
+
+        <div class="bg-blue-600 text-white p-4 rounded-lg">
+            <h3 class="font-bold text-lg mb-2">💧 Liquids: Medium Density</h3>
+            <p class="mb-2">Particles are moderately spaced</p>
+            <p class="text-blue-100 font-semibold">Example: Water = 1,000 kg/m³</p>
+        </div>
+
+        <div class="bg-sky-300 text-gray-800 p-4 rounded-lg">
+            <h3 class="font-bold text-lg mb-2">💨 Gases: Lowest Density</h3>
+            <p class="mb-2">Particles are far apart</p>
+            <p class="text-sky-800 font-semibold">Example: Air = 1.3 kg/m³</p>
+        </div>
+
+        <div class="bg-green-50 border-l-4 border-green-600 p-4">
+            <p class="font-semibold text-green-800 mb-1">General Rule:</p>
+            <p class="text-gray-700">Density decreases from solids to liquids to gases because particle spacing increases</p>
+        </div>
+    </div>
+</section>
+
+<!-- Worked Examples Section -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+    <h2 class="text-2xl font-bold text-blue-600 mb-6">Calculating Density - Worked Examples</h2>
+    
+    <!-- Example 1 -->
+    <div class="mb-8 pb-8 border-b border-gray-200">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">Example 1: Box Density</h3>
+        
+        <div class="bg-purple-50 p-4 rounded-lg mb-4">
+            <p class="font-semibold mb-2">Given:</p>
+            <ul class="list-disc list-inside text-gray-700 ml-2">
+                <li>Length = 20 cm</li>
+                <li>Width = 5 cm</li>
+                <li>Height = 5 cm</li>
+                <li>Mass = 80 g</li>
+            </ul>
+        </div>
+
+        <div class="space-y-3">
+            <div class="bg-gray-50 p-4 rounded">
+                <p class="font-semibold text-blue-700 mb-2">Step 1: Calculate volume</p>
+                <p class="font-mono">V = length × width × height</p>
+                <p class="font-mono">V = 20 cm × 5 cm × 5 cm</p>
+                <p class="font-mono text-lg font-bold text-blue-600">V = 500 cm³</p>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded">
+                <p class="font-semibold text-blue-700 mb-2">Step 2: Calculate density</p>
+                <p class="font-mono">ρ = mass/volume</p>
+                <p class="font-mono">ρ = 80 g / 500 cm³</p>
+                <p class="font-mono text-lg font-bold text-green-600">ρ = 0.16 g/cm³</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Example 2 -->
+    <div>
+        <h3 class="text-xl font-bold text-gray-800 mb-4">Example 2: Metal Rod Mass Calculation</h3>
+        
+        <div class="bg-purple-50 p-4 rounded-lg mb-4">
+            <p class="font-semibold mb-2">Given:</p>
+            <ul class="list-disc list-inside text-gray-700 ml-2">
+                <li>Density = 500 kg/m³</li>
+                <li>Volume = 25 m³</li>
+                <li><strong>Find:</strong> Mass</li>
+            </ul>
+        </div>
+
+        <div class="space-y-3">
+            <div class="bg-gray-50 p-4 rounded">
+                <p class="font-semibold text-blue-700 mb-2">Step 1: Rearrange the density formula</p>
+                <p class="font-mono">ρ = m/V</p>
+                <p class="font-mono text-blue-600">Therefore: m = ρ × V</p>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded">
+                <p class="font-semibold text-blue-700 mb-2">Step 2: Substitute values</p>
+                <p class="font-mono">m = 500 kg/m³ × 25 m³</p>
+                <p class="font-mono text-lg font-bold text-green-600">m = 12,500 kg</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Temperature Effects Section -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+    <h2 class="text-2xl font-bold text-blue-600 mb-6">Effects of Temperature on Density</h2>
+    
+    <div class="bg-orange-50 border-l-4 border-orange-500 p-4 mb-6">
+        <h3 class="font-bold text-lg mb-3 text-orange-800">When Solids are Heated:</h3>
+        <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+                <span class="text-green-600 font-bold mr-2">✓</span>
+                <span><strong>Mass remains constant</strong> - heating doesn't add or remove matter</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-blue-600 font-bold mr-2">↑</span>
+                <span><strong>Volume increases</strong> - particles vibrate more and move apart</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-red-600 font-bold mr-2">↓</span>
+                <span><strong>Density decreases</strong> - since ρ = m/V, if V increases while m stays constant, ρ must decrease</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bg-gray-100 p-4 rounded-lg">
+        <h4 class="font-semibold mb-3">Formula Relationship:</h4>
+        <div class="space-y-2 text-gray-700">
+            <p>🔥 <strong>Higher temperature</strong> → Larger volume → <span class="text-red-600 font-bold">Lower density</span></p>
+            <p>❄️ <strong>Lower temperature</strong> → Smaller volume → <span class="text-blue-600 font-bold">Higher density</span></p>
+        </div>
+    </div>
+</section>
+
+<!-- Anomalous Behavior of Water Section -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+    <h2 class="text-2xl font-bold text-blue-600 mb-6">Anomalous Behavior of Water (4°C to 0°C)</h2>
+    
+    <div class="bg-blue-50 p-4 rounded-lg mb-6">
+        <p class="text-gray-700 leading-relaxed">
+            Water exhibits unusual behavior when cooled from 4°C to 0°C, which is called <strong>anomalous expansion</strong>.
+        </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div class="bg-green-100 border-2 border-green-500 p-4 rounded-lg">
+            <h3 class="font-bold text-lg mb-3 text-green-800">Normal Behavior (above 4°C):</h3>
+            <ul class="space-y-2 text-gray-700">
+                <li>• Water contracts when cooled (volume decreases)</li>
+                <li>• Density increases as temperature drops</li>
+            </ul>
+        </div>
+
+        <div class="bg-red-100 border-2 border-red-500 p-4 rounded-lg">
+            <h3 class="font-bold text-lg mb-3 text-red-800">Anomalous Behavior (4°C to 0°C):</h3>
+            <ul class="space-y-2 text-gray-700">
+                <li>• Water expands when cooled (volume increases)</li>
+                <li>• Density decreases as temperature drops</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="space-y-3">
+        <div class="bg-blue-600 text-white p-4 rounded-lg">
+            <p class="font-semibold">At 4°C: Water has its <strong>maximum density</strong></p>
+        </div>
+
+        <div class="bg-sky-200 text-gray-800 p-4 rounded-lg">
+            <p class="font-semibold">At 0°C: Ice forms and floats because it is less dense than water</p>
+        </div>
+
+        <div class="bg-indigo-50 border-l-4 border-indigo-600 p-4">
+            <p class="font-semibold text-indigo-800 mb-2">Why Ice Floats:</p>
+            <p class="text-gray-700">Ice has a lower density than liquid water due to its crystalline structure, which creates more space between molecules.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Effects of Water's Unusual Expansion Section -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+    <h2 class="text-2xl font-bold text-blue-600 mb-6">Effects of Water's Unusual Expansion</h2>
+    
+    <!-- Effect 1 -->
+    <div class="mb-8 pb-8 border-b border-gray-200">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">1. Freezing of Lakes and Ponds</h3>
+        
+        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+            <p class="font-semibold mb-3 text-blue-800">Process:</p>
+            <ol class="list-decimal list-inside space-y-2 text-gray-700 ml-2">
+                <li>When air temperature drops below 0°C, the surface water cools first</li>
+                <li>Water at 4°C (highest density) sinks to the bottom</li>
+                <li>Warmer water rises to the surface</li>
+                <li>Ice forms at 0°C on the surface and floats</li>
+                <li>Water below the ice remains at approximately 4°C</li>
+            </ol>
+        </div>
+
+        <div class="bg-green-100 border-l-4 border-green-600 p-4">
+            <p class="font-semibold text-green-800 mb-2">Survival of Aquatic Life:</p>
+            <p class="text-gray-700">Fish and other aquatic organisms survive because the water beneath the ice layer remains liquid at 4°C, providing a livable environment throughout winter.</p>
+        </div>
+    </div>
+
+    <!-- Effect 2 -->
+    <div class="mb-8 pb-8 border-b border-gray-200">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">2. Bursting of Water Pipes</h3>
+        
+        <div class="bg-red-50 p-4 rounded-lg mb-3">
+            <p class="font-semibold text-red-800 mb-2">Cause:</p>
+            <p class="text-gray-700">When water inside pipes freezes, it expands significantly (approximately 9% volume increase). This expansion creates enormous pressure against the pipe walls.</p>
+        </div>
+
+        <div class="bg-orange-50 p-4 rounded-lg">
+            <p class="font-semibold text-orange-800 mb-2">Result:</p>
+            <p class="text-gray-700">The internal pressure can exceed the pipe's strength, causing it to crack or burst. This commonly occurs in cold climates when pipes are not properly insulated.</p>
+        </div>
+    </div>
+
+    <!-- Effect 3 -->
+    <div>
+        <h3 class="text-xl font-bold text-gray-800 mb-4">3. Weathering of Rocks</h3>
+        
+        <div class="bg-gray-50 p-4 rounded-lg mb-4">
+            <p class="font-semibold mb-3">Process:</p>
+            <ol class="list-decimal list-inside space-y-2 text-gray-700 ml-2">
+                <li>Water seeps into cracks and crevices in rocks</li>
+                <li>When temperature drops below 0°C, the water freezes</li>
+                <li>Freezing water expands, exerting pressure on the rock</li>
+                <li>Repeated freeze-thaw cycles gradually widen the cracks</li>
+                <li>Eventually, the rock breaks apart</li>
+            </ol>
+        </div>
+
+        <div class="bg-purple-50 border-l-4 border-purple-600 p-4">
+            <p class="font-semibold text-purple-800 mb-2">Significance:</p>
+            <p class="text-gray-700">This is a major form of mechanical weathering that shapes landscapes over time, particularly in regions with frequent temperature fluctuations around 0°C.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Relative Density Section -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+    <h2 class="text-2xl font-bold text-blue-600 mb-6">Relative Density</h2>
+    
+    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-6">
+        <p class="font-semibold mb-2">Definition:</p>
+        <p class="text-gray-700 mb-3">Relative density (RD) is the ratio of the mass of a substance to the mass of an equal volume of water.</p>
+        
+        <div class="space-y-2 mt-4">
+            <p class="font-mono text-lg bg-white p-2 rounded">RD = Mass of substance / Mass of equal volume of water</p>
+            <p class="font-mono text-lg bg-white p-2 rounded">RD = Density of substance / Density of water</p>
+        </div>
+    </div>
+
+    <div class="bg-red-50 border-2 border-red-500 p-4 mb-6">
+        <p class="font-bold text-red-800 text-lg">Important Characteristic:</p>
+        <p class="text-gray-700 mt-2">Relative density has <strong>NO UNITS</strong> because it is a ratio of two similar quantities.</p>
+    </div>
+
+    <!-- Worked Example -->
+    <div class="bg-gray-50 p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">Worked Example: Relative Density</h3>
+        
+        <div class="bg-white p-4 rounded-lg mb-4">
+            <p class="font-semibold mb-2">Given:</p>
+            <ul class="list-disc list-inside text-gray-700 ml-2">
+                <li>Empty bottle mass = 20 g</li>
+                <li>Bottle filled with water = 40 g</li>
+                <li>Bottle filled with liquid X = 30 g</li>
+            </ul>
+        </div>
+
+        <div class="space-y-3">
+            <div class="bg-blue-50 p-4 rounded">
+                <p class="font-semibold text-blue-700 mb-2">Step 1: Find mass of water</p>
+                <p class="font-mono">Mass of water = 40 g - 20 g = <strong>20 g</strong></p>
+            </div>
+
+            <div class="bg-blue-50 p-4 rounded">
+                <p class="font-semibold text-blue-700 mb-2">Step 2: Find mass of liquid X</p>
+                <p class="font-mono">Mass of liquid X = 30 g - 20 g = <strong>10 g</strong></p>
+            </div>
+
+            <div class="bg-blue-50 p-4 rounded">
+                <p class="font-semibold text-blue-700 mb-2">Step 3: Calculate relative density</p>
+                <p class="font-mono">RD = Mass of liquid X / Mass of water</p>
+                <p class="font-mono">RD = 10 g / 20 g</p>
+                <p class="font-mono text-lg font-bold text-green-600">RD = 0.5</p>
+            </div>
+
+            <div class="bg-green-100 border-l-4 border-green-600 p-4">
+                <p class="font-semibold text-green-800 mb-1">Interpretation:</p>
+                <p class="text-gray-700">Liquid X is half as dense as water</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Average Density Section -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+    <h2 class="text-2xl font-bold text-blue-600 mb-6">Average Density</h2>
+    
+    <div class="bg-indigo-50 border-l-4 border-indigo-600 p-4 mb-6">
+        <p class="font-semibold mb-2">Definition:</p>
+        <p class="text-gray-700 mb-3">Average density is the ratio of the total mass of all materials in an object to the total volume occupied by that object, including any hollow spaces.</p>
+        <p class="font-mono text-lg bg-white p-2 rounded mt-3">Average Density = Total Mass / Total Volume</p>
+    </div>
+
+    <div class="bg-yellow-50 p-4 rounded-lg mb-6">
+        <p class="font-semibold text-yellow-800 mb-2">Key Concept:</p>
+        <p class="text-gray-700">Average density accounts for air spaces and hollow regions within an object.</p>
+    </div>
+
+    <!-- Experiment -->
+    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">Experiment: Average Density of Iron</h3>
+        
+        <div class="mb-4">
+            <p class="font-semibold mb-2">Apparatus:</p>
+            <ul class="list-disc list-inside text-gray-700 ml-2">
+                <li>Iron pin (solid)</li>
+                <li>Iron sheet/plate (hollow or shaped)</li>
+                <li>Container of water</li>
+            </ul>
+        </div>
+
+        <div class="mb-4">
+            <p class="font-semibold mb-2">Procedure:</p>
+            <ol class="list-decimal list-inside text-gray-700 ml-2">
+                <li>Place an iron pin in water</li>
+                <li>Place an iron plate on the surface of water</li>
+            </ol>
+        </div>
+
+        <div class="mb-4">
+            <p class="font-semibold mb-3">Observations:</p>
+            <div class="space-y-2">
+                <div class="bg-blue-100 p-3 rounded">
+                    <p class="font-semibold text-blue-800">Iron pin sinks</p>
+                    <p class="text-sm text-gray-700">Its density is greater than water (approximately 7,800 kg/m³)</p>
+                </div>
+                <div class="bg-green-100 p-3 rounded">
+                    <p class="font-semibold text-green-800">Iron plate floats</p>
+                    <p class="text-sm text-gray-700">Its average density is less than water</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border-2 border-indigo-500 p-4 rounded">
+            <p class="font-semibold text-indigo-800 mb-2">Explanation:</p>
+            <p class="text-gray-700 mb-3">Although both objects are made of iron, the plate contains air spaces or has a shape that traps air. This air reduces the average density of the plate-air system to below that of water, allowing it to float.</p>
+            <p class="font-mono text-sm">Average Density = (Mass of iron + Mass of air) / (Volume of iron + Volume of air)</p>
+            <p class="text-sm text-gray-600 mt-2">Since air has very low mass but occupies significant volume, the average density decreases.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Applications of Average Density Section -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+    <h2 class="text-2xl font-bold text-blue-600 mb-6">Applications of Average Density</h2>
+    
+    <!-- Application 1 -->
+    <div class="mb-8 pb-8 border-b border-gray-200">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">1. Why Ships Float ⚓</h3>
+        
+        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+            <p class="text-gray-700 mb-3">Despite being made of steel (density ≈ 7,800 kg/m³), ships float because:</p>
+            <ul class="space-y-2 text-gray-700 ml-4">
+                <li>• Ships have large hollow spaces filled with air</li>
+                <li>• Average density = (Mass of steel + Mass of air) / (Total volume)</li>
+                <li>• The average density of the entire ship is less than water (1,000 kg/m³)</li>
+                <li>• Therefore, ships float</li>
+            </ul>
+        </div>
+
+        <div class="bg-green-100 border-l-4 border-green-600 p-4">
+            <p class="font-semibold text-green-800">Principle:</p>
+            <p class="font-mono text-gray-700">ρ(ship average) < ρ(water) → Ship floats</p>
+        </div>
+    </div>
+
+    <!-- Application 2 -->
+    <div class="mb-8 pb-8 border-b border-gray-200">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">2. Submarines 🚢</h3>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+            <p class="font-semibold mb-3">Submarines can control their buoyancy by:</p>
+            <div class="space-y-3">
+                <div class="bg-blue-200 p-3 rounded">
+                    <p class="font-semibold">To submerge:</p>
+                    <p class="text-sm">Fill ballast tanks with water to increase average density</p>
+                </div>
+                <div class="bg-sky-200 p-3 rounded">
+                    <p class="font-semibold">To rise:</p>
+                    <p class="text-sm">Pump water out and fill tanks with air to decrease average density</p>
+                </div>
+                <div class="bg-purple-200 p-3 rounded">
+                    <p class="font-semibold">To maintain depth:</p>
+                    <p class="text-sm">Adjust water-air ratio to match water density</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application 3 -->
+    <div class="mb-8 pb-8 border-b border-gray-200">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">3. Weather Balloons and Airships 🎈</h3>
+        
+        <div class="bg-yellow-50 p-4 rounded-lg">
+            <p class="text-gray-700 mb-3">These devices float in air because:</p>
+            <ul class="space-y-2 text-gray-700 ml-4">
+                <li>• Filled with helium or hot air (both less dense than regular air)</li>
+                <li>• Average density of balloon + gas < density of surrounding air</li>
+                <li>• Upward buoyant force allows them to rise and float</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Application 4 -->
+    <div>
+        <h3 class="text-xl font-bold text-gray-800 mb-4">4. Hot Air Balloons 🔥🎈</h3>
+        
+        <div class="bg-orange-50 p-4 rounded-lg">
+            <p class="font-semibold mb-3 text-orange-800">Hot air is less dense than cold air because:</p>
+            <ul class="space-y-2 text-gray-700 ml-4">
+                <li>• Heating air causes particles to move faster and spread apart</li>
+                <li>• Volume increases while mass stays constant</li>
+                <li>• Density decreases (ρ = m/V)</li>
+                <li>• Balloon rises when its average density becomes less than surrounding air</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Density of Alloys Section -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+    <h2 class="text-2xl font-bold text-blue-600 mb-6">Density of Alloys</h2>
+    
+    <div class="bg-purple-50 border-l-4 border-purple-600 p-4 mb-6">
+        <p class="font-semibold mb-2">What are Alloys?</p>
+        <p class="text-gray-700">Alloys are mixtures of two or more metals combined to create materials with improved properties.</p>
+    </div>
+
+    <div class="bg-blue-50 p-4 rounded-lg mb-6">
+        <p class="font-semibold text-blue-800 mb-2">Key Property:</p>
+        <p class="text-gray-700">The density of an alloy lies between the densities of the pure metals used to make it.</p>
+    </div>
+
+    <div class="bg-gray-50 p-4 rounded-lg mb-6">
+        <p class="font-semibold mb-3">Example:</p>
+        <div class="space-y-2 text-gray-700">
+            <p>Metal A density = 5,000 kg/m³</p>
+            <p>Metal B density = 9,000 kg/m³</p>
+            <p class="text-green-700 font-semibold">Alloy A+B density = somewhere between 5,000 and 9,000 kg/m³</p>
+        </div>
+    </div>
+
+    <div class="bg-gradient-to-r from-yellow-100 to-orange-100 p-4 rounded-lg">
+        <p class="font-semibold mb-3">Common Alloys:</p>
+        <ul class="space-y-2 text-gray-700">
+            <li class="flex items-center">
+                <span class="bg-orange-500 w-3 h-3 rounded-full mr-3"></span>
+                <strong>Bronze</strong> = Copper + Tin
+            </li>
+            <li class="flex items-center">
+                <span class="bg-yellow-500 w-3 h-3 rounded-full mr-3"></span>
+                <strong>Brass</strong> = Copper + Zinc
+            </li>
+            <li class="flex items-center">
+                <span class="bg-gray-500 w-3 h-3 rounded-full mr-3"></span>
+                <strong>Steel</strong> = Iron + Carbon
+            </li>
+        </ul>
+        <p class="text-sm text-gray-600 mt-3 italic">The exact density depends on the proportions of each metal in the mixture.</p>
+    </div>
+</section>
+
+<!-- Floating and Sinking Section -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+    <h2 class="text-2xl font-bold text-blue-600 mb-6">Floating and Sinking</h2>
+    
+    <div class="bg-indigo-50 border-l-4 border-indigo-600 p-4 mb-6">
+        <p class="font-semibold mb-2">Upthrust:</p>
+        <p class="text-gray-700">An object submerged in a fluid experiences an upward force called upthrust (or buoyant force).</p>
+    </div>
+
+    <div class="space-y-4 mb-6">
+        <div class="bg-red-100 border-2 border-red-500 p-4 rounded-lg">
+            <p class="font-bold text-red-800 mb-1">Object sinks when:</p>
+            <p class="text-gray-700">Density of object > Density of fluid</p>
+        </div>
+
+        <div class="bg-green-100 border-2 border-green-500 p-4 rounded-lg">
+            <p class="font-bold text-green-800 mb-1">Object floats when:</p>
+            <p class="text-gray-700">Density of object < Density of fluid</p>
+        </div>
+
+       <div class="bg-blue-100 border-2 border-blue-500 p-4 rounded-lg">
+            <p class="font-bold text-blue-800 mb-1">Object suspends when:</p>
+            <p class="text-gray-700">Density of object = Density of fluid</p>
+        </div>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4">
+        <p class="font-semibold text-yellow-800 mb-2">Effect of Fluid Density:</p>
+        <p class="text-gray-700">A denser fluid exerts greater upthrust. This is why it's easier to float in salt water (higher density) than fresh water.</p>
+    </div>
+</section>
+
+<!-- Practical Test: Egg Freshness Section -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+    <h2 class="text-2xl font-bold text-blue-600 mb-6">Practical Test: Determining if an Egg is Rotten 🥚</h2>
+    
+    <div class="bg-green-50 p-4 rounded-lg mb-4">
+        <p class="font-semibold text-green-800 mb-2">Objective:</p>
+        <p class="text-gray-700">Use density principles to test egg freshness</p>
+    </div>
+
+    <div class="mb-4">
+        <p class="font-semibold mb-2">Materials:</p>
+        <ul class="list-disc list-inside text-gray-700 ml-2">
+            <li>Bowl or container</li>
+            <li>Fresh water</li>
+            <li>Egg (fresh or suspected rotten)</li>
+        </ul>
+    </div>
+
+    <div class="bg-gray-50 p-4 rounded-lg mb-6">
+        <p class="font-semibold mb-3">Procedure:</p>
+        <ol class="list-decimal list-inside text-gray-700 ml-2 space-y-1">
+            <li>Fill a bowl with fresh water</li>
+            <li>Gently place the egg in the water</li>
+            <li>Observe the egg's behavior</li>
+        </ol>
+    </div>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse">
+            <thead>
+                <tr class="bg-blue-600 text-white">
+                    <th class="border border-gray-300 p-3 text-left">Observation</th>
+                    <th class="border border-gray-300 p-3 text-left">Interpretation</th>
+                    <th class="border border-gray-300 p-3 text-left">Reason</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-green-50">
+                    <td class="border border-gray-300 p-3">Egg sinks flat on bottom</td>
+                    <td class="border border-gray-300 p-3 font-semibold text-green-700">Fresh egg</td>
+                    <td class="border border-gray-300 p-3">High density, minimal air pocket</td>
+                </tr>
+                <tr class="bg-yellow-50">
+                    <td class="border border-gray-300 p-3">Egg stands upright on bottom</td>
+                    <td class="border border-gray-300 p-3 font-semibold text-yellow-700">Older but edible</td>
+                    <td class="border border-gray-300 p-3">Some air has entered, moderate density</td>
+                </tr>
+                <tr class="bg-red-50">
+                    <td class="border border-gray-300 p-3">Egg floats on surface</td>
+                    <td class="border border-gray-300 p-3 font-semibold text-red-700">Rotten egg, do not eat</td>
+                    <td class="border border-gray-300 p-3">Large air pocket, low density</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-blue-50 p-4 rounded-lg mb-4">
+        <p class="font-semibold text-blue-800 mb-3">Scientific Explanation:</p>
+        <ul class="space-y-2 text-gray-700 ml-4">
+            <li>• Fresh eggs are dense and sink because they have minimal air inside</li>
+            <li>• As eggs age, air gradually enters through the porous shell</li>
+            <li>• Air increases buoyancy and decreases average density</li>
+            <li>• Rotten eggs have large air pockets and float</li>
+        </ul>
+    </div>
+
+    <div class="bg-red-100 border-2 border-red-500 p-4">
+        <p class="font-bold text-red-800 mb-2">⚠️ Safety Note:</p>
+        <p class="text-gray-700">Never consume an egg that floats - it indicates spoilage.</p>
+    </div>
+</section>
+
+<!-- Summary Section -->
+<section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg shadow-md p-6 mb-6">
+    <h2 class="text-2xl font-bold mb-6">Summary of Key Concepts</h2>
+    
+    <div class="grid md:grid-cols-2 gap-4">
+        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+            <p class="font-semibold mb-1">Formula:</p>
+            <p>Density = Mass / Volume (ρ = m/V)</p>
+        </div>
+        
+        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+            <p class="font-semibold mb-1">SI Unit:</p>
+            <p>kg/m³</p>
+        </div>
+        
+        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+            <p class="font-semibold mb-1">Order of Density:</p>
+            <p>Solids > Liquids > Gases</p>
+        </div>
+        
+        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+            <p class="font-semibold mb-1">Temperature Effect:</p>
+            <p>Heating generally decreases density</p>
+        </div>
+        
+        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+            <p class="font-semibold mb-1">Water's Maximum Density:</p>
+            <p>4°C</p>
+        </div>
+        
+        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+            <p class="font-semibold mb-1">Ice Floats:</p>
+            <p>Because it's less dense than liquid water</p>
+        </div>
+        
+        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+            <p class="font-semibold mb-1">Relative Density:</p>
+            <p>Has no units (ratio)</p>
+        </div>
+        
+        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+            <p class="font-semibold mb-1">Average Density:</p>
+            <p>Includes hollow spaces and air</p>
+        </div>
+        
+        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+            <p class="font-semibold mb-1">Ships Float:</p>
+            <p>Due to average density < water density</p>
+        </div>
+        
+        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+            <p class="font-semibold mb-1">Alloy Density:</p>
+            <p>Between the densities of constituent metals</p>
+        </div>
+    </div>
+</section>
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-6">📝 Quiz: Test Your Knowledge</h2>
+            
+            <form id="quizForm" class="space-y-6">
+                <!-- Question 1 -->
+                <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="font-semibold mb-3">1. What is the formula for density?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q1" value="a" class="mr-2">
+                            <span>a) ρ = V/m</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q1" value="b" class="mr-2">
+                            <span>b) ρ = m/V</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q1" value="c" class="mr-2">
+                            <span>c) ρ = m × V</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q1" value="d" class="mr-2">
+                            <span>d) ρ = m + V</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="font-semibold mb-3">2. What is the primary SI unit for density?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q2" value="a" class="mr-2">
+                            <span>a) g/cm³</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q2" value="b" class="mr-2">
+                            <span>b) kg/m³</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q2" value="c" class="mr-2">
+                            <span>c) kg/L</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q2" value="d" class="mr-2">
+                            <span>d) g/mL</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="font-semibold mb-3">3. Which method is used to find the volume of an irregular solid?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q3" value="a" class="mr-2">
+                            <span>a) Multiplication of dimensions</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q3" value="b" class="mr-2">
+                            <span>b) Water displacement method</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q3" value="c" class="mr-2">
+                            <span>c) Using a ruler</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q3" value="d" class="mr-2">
+                            <span>d) Direct measurement</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="font-semibold mb-3">4. An iron block has dimensions 3 cm × 4 cm × 2 cm. What is its volume?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q4" value="a" class="mr-2">
+                            <span>a) 9 cm³</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q4" value="b" class="mr-2">
+                            <span>b) 12 cm³</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q4" value="c" class="mr-2">
+                            <span>c) 24 cm³</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q4" value="d" class="mr-2">
+                            <span>d) 14 cm³</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="font-semibold mb-3">5. Why does air have the lowest density among the three states of matter?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q5" value="a" class="mr-2">
+                            <span>a) Because it has less mass</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q5" value="b" class="mr-2">
+                            <span>b) Because gas particles are far apart</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q5" value="c" class="mr-2">
+                            <span>c) Because it is invisible</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="q5" value="d" class="mr-2">
+                            <span>d) Because it is lighter</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-200">
+                    Submit Quiz
+                </button>
+            </form>
+
+            <div id="results" class="mt-6 hidden">
+                <div class="p-4 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Quiz Results</h3>
+                    <p id="score" class="text-lg mb-4"></p>
+                    <div id="feedback" class="space-y-2"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-400">© 2024 Online Physics Class | Unit 8: Density</p>
+        </div>
+    </footer>
+
+    <script>
+        const answers = {
+            q1: 'b',
+            q2: 'b',
+            q3: 'b',
+            q4: 'c',
+            q5: 'b'
+        };
+
+        const explanations = {
+            q1: 'Density is defined as mass divided by volume (ρ = m/V)',
+            q2: 'The primary SI unit for density is kg/m³ (kilograms per cubic meter)',
+            q3: 'The water displacement method is used for irregular solids',
+            q4: 'Volume = length × width × height = 3 × 4 × 2 = 24 cm³',
+            q5: 'Gas particles are far apart, making air less dense than solids or liquids'
+        };
+
+        document.getElementById('quizForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let score = 0;
+            let total = Object.keys(answers).length;
+            let feedback = '';
+
+            for (let question in answers) {
+                const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                const correctAnswer = answers[question];
+                
+                if (userAnswer) {
+                    if (userAnswer.value === correctAnswer) {
+                        score++;
+                        feedback += `<div class="p-3 bg-green-100 border-l-4 border-green-500 text-green-700 rounded">
+                            <strong>Question ${question.slice(1)}:</strong> Correct! ${explanations[question]}
+                        </div>`;
+                    } else {
+                        feedback += `<div class="p-3 bg-red-100 border-l-4 border-red-500 text-red-700 rounded">
+                            <strong>Question ${question.slice(1)}:</strong> Incorrect. ${explanations[question]}
+                        </div>`;
+                    }
+                } else {
+                    feedback += `<div class="p-3 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 rounded">
+                        <strong>Question ${question.slice(1)}:</strong> Not answered. ${explanations[question]}
+                    </div>`;
+                }
+            }
+
+            const percentage = Math.round((score / total) * 100);
+            let resultColor = 'text-red-600';
+            let resultMessage = 'Keep studying!';
+            
+            if (percentage >= 80) {
+                resultColor = 'text-green-600';
+                resultMessage = 'Excellent work!';
+            } else if (percentage >= 60) {
+                resultColor = 'text-yellow-600';
+                resultMessage = 'Good effort!';
+            }
+
+            document.getElementById('score').innerHTML = `
+                <span class="text-2xl font-bold ${resultColor}">Score: ${score}/${total} (${percentage}%)</span>
+                <span class="block text-lg mt-2">${resultMessage}</span>
+            `;
+            
+            document.getElementById('feedback').innerHTML = feedback;
+            document.getElementById('results').classList.remove('hidden');
+            
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+    </script>
+</body>
+</html>
