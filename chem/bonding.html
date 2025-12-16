@@ -1,0 +1,142 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- always change title -->
+    <title>Unit: Chemical Bonding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-purple-600 text-white py-6 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+
+            <!-- always change h1 and p tag text -->
+            <h1 class="text-3xl font-bold mb-2">⚛️ UNIT: CHEMICAL BONDING</h1> 
+            <p class="text-purple-100">Understanding How Atoms Combine to Form Compounds</p>
+        </div>
+    </header>
+
+    <!-- mobile / desktop sidebar -->
+    <aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform">
+        <nav class="p-4 space-y-2">
+            <a href="./chem.html" class="block px-3 py-2 rounded hover:bg-gray-700">Return</a>
+            <a href="./bonding-quiz.html" class="block px-3 py-2 rounded hover:bg-gray-700">Take Exams</a>
+        </nav>
+    </aside>
+
+    <!-- toggle button (mobile) -->
+    <button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+            class="fixed top-4 left-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+        Menu
+    </button>
+
+    <!-- centered image -->
+    <div class="flex justify-center items-center my-4">
+        <img src="/img/lms.jpg"
+             alt="Chemical Bonding Illustration"
+             class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+
+        <!-- Introduction -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-3">Introduction</h2>
+            <p>
+                Chemical bonding refers to the force of attraction that holds atoms or ions together
+                to form molecules and compounds. The type of bond formed depends on how electrons
+                are arranged and shared or transferred between atoms.
+            </p>
+        </section>
+
+        <!-- Types of Chemical Bonds -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-3">Types of Chemical Bonds</h2>
+            <p class="mb-3">There are three main types of chemical bonds:</p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li><strong>Ionic Bond</strong> – formed by transfer of electrons between metals and non-metals.</li>
+                <li><strong>Covalent Bond</strong> – formed by sharing of electrons between non-metal atoms.</li>
+                <li><strong>Metallic Bond</strong> – formed among metal atoms through attraction between positive ions and delocalised electrons.</li>
+            </ul>
+        </section>
+
+        <!-- Ionic Bonding -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-3">Ionic Bonding</h2>
+            <p class="mb-3">
+                Ionic bonding involves the transfer of electrons to form oppositely charged ions
+                which attract each other.
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Occurs between metals and non-metals.</li>
+                <li>Metals lose electrons to form <strong>cations</strong>.</li>
+                <li>Non-metals gain electrons to form <strong>anions</strong>.</li>
+            </ul>
+            <p class="mt-3"><strong>Examples:</strong> NaCl, MgCl₂, CaO</p>
+            <p class="mt-2">
+                Sodium chloride forms a giant ionic lattice where each Na⁺ ion is surrounded
+                by six Cl⁻ ions in a cubic arrangement.
+            </p>
+        </section>
+
+        <!-- Covalent Bonding -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-3">Covalent Bonding</h2>
+            <p class="mb-3">
+                Covalent bonding occurs when non-metal atoms share electrons to achieve stable
+                electron arrangements.
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Forms molecules instead of ions.</li>
+                <li>Each shared pair of electrons forms one covalent bond.</li>
+                <li>Double and triple bonds may occur.</li>
+            </ul>
+            <p class="mt-3">
+                <strong>Examples:</strong> H₂, Cl₂, NH₃, H₂O, CO₂, CH₄, N₂, O₂
+            </p>
+        </section>
+
+        <!-- Metallic Bonding -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-3">Metallic Bonding</h2>
+            <p class="mb-3">
+                In metallic bonding, outer electrons become delocalised and move freely between
+                metal ions, forming a strong bond.
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Explains electrical and thermal conductivity.</li>
+                <li>Accounts for malleability and ductility of metals.</li>
+            </ul>
+            <p class="mt-3"><strong>Examples:</strong> Copper (Cu), Aluminium (Al)</p>
+        </section>
+
+        <!-- Summary -->
+        <section>
+            <h2 class="text-2xl font-bold mb-3">Summary</h2>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Ionic bonding involves electron transfer.</li>
+                <li>Covalent bonding involves electron sharing.</li>
+                <li>Metallic bonding involves delocalised electrons.</li>
+                <li>Understanding bonding explains properties of substances.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-400">© Millennium E-learning Centre</p>
+        </div>
+    </footer>
+
+</body>
+</html>

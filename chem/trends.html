@@ -1,0 +1,524 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1: Elements and the Periodic Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-purple-600 text-white py-6 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">🧪 UNIT 1: ELEMENTS AND THE PERIODIC TABLE</h1>
+            <p class="text-purple-100">Understanding Chemical Elements and Their Properties</p>
+        </div>
+    </header>
+
+          <!-- mobile / desktop sidebar -->
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform">
+  <nav class="p-4 space-y-2">
+    <a href="./chem.html" class="block px-3 py-2 rounded hover:bg-gray-700">Return</a>
+    <a href="./trends-quiz.html" class="block px-3 py-2 rounded hover:bg-gray-700">Take Exams</a>
+    <a href="#quiz" class="block px-3 py-2 rounded hover:bg-gray-700">Take Quiz</a>
+    <a href="experiments.html" class="block px-3 py-2 rounded hover:bg-gray-700">Experiments</a>
+    
+  </nav>
+</aside>
+
+<!-- toggle button (mobile) -->
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 left-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+  Menu
+</button>
+
+     <!-- centered image -->
+            <div class="flex justify-center items-center my-4">
+            <img src="/img/lms.jpg"
+                alt="Illustration"
+                class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+            </div> 
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        
+        <!-- Introduction Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-4">📘 1. Introduction</h2>
+            <div class="space-y-4 text-gray-700">
+                <p class="leading-relaxed">The Periodic Table arranges elements in rows (periods) and columns (groups) according to their properties.</p>
+                <p class="leading-relaxed">Elements show patterns (trends) in physical and chemical properties.</p>
+                <p class="leading-relaxed">These trends depend mainly on the number of outer (valence) electrons.</p>
+            </div>
+        </section>
+
+        <!-- Blocks of Elements Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-6">⚙️ 1.1 Blocks of Elements</h2>
+            
+            <div class="space-y-6">
+                <!-- Metals -->
+                <div class="bg-gradient-to-r from-gray-700 to-gray-600 text-white p-5 rounded-lg">
+                    <h3 class="text-xl font-bold mb-3">Metals</h3>
+                    <ul class="space-y-2 ml-4">
+                        <li>• Good conductors of heat and electricity</li>
+                        <li>• Shiny, malleable, ductile</li>
+                        <li>• Found on the left of the table</li>
+                        <li>• <span class="font-semibold">Example:</span> Sodium, Magnesium, Calcium</li>
+                    </ul>
+                </div>
+
+                <!-- Non-metals -->
+                <div class="bg-gradient-to-r from-blue-500 to-blue-400 text-white p-5 rounded-lg">
+                    <h3 class="text-xl font-bold mb-3">Non-metals</h3>
+                    <ul class="space-y-2 ml-4">
+                        <li>• Poor conductors</li>
+                        <li>• Many are gases (like oxygen, chlorine)</li>
+                        <li>• Found on the right side</li>
+                    </ul>
+                </div>
+
+                <!-- Metalloids -->
+                <div class="bg-gradient-to-r from-yellow-500 to-orange-400 text-white p-5 rounded-lg">
+                    <h3 class="text-xl font-bold mb-3">Metalloids (Semi-metals)</h3>
+                    <ul class="space-y-2 ml-4">
+                        <li>• Have both metallic and non-metallic properties</li>
+                        <li>• <span class="font-semibold">Examples:</span> Silicon, Arsenic</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- General Trends Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-6">🔄 1.2 General Trends in the Periodic Table</h2>
+            
+            <!-- Atomic Radius -->
+            <div class="mb-8 pb-8 border-b border-gray-200">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">🧩 a. Atomic Radius</h3>
+                <div class="bg-blue-50 p-4 rounded-lg mb-3">
+                    <p class="text-gray-700 mb-3">Distance between nucleus and outermost electron.</p>
+                    <ul class="space-y-2 text-gray-700 ml-4">
+                        <li>• <strong>Increases down a group</strong> → more electron shells</li>
+                        <li>• <strong>Decreases across a period</strong> → stronger pull of nucleus</li>
+                    </ul>
+                </div>
+                <div class="bg-green-100 border-l-4 border-green-600 p-4">
+                    <p class="font-semibold text-green-800 mb-1">Example:</p>
+                    <p class="text-gray-700">Lithium &lt; Sodium &lt; Potassium (radius increases down group)</p>
+                </div>
+            </div>
+
+            <!-- Ionisation Energy -->
+            <div class="mb-8 pb-8 border-b border-gray-200">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">⚡ b. Ionisation Energy</h3>
+                <div class="bg-yellow-50 p-4 rounded-lg mb-3">
+                    <p class="text-gray-700 mb-3">Energy needed to remove an outer electron.</p>
+                    <ul class="space-y-2 text-gray-700 ml-4">
+                        <li>• <strong>Decreases down a group</strong> → outer electrons are farther from nucleus</li>
+                        <li>• <strong>Increases across a period</strong> → atoms hold electrons more tightly</li>
+                    </ul>
+                </div>
+                <div class="bg-green-100 border-l-4 border-green-600 p-4">
+                    <p class="font-semibold text-green-800 mb-1">Example:</p>
+                    <p class="text-gray-700">Lithium &gt; Sodium &gt; Potassium (Li hardest to remove electron)</p>
+                </div>
+            </div>
+
+            <!-- Electron Affinity -->
+            <div class="mb-8 pb-8 border-b border-gray-200">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">🧲 c. Electron Affinity</h3>
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <p class="text-gray-700 mb-3">Measure of how strongly an atom attracts an extra electron.</p>
+                    <ul class="space-y-2 text-gray-700 ml-4">
+                        <li>• <strong>Increases across a period</strong> (atoms become smaller and more positive)</li>
+                        <li>• <strong>Decreases down a group</strong> (atoms get larger)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Electronegativity -->
+            <div>
+                <h3 class="text-xl font-bold text-gray-800 mb-4">⚖️ d. Electronegativity</h3>
+                <div class="bg-indigo-50 p-4 rounded-lg">
+                    <p class="text-gray-700 mb-3">Ability of an atom to attract electrons in a bond.</p>
+                    <ul class="space-y-2 text-gray-700 ml-4">
+                        <li>• <strong>Increases across a period</strong></li>
+                        <li>• <strong>Decreases down a group</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+         <!-- Video Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson 1</h2>
+            <div class="aspect-video w-full">
+                <iframe 
+                    class="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/C4Y3Iuetuws" 
+                    title="Density Lesson Video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Group I - Alkali Metals Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-4">🔹 1.3 Group I – Alkali Metals</h2>
+            <p class="text-gray-600 mb-6 italic">Examples: Lithium (Li), Sodium (Na), Potassium (K)</p>
+            
+            <!-- Physical Properties -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-3">🧱 Physical Properties</h3>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <ul class="space-y-2 text-gray-700 ml-4">
+                        <li>• Soft and shiny when freshly cut</li>
+                        <li>• Low density – float on water</li>
+                        <li>• Good conductors of heat and electricity</li>
+                        <li>• Low melting and boiling points</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Chemical Properties -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-3">🔬 Chemical Properties</h3>
+                <div class="bg-red-50 p-4 rounded-lg">
+                    <ul class="space-y-2 text-gray-700 ml-4">
+                        <li>• Very reactive – react with oxygen, water, and chlorine</li>
+                        <li>• <strong>Reactivity increases down the group</strong></li>
+                        <li>• Form alkaline hydroxides with water</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Uses -->
+            <div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">💡 Uses</h3>
+                <div class="space-y-4">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <p class="font-bold text-blue-800 mb-2">Lithium:</p>
+                        <ul class="space-y-1 text-gray-700 ml-4">
+                            <li>• Used in batteries (phones, laptops)</li>
+                            <li>• Used in greases and light alloys</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                        <p class="font-bold text-yellow-800 mb-2">Sodium:</p>
+                        <ul class="space-y-1 text-gray-700 ml-4">
+                            <li>• Used in street lights (sodium vapor lamps)</li>
+                            <li>• Used in making soap, detergents, and table salt (NaCl)</li>
+                            <li>• Used in chemical industries</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-purple-50 p-4 rounded-lg">
+                        <p class="font-bold text-purple-800 mb-2">Potassium:</p>
+                        <ul class="space-y-1 text-gray-700 ml-4">
+                            <li>• Used in fertilizers (improves plant growth)</li>
+                            <li>• Used in making glass and soaps</li>
+                            <li>• Used in food preservation (potassium nitrate)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Group II - Alkaline-Earth Metals Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-4">🔹 1.4 Group II – Alkaline-Earth Metals</h2>
+            <p class="text-gray-600 mb-6 italic">Examples: Magnesium (Mg), Calcium (Ca), Barium (Ba)</p>
+            
+            <!-- Physical Properties -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-3">🧱 Physical Properties</h3>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <ul class="space-y-2 text-gray-700 ml-4">
+                        <li>• Harder and denser than Group I metals</li>
+                        <li>• High melting points</li>
+                        <li>• Good conductors of electricity</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Chemical Properties -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-3">🔬 Chemical Properties</h3>
+                <div class="bg-red-50 p-4 rounded-lg">
+                    <ul class="space-y-2 text-gray-700 ml-4">
+                        <li>• Less reactive than Group I</li>
+                        <li>• <strong>Reactivity increases down the group</strong></li>
+                        <li>• Form oxides, hydroxides, and chlorides</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Uses -->
+            <div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">💡 Uses</h3>
+                <div class="space-y-4">
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <p class="font-bold text-green-800 mb-2">Beryllium:</p>
+                        <p class="text-gray-700 ml-4">Used in X-ray windows, aerospace alloys</p>
+                    </div>
+
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <p class="font-bold text-blue-800 mb-2">Magnesium:</p>
+                        <ul class="space-y-1 text-gray-700 ml-4">
+                            <li>• Used in fireworks and flares (bright light)</li>
+                            <li>• Used in alloys for airplanes and cars (lightweight)</li>
+                            <li>• Used in medicine (milk of magnesia)</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-orange-50 p-4 rounded-lg">
+                        <p class="font-bold text-orange-800 mb-2">Calcium:</p>
+                        <ul class="space-y-1 text-gray-700 ml-4">
+                            <li>• Used in cement, lime, and plaster</li>
+                            <li>• Strengthens bones and teeth</li>
+                            <li>• Used in making bricks and glass</li>
+                            <li>• Used as an antacid (calcium carbonate)</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-pink-50 p-4 rounded-lg">
+                        <p class="font-bold text-pink-800 mb-2">Barium:</p>
+                        <p class="text-gray-700 ml-4">Used in X-ray imaging of the stomach</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Group VII - Halogens Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-4">🔹 1.5 Group VII – Halogens</h2>
+            <p class="text-gray-600 mb-6 italic">Examples: Fluorine (F₂), Chlorine (Cl₂), Bromine (Br₂), Iodine (I₂)</p>
+            
+            <!-- Physical Properties -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-3">🧱 Physical Properties</h3>
+                <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                    <p class="text-gray-700 mb-3">Exist as non-metals.</p>
+                    <p class="font-semibold text-gray-800 mb-2">Color and state change down the group:</p>
+                    <ul class="space-y-2 text-gray-700 ml-4">
+                        <li>• <strong>Fluorine</strong> – pale yellow gas</li>
+                        <li>• <strong>Chlorine</strong> – greenish gas</li>
+                        <li>• <strong>Bromine</strong> – reddish-brown liquid</li>
+                        <li>• <strong>Iodine</strong> – dark purple solid</li>
+                    </ul>
+                </div>
+                <div class="bg-blue-50 p-3 rounded">
+                    <p class="text-gray-700">Boiling and melting points increase down the group</p>
+                </div>
+            </div>
+
+            <!-- Chemical Properties -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-3">🔬 Chemical Properties</h3>
+                <div class="bg-red-50 p-4 rounded-lg">
+                    <ul class="space-y-2 text-gray-700 ml-4">
+                        <li>• Very reactive (<strong>reactivity decreases down the group</strong>)</li>
+                        <li>• React with metals to form salts (e.g., NaCl)</li>
+                        <li>• Do not conduct electricity</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Uses -->
+            <div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">💡 Uses</h3>
+                <div class="space-y-4">
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                        <p class="font-bold text-yellow-800 mb-2">Fluorine:</p>
+                        <ul class="space-y-1 text-gray-700 ml-4">
+                            <li>• Used in making plastics (Teflon)</li>
+                            <li>• Used in toothpaste to prevent tooth decay</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <p class="font-bold text-green-800 mb-2">Chlorine:</p>
+                        <ul class="space-y-1 text-gray-700 ml-4">
+                            <li>• Used in disinfecting and purifying water</li>
+                            <li>• Used in making PVC (plastic pipes)</li>
+                            <li>• Used in bleach and cleaning agents</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-orange-50 p-4 rounded-lg">
+                        <p class="font-bold text-orange-800 mb-2">Bromine:</p>
+                        <ul class="space-y-1 text-gray-700 ml-4">
+                            <li>• Used in photographic films (silver bromide)</li>
+                            <li>• Used in flame retardants</li>
+                            <li>• Used in petrol additives</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-purple-50 p-4 rounded-lg">
+                        <p class="font-bold text-purple-800 mb-2">Iodine:</p>
+                        <ul class="space-y-1 text-gray-700 ml-4">
+                            <li>• Used as an antiseptic</li>
+                            <li>• Added to table salt to prevent goiter</li>
+                            <li>• Used in starch test (turns blue-black)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Group VIII - Noble Gases Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-4">🔹 1.6 Group VIII – Noble Gases</h2>
+            <p class="text-gray-600 mb-6 italic">Examples: Helium (He), Neon (Ne), Argon (Ar), Krypton (Kr), Xenon (Xe)</p>
+            
+            <!-- Physical Properties -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-3">🧱 Physical Properties</h3>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <ul class="space-y-2 text-gray-700 ml-4">
+                        <li>• Colorless, odorless gases</li>
+                        <li>• Non-reactive (inert)</li>
+                        <li>• Do not form compounds easily</li>
+                        <li>• Conduct neither heat nor electricity well</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Uses -->
+            <div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">💡 Uses</h3>
+                <div class="space-y-4">
+                    <div class="bg-sky-50 p-4 rounded-lg">
+                        <p class="font-bold text-sky-800 mb-2">Helium:</p>
+                        <ul class="space-y-1 text-gray-700 ml-4">
+                            <li>• Used in balloons and airships (non-flammable)</li>
+                            <li>• Used for cooling in nuclear reactors</li>
+                            <li>• Mixed with oxygen for divers' breathing gas</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <p class="font-bold text-red-800 mb-2">Neon:</p>
+                        <ul class="space-y-1 text-gray-700 ml-4">
+                            <li>• Used in neon advertising signs</li>
+                            <li>• Used in lasers and high-voltage indicators</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <p class="font-bold text-blue-800 mb-2">Argon:</p>
+                        <ul class="space-y-1 text-gray-700 ml-4">
+                            <li>• Used in electric light bulbs to prevent burning of filaments</li>
+                            <li>• Used as a protective gas in welding</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-indigo-50 p-4 rounded-lg">
+                        <p class="font-bold text-indigo-800 mb-2">Krypton/Xenon:</p>
+                        <p class="text-gray-700 ml-4">Used in camera flashes and special lighting</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Table Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-6">🧭 Summary of Group Trends</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-purple-600 text-white">
+                            <th class="border border-gray-300 p-3 text-left">Group</th>
+                            <th class="border border-gray-300 p-3 text-left">Name</th>
+                            <th class="border border-gray-300 p-3 text-left">Reactivity Trend</th>
+                            <th class="border border-gray-300 p-3 text-left">Key Feature</th>
+                            <th class="border border-gray-300 p-3 text-left">Common Uses</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-blue-50">
+                            <td class="border border-gray-300 p-3 font-bold">I</td>
+                            <td class="border border-gray-300 p-3">Alkali Metals</td>
+                            <td class="border border-gray-300 p-3">Increases down group</td>
+                            <td class="border border-gray-300 p-3">Very soft, shiny, reactive</td>
+                            <td class="border border-gray-300 p-3">Batteries, soap, fertilizers</td>
+                        </tr>
+                        <tr class="bg-green-50">
+                            <td class="border border-gray-300 p-3 font-bold">II</td>
+                            <td class="border border-gray-300 p-3">Alkaline Earth Metals</td>
+                            <td class="border border-gray-300 p-3">Increases down group</td>
+                            <td class="border border-gray-300 p-3">Harder than Group I</td>
+                            <td class="border border-gray-300 p-3">Cement, alloys, medicine</td>
+                        </tr>
+                        <tr class="bg-yellow-50">
+                            <td class="border border-gray-300 p-3 font-bold">VII</td>
+                            <td class="border border-gray-300 p-3">Halogens</td>
+                            <td class="border border-gray-300 p-3">Decreases down group</td>
+                            <td class="border border-gray-300 p-3">Reactive non-metals</td>
+                            <td class="border border-gray-300 p-3">Water treatment, plastics, antiseptics</td>
+                        </tr>
+                        <tr class="bg-purple-50">
+                            <td class="border border-gray-300 p-3 font-bold">VIII</td>
+                            <td class="border border-gray-300 p-3">Noble Gases</td>
+                            <td class="border border-gray-300 p-3">Very low reactivity</td>
+                            <td class="border border-gray-300 p-3">Inert gases</td>
+                            <td class="border border-gray-300 p-3">Lighting, balloons, welding</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Self-Assessment Section -->
+        <section class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold mb-6">📝 Self-Assessment Revision Points</h2>
+            
+            <div class="space-y-4">
+                <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                    <p class="font-semibold mb-2">Define:</p>
+                    <ul class="ml-4 space-y-1">
+                        <li>• Atomic radius</li>
+                        <li>• Ionization energy</li>
+                        <li>• Electron affinity</li>
+                        <li>• Electronegativity</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                    <p>Explain why potassium is more reactive than sodium.</p>
+                </div>
+
+                <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                    <p>List two uses each for lithium, magnesium, chlorine, and helium.</p>
+                </div>
+
+                <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                    <p>State three general properties of metals and non-metals.</p>
+                </div>
+
+                <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                    <p>Name one useful product made from each group of elements.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-400">© Millennium Online Chemistry Class | Unit 1: Elements and the Periodic Table</p>
+        </div>
+    </footer>
+
+</body>
+</html>
