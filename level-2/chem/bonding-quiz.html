@@ -1,0 +1,240 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry Quiz – Chemical Bonding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" type="image/png" href="/img/WTEC1_LMS_512x512.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Header -->
+<header class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 flex justify-between text-white py-6 px-4 shadow-lg sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold mb-2">Time for Test: Chemical Bonding</h1>
+        <p class="text-blue-100">Assess your understanding of chemical bonds</p>
+    </div>
+</header>
+
+<!-- Sidebar -->
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform">
+    <nav class="p-4 space-y-2">
+        <a href="./chem.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+    </nav>
+</aside>
+
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 left-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+    Menu
+</button>
+
+<!-- Image -->
+<div class="flex justify-center items-center my-6">
+    <img src="/img/exam.jpg"
+         alt="Exam Illustration"
+         class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+</div>
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+    <h2 class="text-2xl font-bold text-purple-600 mb-6">📝 Exam: Chemical Bonding (15 Questions)</h2>
+
+<form id="quizForm" class="space-y-6">
+
+<!-- Q1 -->
+<div class="p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">1. What is a chemical bond?</p>
+<label class="flex items-center"><input type="radio" name="q1" value="a" class="mr-2">a) A physical mixture</label>
+<label class="flex items-center"><input type="radio" name="q1" value="b" class="mr-2">b) A force holding atoms or ions together</label>
+<label class="flex items-center"><input type="radio" name="q1" value="c" class="mr-2">c) A chemical reaction</label>
+<label class="flex items-center"><input type="radio" name="q1" value="d" class="mr-2">d) An energy change</label>
+</div>
+
+<!-- Q2 -->
+<div class="p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">2. Which type of bond involves transfer of electrons?</p>
+<label><input type="radio" name="q2" value="a" class="mr-2">a) Covalent</label>
+<label><input type="radio" name="q2" value="b" class="mr-2">b) Metallic</label>
+<label><input type="radio" name="q2" value="c" class="mr-2">c) Ionic</label>
+<label><input type="radio" name="q2" value="d" class="mr-2">d) Hydrogen</label>
+</div>
+
+<!-- Q3 -->
+<div class="p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">3. Ionic bonding usually occurs between:</p>
+<label><input type="radio" name="q3" value="a" class="mr-2">a) Two metals</label>
+<label><input type="radio" name="q3" value="b" class="mr-2">b) Two non-metals</label>
+<label><input type="radio" name="q3" value="c" class="mr-2">c) A metal and a non-metal</label>
+<label><input type="radio" name="q3" value="d" class="mr-2">d) Noble gases</label>
+</div>
+
+<!-- Q4 -->
+<div class="p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">4. A positively charged ion is called:</p>
+<label><input type="radio" name="q4" value="a" class="mr-2">a) Anion</label>
+<label><input type="radio" name="q4" value="b" class="mr-2">b) Electron</label>
+<label><input type="radio" name="q4" value="c" class="mr-2">c) Cation</label>
+<label><input type="radio" name="q4" value="d" class="mr-2">d) Molecule</label>
+</div>
+
+<!-- Q5 -->
+<div class="p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">5. Which compound is ionic?</p>
+<label><input type="radio" name="q5" value="a" class="mr-2">a) H₂O</label>
+<label><input type="radio" name="q5" value="b" class="mr-2">b) CO₂</label>
+<label><input type="radio" name="q5" value="c" class="mr-2">c) NaCl</label>
+<label><input type="radio" name="q5" value="d" class="mr-2">d) CH₄</label>
+</div>
+
+<!-- Q6 -->
+<div class="p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">6. Covalent bonding involves:</p>
+<label><input type="radio" name="q6" value="a" class="mr-2">a) Transfer of electrons</label>
+<label><input type="radio" name="q6" value="b" class="mr-2">b) Sharing of electrons</label>
+<label><input type="radio" name="q6" value="c" class="mr-2">c) Loss of protons</label>
+<label><input type="radio" name="q6" value="d" class="mr-2">d) Attraction of ions</label>
+</div>
+
+<!-- Q7 -->
+<div class="p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">7. Which of the following is a covalent compound?</p>
+<label><input type="radio" name="q7" value="a" class="mr-2">a) KCl</label>
+<label><input type="radio" name="q7" value="b" class="mr-2">b) CaO</label>
+<label><input type="radio" name="q7" value="c" class="mr-2">c) H₂O</label>
+<label><input type="radio" name="q7" value="d" class="mr-2">d) Na₂O</label>
+</div>
+
+<!-- Q8 -->
+<div class="p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">8. A double bond means:</p>
+<label><input type="radio" name="q8" value="a" class="mr-2">a) One shared pair of electrons</label>
+<label><input type="radio" name="q8" value="b" class="mr-2">b) Two shared pairs of electrons</label>
+<label><input type="radio" name="q8" value="c" class="mr-2">c) Two transferred electrons</label>
+<label><input type="radio" name="q8" value="d" class="mr-2">d) No electrons involved</label>
+</div>
+
+<!-- Q9 -->
+<div class="p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">9. Which molecule has a triple bond?</p>
+<label><input type="radio" name="q9" value="a" class="mr-2">a) O₂</label>
+<label><input type="radio" name="q9" value="b" class="mr-2">b) CO₂</label>
+<label><input type="radio" name="q9" value="c" class="mr-2">c) N₂</label>
+<label><input type="radio" name="q9" value="d" class="mr-2">d) H₂O</label>
+</div>
+
+<!-- Q10 -->
+<div class="p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">10. Metallic bonding is best described as:</p>
+<label><input type="radio" name="q10" value="a" class="mr-2">a) Sharing of electrons</label>
+<label><input type="radio" name="q10" value="b" class="mr-2">b) Transfer of electrons</label>
+<label><input type="radio" name="q10" value="c" class="mr-2">c) Attraction between ions and delocalised electrons</label>
+<label><input type="radio" name="q10" value="d" class="mr-2">d) Weak forces</label>
+</div>
+
+<!-- Q11 -->
+<div class="p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">11. Which property of metals is explained by metallic bonding?</p>
+<label><input type="radio" name="q11" value="a" class="mr-2">a) Brittleness</label>
+<label><input type="radio" name="q11" value="b" class="mr-2">b) Electrical conductivity</label>
+<label><input type="radio" name="q11" value="c" class="mr-2">c) Low melting point</label>
+<label><input type="radio" name="q11" value="d" class="mr-2">d) Insolubility</label>
+</div>
+
+<!-- Q12 -->
+<div class="p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">12. Which element conducts electricity well due to metallic bonding?</p>
+<label><input type="radio" name="q12" value="a" class="mr-2">a) Sulfur</label>
+<label><input type="radio" name="q12" value="b" class="mr-2">b) Copper</label>
+<label><input type="radio" name="q12" value="c" class="mr-2">c) Oxygen</label>
+<label><input type="radio" name="q12" value="d" class="mr-2">d) Chlorine</label>
+</div>
+
+<!-- Q13 -->
+<div class="p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">13. Which diagram is used to show electron transfer or sharing?</p>
+<label><input type="radio" name="q13" value="a" class="mr-2">a) Energy diagram</label>
+<label><input type="radio" name="q13" value="b" class="mr-2">b) Dot and cross diagram</label>
+<label><input type="radio" name="q13" value="c" class="mr-2">c) Bar chart</label>
+<label><input type="radio" name="q13" value="d" class="mr-2">d) Flow chart</label>
+</div>
+
+<!-- Q14 -->
+<div class="p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">14. Which compound contains covalent bonds only?</p>
+<label><input type="radio" name="q14" value="a" class="mr-2">a) CaBr₂</label>
+<label><input type="radio" name="q14" value="b" class="mr-2">b) KCl</label>
+<label><input type="radio" name="q14" value="c" class="mr-2">c) SiH₄</label>
+<label><input type="radio" name="q14" value="d" class="mr-2">d) Na₂O</label>
+</div>
+
+<!-- Q15 -->
+<div class="p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">15. Which statement correctly compares ionic and covalent bonding?</p>
+<label><input type="radio" name="q15" value="a" class="mr-2">a) Both involve electron transfer</label>
+<label><input type="radio" name="q15" value="b" class="mr-2">b) Ionic shares electrons, covalent transfers</label>
+<label><input type="radio" name="q15" value="c" class="mr-2">c) Ionic transfers electrons, covalent shares</label>
+<label><input type="radio" name="q15" value="d" class="mr-2">d) Both occur in metals</label>
+</div>
+
+<button type="submit" class="w-full bg-purple-600 text-white font-bold py-3 rounded-lg hover:bg-purple-700">
+Submit Quiz
+</button>
+
+</form>
+
+<div id="results" class="mt-6 hidden">
+<h3 class="text-xl font-bold mb-2">Quiz Results</h3>
+<p id="score"></p>
+<div id="feedback" class="space-y-2"></div>
+</div>
+
+</section>
+
+<script>
+const answers = {
+q1:'b', q2:'c', q3:'c', q4:'c', q5:'c',
+q6:'b', q7:'c', q8:'b', q9:'c', q10:'c',
+q11:'b', q12:'b', q13:'b', q14:'c', q15:'c'
+};
+
+const explanations = {
+q1:'A chemical bond is the force holding atoms or ions together.',
+q2:'Ionic bonding involves transfer of electrons.',
+q3:'Ionic bonds form between metals and non-metals.',
+q4:'A cation is a positively charged ion.',
+q5:'NaCl is formed by ionic bonding.',
+q6:'Covalent bonding involves sharing of electrons.',
+q7:'Water (H₂O) is a covalent compound.',
+q8:'A double bond has two shared pairs of electrons.',
+q9:'Nitrogen (N₂) has a triple bond.',
+q10:'Metallic bonding involves delocalised electrons.',
+q11:'Free electrons allow metals to conduct electricity.',
+q12:'Copper conducts electricity very well.',
+q13:'Dot and cross diagrams show electron sharing or transfer.',
+q14:'Silane (SiH₄) is covalent.',
+q15:'Ionic bonds transfer electrons; covalent bonds share.'
+};
+
+document.getElementById('quizForm').addEventListener('submit', e=>{
+e.preventDefault();
+let score=0, total=15, feedback='';
+for(let q in answers){
+const a=document.querySelector(`input[name="${q}"]:checked`);
+if(a && a.value===answers[q]){score++;}
+feedback+=`<div class="p-3 bg-gray-100 rounded"><strong>${q.toUpperCase()}:</strong> ${explanations[q]}</div>`;
+}
+document.getElementById('score').innerHTML=`Score: <strong>${score}/${total}</strong>`;
+document.getElementById('feedback').innerHTML=feedback;
+document.getElementById('results').classList.remove('hidden');
+});
+</script>
+
+</main>
+</body>
+</html>
