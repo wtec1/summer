@@ -1,0 +1,188 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Introduction to Nuclear Physics Quiz</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" type="image/png" href="/img/WTEC1_LMS_512x512.png">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<header class="bg-gradient-to-br from-purple-600 via-indigo-600 to-purple-800 text-center text-white py-6 px-4 shadow-lg">
+<div class="max-w-4xl mx-auto">
+<h1 class="text-3xl font-bold mb-2">Time for Test: Take Exams</h1>
+<p class="text-purple-100">Introduction to Nuclear Physics — Form 2 (JCE)</p>
+</div>
+</header>
+
+<!-- sidebar -->
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform">
+  <nav class="p-4 space-y-2">
+    <a href="./nuclear-intro.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+  </nav>
+</aside>
+
+<!-- toggle -->
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 left-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+Menu
+</button>
+
+<!-- image -->
+<div class="flex justify-center items-center my-6">
+<img src="../img/exam.jpg"
+     alt="Illustration"
+     class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+</div>
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+
+<div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+<h2 class="text-2xl font-bold text-purple-600 mb-4">☢️ Nuclear Physics Quiz</h2>
+<p class="text-gray-600 mb-6">Answer all questions. Choose the best option.</p>
+
+<form id="quizForm">
+
+<!-- Q1 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">1. Which particles are found in the nucleus of an atom?</p>
+<label><input type="radio" name="q1" value="a"> a) Protons and electrons</label><br>
+<label><input type="radio" name="q1" value="b"> b) Neutrons and electrons</label><br>
+<label><input type="radio" name="q1" value="c"> c) Protons and neutrons</label><br>
+<label><input type="radio" name="q1" value="d"> d) Electrons only</label>
+</div>
+
+<!-- Q2 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">2. What does the atomic number of an element represent?</p>
+<label><input type="radio" name="q2" value="a"> a) Number of neutrons</label><br>
+<label><input type="radio" name="q2" value="b"> b) Number of electrons</label><br>
+<label><input type="radio" name="q2" value="c"> c) Number of protons</label><br>
+<label><input type="radio" name="q2" value="d"> d) Mass number</label>
+</div>
+
+<!-- Q3 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">3. Isotopes are atoms that have the same:</p>
+<label><input type="radio" name="q3" value="a"> a) Mass number</label><br>
+<label><input type="radio" name="q3" value="b"> b) Number of neutrons</label><br>
+<label><input type="radio" name="q3" value="c"> c) Number of protons</label><br>
+<label><input type="radio" name="q3" value="d"> d) Number of electrons only</label>
+</div>
+
+<!-- Q4 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">4. Which of the following is a radioactive isotope?</p>
+<label><input type="radio" name="q4" value="a"> a) Carbon-12</label><br>
+<label><input type="radio" name="q4" value="b"> b) Oxygen-16</label><br>
+<label><input type="radio" name="q4" value="c"> c) Carbon-14</label><br>
+<label><input type="radio" name="q4" value="d"> d) Neon-20</label>
+</div>
+
+<!-- Q5 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">5. Which radioactive emission has the highest penetrating power?</p>
+<label><input type="radio" name="q5" value="a"> a) Alpha particles</label><br>
+<label><input type="radio" name="q5" value="b"> b) Beta particles</label><br>
+<label><input type="radio" name="q5" value="c"> c) Gamma rays</label><br>
+<label><input type="radio" name="q5" value="d"> d) Neutrons</label>
+</div>
+
+<!-- Q6 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">6. Which radiation is stopped by a sheet of paper?</p>
+<label><input type="radio" name="q6" value="a"> a) Alpha radiation</label><br>
+<label><input type="radio" name="q6" value="b"> b) Beta radiation</label><br>
+<label><input type="radio" name="q6" value="c"> c) Gamma radiation</label><br>
+<label><input type="radio" name="q6" value="d"> d) X-rays</label>
+</div>
+
+<!-- Q7 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">7. One danger of radioactive emissions is that they can:</p>
+<label><input type="radio" name="q7" value="a"> a) Improve health</label><br>
+<label><input type="radio" name="q7" value="b"> b) Cause cell damage</label><br>
+<label><input type="radio" name="q7" value="c"> c) Increase body temperature</label><br>
+<label><input type="radio" name="q7" value="d"> d) Produce sound</label>
+</div>
+
+<!-- Q8 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">8. Which of the following is a medical application of radioactivity?</p>
+<label><input type="radio" name="q8" value="a"> a) Food colouring</label><br>
+<label><input type="radio" name="q8" value="b"> b) Radiotherapy</label><br>
+<label><input type="radio" name="q8" value="c"> c) Metal polishing</label><br>
+<label><input type="radio" name="q8" value="d"> d) Painting buildings</label>
+</div>
+
+<div class="text-center mt-8">
+<button type="button" onclick="gradeQuiz()" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg">
+Submit Quiz
+</button>
+</div>
+
+</form>
+
+<div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+</div>
+</main>
+
+<script>
+const answers = {
+q1:'c', q2:'c', q3:'c', q4:'c',
+q5:'c', q6:'a', q7:'b', q8:'b'
+};
+
+const explanations = {
+q1:'The nucleus contains protons and neutrons.',
+q2:'Atomic number is the number of protons.',
+q3:'Isotopes have the same number of protons.',
+q4:'Carbon-14 is radioactive.',
+q5:'Gamma rays have the highest penetrating power.',
+q6:'Alpha particles are stopped by paper.',
+q7:'Radiation can damage living cells.',
+q8:'Radiotherapy is used to treat cancer.'
+};
+
+function gradeQuiz(){
+let score=0, unanswered=[], incorrect=[];
+let total=Object.keys(answers).length;
+
+for(let q in answers){
+let s=document.querySelector(`input[name="${q}"]:checked`);
+if(!s) unanswered.push(q.replace('q','Question '));
+else if(s.value===answers[q]) score++;
+else incorrect.push({q:q.replace('q','Question '),e:explanations[q]});
+}
+
+let percent=((score/total)*100).toFixed(1);
+let grade='F', bg='bg-red-100 border-red-500';
+if(percent>=90){grade='A';bg='bg-green-100 border-green-500'}
+else if(percent>=80){grade='B';bg='bg-blue-100 border-blue-500'}
+else if(percent>=70){grade='C';bg='bg-yellow-100 border-yellow-500'}
+else if(percent>=60){grade='D';bg='bg-orange-100 border-orange-500'}
+
+let html=`<div class="${bg} border-l-4 p-4">
+<h3 class="text-xl font-bold">Score: ${score}/${total} (${percent}%)</h3>
+<p class="font-semibold mb-2">Grade: ${grade}</p>`;
+
+if(unanswered.length) html+=`<p class="text-red-600">Unanswered: ${unanswered.join(', ')}</p>`;
+if(incorrect.length){
+html+=`<div class="mt-3 bg-white p-3 rounded"><p class="font-semibold">Review:</p>`;
+incorrect.forEach(i=>html+=`<p class="text-red-600">${i.q}</p><p class="text-sm">${i.e}</p>`);
+html+='</div>';
+}
+
+html+=`<button onclick="location.reload()" class="mt-4 bg-purple-600 text-white px-6 py-2 rounded">Retake Quiz</button></div>`;
+const r=document.getElementById('results');
+r.innerHTML=html; r.classList.remove('hidden'); r.scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
