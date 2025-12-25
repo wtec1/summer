@@ -1,0 +1,233 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium E-learning Centre - Online Class</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="/img/WTEC1_LMS_512x512.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<header class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 text-white py-6 px-4 text-center shadow-lg">
+    <h1 class="text-3xl font-bold mb-2">Time for test: Take Exams</h1>
+    <p class="text-blue-100">Assessing your learning</p>
+</header>
+
+      <!-- mobile / desktop sidebar -->
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+  <nav class="p-4 space-y-2">
+    <a href="./cross-section.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+  </nav>
+</aside>
+
+<!-- toggle button (mobile) -->
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 right-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+  Menu
+</button>
+
+<div class="flex justify-center items-center my-6">
+    <img src="../img/exam.jpg" class="w-full sm:w-5/6 md:w-2/3 max-h-80 rounded-lg shadow-md">
+</div>
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+
+<div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+<h2 class="text-2xl font-bold text-purple-600 mb-4">📝 Cross-Section and Long Profile Quiz</h2>
+
+<form id="quizForm">
+
+<!-- Q1 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">1. What is a cross-section?</p>
+<label><input type="radio" name="q1" value="a"> a) A top view of land</label><br>
+<label><input type="radio" name="q1" value="b"> b) A side view of land</label><br>
+<label><input type="radio" name="q1" value="c"> c) A map key</label><br>
+<label><input type="radio" name="q1" value="d"> d) A contour interval</label>
+</div>
+
+<!-- Q2 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">2. Which scale shows height on a cross-section?</p>
+<label><input type="radio" name="q2" value="a"> a) Horizontal scale</label><br>
+<label><input type="radio" name="q2" value="b"> b) Vertical scale</label><br>
+<label><input type="radio" name="q2" value="c"> c) Linear scale</label><br>
+<label><input type="radio" name="q2" value="d"> d) Map scale</label>
+</div>
+
+<!-- Q3 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">3. What does the horizontal scale represent?</p>
+<label><input type="radio" name="q3" value="a"> a) Height</label><br>
+<label><input type="radio" name="q3" value="b"> b) Depth</label><br>
+<label><input type="radio" name="q3" value="c"> c) Distance</label><br>
+<label><input type="radio" name="q3" value="d"> d) Slope angle</label>
+</div>
+
+<!-- Q4 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">4. Why is the vertical scale sometimes exaggerated?</p>
+<label><input type="radio" name="q4" value="a"> a) To shorten distance</label><br>
+<label><input type="radio" name="q4" value="b"> b) To show height clearly</label><br>
+<label><input type="radio" name="q4" value="c"> c) To change direction</label><br>
+<label><input type="radio" name="q4" value="d"> d) To remove contours</label>
+</div>
+
+<!-- Q5 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">5. What is a long profile?</p>
+<label><input type="radio" name="q5" value="a"> a) Side view of a river</label><br>
+<label><input type="radio" name="q5" value="b"> b) Top view of land</label><br>
+<label><input type="radio" name="q5" value="c"> c) River mouth</label><br>
+<label><input type="radio" name="q5" value="d"> d) Contour interval</label>
+</div>
+
+<!-- Q6 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">6. A long profile shows changes in:</p>
+<label><input type="radio" name="q6" value="a"> a) Climate</label><br>
+<label><input type="radio" name="q6" value="b"> b) Gradient</label><br>
+<label><input type="radio" name="q6" value="c"> c) Vegetation</label><br>
+<label><input type="radio" name="q6" value="d"> d) Population</label>
+</div>
+
+<!-- Q7 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">7. One importance of cross-sections is to:</p>
+<label><input type="radio" name="q7" value="a"> a) Show rainfall</label><br>
+<label><input type="radio" name="q7" value="b"> b) Visualize landscapes</label><br>
+<label><input type="radio" name="q7" value="c"> c) Measure temperature</label><br>
+<label><input type="radio" name="q7" value="d"> d) Count settlements</label>
+</div>
+
+<!-- Q8 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">8. Cross-sections are useful when planning:</p>
+<label><input type="radio" name="q8" value="a"> a) Crop rotation</label><br>
+<label><input type="radio" name="q8" value="b"> b) Radio communication towers</label><br>
+<label><input type="radio" name="q8" value="c"> c) Rainfall recording</label><br>
+<label><input type="radio" name="q8" value="d"> d) Soil testing</label>
+</div>
+
+<button type="button" onclick="gradeQuiz()" class="bg-purple-600 text-white px-6 py-3 rounded-lg">Submit Quiz</button>
+</form>
+
+<div id="results" class="mt-6 hidden"></div>
+</div>
+</main>
+
+<script>
+    const answers = {
+        q1: 'b',
+        q2: 'b',
+        q3: 'c',
+        q4: 'b',
+        q5: 'a',
+        q6: 'b',
+        q7: 'b',
+        q8: 'b'
+    };
+
+    const explanations = {
+        q1: 'A cross-section is a side view of land.',
+        q2: 'The vertical scale represents height differences.',
+        q3: 'The horizontal scale represents distance.',
+        q4: 'Vertical exaggeration helps show height clearly.',
+        q5: 'A long profile is a side view of a river from source to mouth.',
+        q6: 'A long profile shows changes in gradient.',
+        q7: 'Cross-sections help visualize the side view of landscapes.',
+        q8: 'They help determine visibility for radio communication towers.'
+    };
+
+    function gradeQuiz() {
+        let score = 0;
+        let total = Object.keys(answers).length;
+        let unanswered = [];
+        let incorrectAnswers = [];
+
+        for (let question in answers) {
+            const selected = document.querySelector(`input[name="${question}"]:checked`);
+            if (!selected) {
+                unanswered.push(question.replace('q', 'Question '));
+            } else if (selected.value === answers[question]) {
+                score++;
+            } else {
+                incorrectAnswers.push({
+                    question: question.replace('q', 'Question '),
+                    explanation: explanations[question]
+                });
+            }
+        }
+
+        const resultsDiv = document.getElementById('results');
+        resultsDiv.classList.remove('hidden');
+
+        const percentage = ((score / total) * 100).toFixed(1);
+        let grade = '';
+        let bgColor = '';
+
+        if (percentage >= 90) {
+            grade = 'A - Excellent!';
+            bgColor = 'bg-green-100 border-green-500';
+        } else if (percentage >= 80) {
+            grade = 'B - Very Good!';
+            bgColor = 'bg-blue-100 border-blue-500';
+        } else if (percentage >= 70) {
+            grade = 'C - Good!';
+            bgColor = 'bg-yellow-100 border-yellow-500';
+        } else if (percentage >= 60) {
+            grade = 'D - Fair';
+            bgColor = 'bg-orange-100 border-orange-500';
+        } else {
+            grade = 'F - Need More Practice';
+            bgColor = 'bg-red-100 border-red-500';
+        }
+
+        let resultHTML = `
+            <div class="${bgColor} border-l-4 p-4">
+                <h3 class="text-2xl font-bold mb-2">Your Results</h3>
+                <p class="text-xl mb-2">Score: ${score} out of ${total} (${percentage}%)</p>
+                <p class="text-xl font-semibold mb-4">Grade: ${grade}</p>
+        `;
+
+        if (unanswered.length > 0) {
+            resultHTML += `
+                <p class="mt-4 text-red-600 font-semibold">You missed ${unanswered.length} question(s):</p>
+                <p class="text-red-600">${unanswered.join(', ')}</p>
+            `;
+        }
+
+        if (incorrectAnswers.length > 0) {
+            resultHTML += `
+                <div class="mt-4 p-4 bg-white rounded">
+                    <p class="font-semibold text-gray-800 mb-2">Review These Topics:</p>
+            `;
+            incorrectAnswers.forEach(item => {
+                resultHTML += `
+                    <div class="mb-3">
+                        <p class="font-semibold text-red-600">${item.question}:</p>
+                        <p class="text-gray-700 text-sm">${item.explanation}</p>
+                    </div>
+                `;
+            });
+            resultHTML += `</div>`;
+        }
+
+        resultHTML += `
+                <button onclick="location.reload()" class="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded transition duration-300">
+                    Retake Quiz
+                </button>
+            </div>
+        `;
+
+        resultsDiv.innerHTML = resultHTML;
+        resultsDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+
+</body>
+</html>
