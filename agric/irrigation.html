@@ -1,2 +1,278 @@
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrigation Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-purple-600 text-white py-6 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">💧 IRRIGATION SYSTEMS</h1> 
+            <p class="text-purple-100">Understanding and Managing Water for Crops</p>
+        </div>
+    </header>
+
+    <!-- mobile / desktop sidebar -->
+    <aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+        <nav class="p-4 space-y-2">
+            <a href="./agriculture.html" class="block px-3 py-2 rounded hover:bg-gray-700">Return</a>
+            <a href="./irrigation-quiz.html" class="block px-3 py-2 rounded hover:bg-gray-700">Take Exams</a>
+        </nav>
+    </aside>
+
+    <!-- toggle button (mobile) -->
+    <button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+            class="fixed top-4 right-4 z-50 bg-gray-800 text-white px-4 py-2 rounded md:hidden">
+        Menu
+    </button>
+
+   
+
+    <!-- centered image -->
+    <div class="flex justify-center items-center my-4">
+        <img src="../img/lms.jpg"
+            alt="Illustration"
+            class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+    </div> 
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        
+        <!-- Introduction -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📚 What is Irrigation?</h2>
+            <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                <p class="text-gray-700 text-lg">
+                    <strong>Irrigation</strong> is the artificial application of water to crops to help them grow, especially in areas with insufficient rainfall.
+                </p>
+            </div>
+        </section>
+
+         <!-- Video Section - Always on Top -->
+    <section class="max-w-4xl mx-auto px-4 py-6">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson</h2>
+            <div class="aspect-video w-full">
+                <iframe 
+                    class="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/H3T5YtbaDzI" 
+                    title="Irrigation Systems" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+        <!-- Importance -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">1️⃣ Importance of Irrigation</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-green-50 p-3 rounded-lg">
+                    <p class="text-sm text-gray-700">✓ Ensures crop growth in dry areas</p>
+                </div>
+                <div class="bg-blue-50 p-3 rounded-lg">
+                    <p class="text-sm text-gray-700">✓ Increases crop yields</p>
+                </div>
+                <div class="bg-purple-50 p-3 rounded-lg">
+                    <p class="text-sm text-gray-700">✓ Allows farming all year round</p>
+                </div>
+                <div class="bg-yellow-50 p-3 rounded-lg">
+                    <p class="text-sm text-gray-700">✓ Protects crops from drought</p>
+                </div>
+                <div class="bg-pink-50 p-3 rounded-lg">
+                    <p class="text-sm text-gray-700">✓ Improves food security</p>
+                </div>
+                <div class="bg-indigo-50 p-3 rounded-lg">
+                    <p class="text-sm text-gray-700">✓ Supports diverse crop production</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Systems Overview -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">2️⃣ Types of Irrigation Systems</h2>
+            <div class="space-y-3">
+                <div class="bg-blue-100 p-3 rounded-lg">
+                    <h3 class="font-semibold text-blue-800">Surface Irrigation</h3>
+                    <p class="text-sm text-gray-700">Water flows over the soil surface by gravity</p>
+                </div>
+                <div class="bg-green-100 p-3 rounded-lg">
+                    <h3 class="font-semibold text-green-800">Overhead Irrigation</h3>
+                    <p class="text-sm text-gray-700">Water is sprayed from above like rain</p>
+                </div>
+                <div class="bg-purple-100 p-3 rounded-lg">
+                    <h3 class="font-semibold text-purple-800">Drip Irrigation</h3>
+                    <p class="text-sm text-gray-700">Water drips slowly directly to plant roots</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Surface Irrigation -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">3️⃣ Surface Irrigation System</h2>
+            
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Types:</h3>
+            <div class="space-y-3 mb-4">
+                <div class="bg-blue-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-blue-800">Flooding</h4>
+                    <p class="text-sm text-gray-700">Water covers entire field; used for rice</p>
+                </div>
+                <div class="bg-green-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-green-800">Furrow</h4>
+                    <p class="text-sm text-gray-700">Water flows in channels between crop rows</p>
+                </div>
+                <div class="bg-purple-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-purple-800">Basin</h4>
+                    <p class="text-sm text-gray-700">Water held in small basins around plants</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-green-800 mb-2">✓ Advantages:</h4>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                        <li>Low cost and simple technology</li>
+                        <li>Easy to maintain</li>
+                        <li>Works well on flat land</li>
+                        <li>No energy needed</li>
+                    </ul>
+                </div>
+                <div class="bg-red-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-red-800 mb-2">✗ Limitations:</h4>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                        <li>Wastes water</li>
+                        <li>Can cause waterlogging</li>
+                        <li>May spread diseases</li>
+                        <li>Uneven water distribution</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overhead Irrigation -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">4️⃣ Overhead Irrigation System</h2>
+            <p class="text-gray-700 mb-4">Water is sprayed from above using sprinklers, mimicking natural rainfall.</p>
+
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-green-800 mb-2">✓ Advantages:</h4>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                        <li>Efficient water use</li>
+                        <li>Works on uneven terrain</li>
+                        <li>Even water distribution</li>
+                        <li>Can cover large areas</li>
+                        <li>Reduces soil erosion</li>
+                    </ul>
+                </div>
+                <div class="bg-red-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-red-800 mb-2">✗ Limitations:</h4>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                        <li>High initial cost</li>
+                        <li>Needs electricity or fuel</li>
+                        <li>Requires technical knowledge</li>
+                        <li>Wind can affect distribution</li>
+                        <li>Water loss through evaporation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Drip Irrigation -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">5️⃣ Drip Irrigation System</h2>
+            <p class="text-gray-700 mb-4">Water drips slowly and directly to plant roots through tubes and emitters.</p>
+
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-green-800 mb-2">✓ Advantages:</h4>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                        <li>Most water-efficient system</li>
+                        <li>Reduces weed growth</li>
+                        <li>Precise water application</li>
+                        <li>Can use with fertilizers</li>
+                        <li>Works on any terrain</li>
+                    </ul>
+                </div>
+                <div class="bg-red-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-red-800 mb-2">✗ Limitations:</h4>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                        <li>Very expensive to install</li>
+                        <li>Tubes can clog easily</li>
+                        <li>Requires clean water</li>
+                        <li>Needs regular maintenance</li>
+                        <li>Technical expertise required</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Factors Affecting Frequency -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">6️⃣ Factors Affecting Irrigation Frequency & Time</h2>
+            <div class="space-y-3">
+                <div class="bg-yellow-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-yellow-800">Type of Soil</h4>
+                    <p class="text-sm text-gray-700">Sandy soil needs more frequent watering; clay retains water longer</p>
+                </div>
+                <div class="bg-blue-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-blue-800">Type of Crops</h4>
+                    <p class="text-sm text-gray-700">Some crops need more water than others</p>
+                </div>
+                <div class="bg-green-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-green-800">Weather</h4>
+                    <p class="text-sm text-gray-700">Hot, dry weather increases irrigation needs</p>
+                </div>
+                <div class="bg-purple-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-purple-800">Soil Moisture Content</h4>
+                    <p class="text-sm text-gray-700">Check soil dampness before irrigating</p>
+                </div>
+                <div class="bg-pink-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-pink-800">Stage of Plant Growth</h4>
+                    <p class="text-sm text-gray-700">Flowering and fruiting stages need more water</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selecting System -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">7️⃣ Selecting an Irrigation System</h2>
+            <h3 class="text-lg font-semibold text-gray-800 mb-3">Consider these factors:</h3>
+            <div class="grid md:grid-cols-2 gap-3">
+                <div class="bg-indigo-50 p-3 rounded-lg text-sm text-gray-700">✓ Topography (land shape)</div>
+                <div class="bg-blue-50 p-3 rounded-lg text-sm text-gray-700">✓ Source of water</div>
+                <div class="bg-green-50 p-3 rounded-lg text-sm text-gray-700">✓ Type of crop</div>
+                <div class="bg-purple-50 p-3 rounded-lg text-sm text-gray-700">✓ Value of crop</div>
+                <div class="bg-yellow-50 p-3 rounded-lg text-sm text-gray-700">✓ Available capital</div>
+                <div class="bg-pink-50 p-3 rounded-lg text-sm text-gray-700">✓ Type of soil</div>
+                <div class="bg-orange-50 p-3 rounded-lg text-sm text-gray-700">✓ Technical knowledge</div>
+                <div class="bg-red-50 p-3 rounded-lg text-sm text-gray-700">✓ Maintenance capacity</div>
+            </div>
+        </section>
+
+        <!-- Summary -->
+        <section class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-4">📝 Summary</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Irrigation is vital for crop production. The three main systems are: surface (flooding, furrow, basin), overhead (sprinkler), and drip irrigation. Each has advantages and limitations. Choose a system based on topography, water source, crop type, capital, and technical knowledge. Consider soil type, weather, and plant growth stage when determining irrigation frequency. Watch the video for practical demonstrations.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-400">© Millennium E-learning Centre</p>
+        </div>
+    </footer>
+
+</body>
+</html>
