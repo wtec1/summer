@@ -1,0 +1,198 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Industries in Malawi – Quiz</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<header class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 text-white py-6 px-4 text-center shadow-lg">
+<div class="max-w-4xl mx-auto">
+<h1 class="text-3xl font-bold mb-2">Time for test: Take Exams</h1>
+<p class="text-blue-100">Assessing your learning</p>
+</div>
+</header>
+
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+<nav class="p-4 space-y-2">
+<a href="./industry.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+</nav>
+</aside>
+
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+class="fixed top-4 right-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+Menu
+</button>
+
+<div class="flex justify-center items-center my-6">
+<img src="../img/exam.jpg"
+class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+</div>
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+
+<div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+<h2 class="text-2xl font-bold text-purple-600 mb-4">📝 Industries in Malawi – Quiz</h2>
+<p class="text-gray-600 mb-6">Answer all questions. Wrong choices will be shown after submission.</p>
+
+<form id="quizForm">
+
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">1. What is an industry?</p>
+<label class="block"><input type="radio" name="q1" value="a"> a) Only large factories</label>
+<label class="block"><input type="radio" name="q1" value="b"> b) Any activity that produces goods or provides services</label>
+<label class="block"><input type="radio" name="q1" value="c"> c) Farming only</label>
+<label class="block"><input type="radio" name="q1" value="d"> d) Government offices</label>
+</div>
+
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">2. Which is a primary industry?</p>
+<label class="block"><input type="radio" name="q2" value="a"> a) Banking</label>
+<label class="block"><input type="radio" name="q2" value="b"> b) Fishing</label>
+<label class="block"><input type="radio" name="q2" value="c"> c) Transport</label>
+<label class="block"><input type="radio" name="q2" value="d"> d) Teaching</label>
+</div>
+
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">3. Which is a secondary industry?</p>
+<label class="block"><input type="radio" name="q3" value="a"> a) Tobacco curing</label>
+<label class="block"><input type="radio" name="q3" value="b"> b) Mining</label>
+<label class="block"><input type="radio" name="q3" value="c"> c) Fishing</label>
+<label class="block"><input type="radio" name="q3" value="d"> d) Tourism</label>
+</div>
+
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">4. Which is a tertiary industry?</p>
+<label class="block"><input type="radio" name="q4" value="a"> a) Timber cutting</label>
+<label class="block"><input type="radio" name="q4" value="b"> b) Sugar processing</label>
+<label class="block"><input type="radio" name="q4" value="c"> c) Banking</label>
+<label class="block"><input type="radio" name="q4" value="d"> d) Maize farming</label>
+</div>
+
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">5. Which factor influences the location of industries?</p>
+<label class="block"><input type="radio" name="q5" value="a"> a) Colour of soil</label>
+<label class="block"><input type="radio" name="q5" value="b"> b) Availability of raw materials</label>
+<label class="block"><input type="radio" name="q5" value="c"> c) Distance from equator</label>
+<label class="block"><input type="radio" name="q5" value="d"> d) Size of classrooms</label>
+</div>
+
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">6. Why are industries important in Malawi?</p>
+<label class="block"><input type="radio" name="q6" value="a"> a) They increase unemployment</label>
+<label class="block"><input type="radio" name="q6" value="b"> b) They waste resources</label>
+<label class="block"><input type="radio" name="q6" value="c"> c) They provide jobs and income</label>
+<label class="block"><input type="radio" name="q6" value="d"> d) They reduce production</label>
+</div>
+
+<div class="text-center mt-8">
+<button type="button" onclick="gradeQuiz()"
+class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg">
+Submit Quiz
+</button>
+</div>
+
+</form>
+
+<div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+</div>
+</main>
+
+<script>
+const answers = {
+q1:'b',
+q2:'b',
+q3:'a',
+q4:'c',
+q5:'b',
+q6:'c'
+};
+
+const explanations = {
+q1:'Industry refers to activities that produce goods or provide services.',
+q2:'Fishing is a primary or extractive industry.',
+q3:'Tobacco curing is a secondary manufacturing industry.',
+q4:'Banking is a tertiary or service industry.',
+q5:'Industries locate near raw materials to reduce costs.',
+q6:'Industries are important because they create jobs and income.'
+};
+
+function gradeQuiz() {
+let score = 0;
+let total = Object.keys(answers).length;
+let unanswered = [];
+let wrongDetails = [];
+
+for (let q in answers) {
+const selected = document.querySelector('input[name=\"' + q + '\"]:checked');
+if (!selected) {
+unanswered.push(q.replace('q','Question '));
+} else if (selected.value === answers[q]) {
+score++;
+} else {
+wrongDetails.push({
+question: q.replace('q','Question '),
+chosen: selected.parentElement.textContent.trim(),
+correct: answers[q],
+explanation: explanations[q]
+});
+}
+}
+
+const results = document.getElementById('results');
+results.classList.remove('hidden');
+
+const percent = ((score/total)*100).toFixed(1);
+let grade='', bg='';
+
+if (percent>=90){grade='A - Excellent';bg='bg-green-100 border-green-500';}
+else if (percent>=80){grade='B - Very Good';bg='bg-blue-100 border-blue-500';}
+else if (percent>=70){grade='C - Good';bg='bg-yellow-100 border-yellow-500';}
+else if (percent>=60){grade='D - Fair';bg='bg-orange-100 border-orange-500';}
+else {grade='F - Need More Practice';bg='bg-red-100 border-red-500';}
+
+let html = `
+<div class=\"${bg} border-l-4 p-4\">
+<h3 class=\"text-2xl font-bold mb-2\">Your Results</h3>
+<p class=\"text-xl mb-2\">Score: ${score} out of ${total} (${percent}%)</p>
+<p class=\"text-xl font-semibold mb-4\">Grade: ${grade}</p>
+`;
+
+if (unanswered.length>0){
+html+=`<p class=\"text-red-600 font-semibold\">Unanswered: ${unanswered.join(', ')}</p>`;
+}
+
+if (wrongDetails.length>0){
+html+=`<div class=\"mt-4 bg-white p-4 rounded\">
+<p class=\"font-semibold mb-2\">Incorrect Answers Review:</p>`;
+wrongDetails.forEach(w=>{
+html+=`
+<div class=\"mb-3\">
+<p class=\"font-semibold text-red-600\">${w.question}</p>
+<p class=\"text-sm\">Your choice: ${w.chosen}</p>
+<p class=\"text-sm text-green-700\">Correct answer: ${w.correct}</p>
+<p class=\"text-xs text-gray-600\">${w.explanation}</p>
+</div>`;
+});
+html+='</div>';
+}
+
+html+=`
+<button onclick=\"location.reload()\"
+class=\"mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded\">
+Retake Quiz
+</button>
+</div>`;
+
+results.innerHTML = html;
+results.scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
