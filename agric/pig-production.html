@@ -1,3 +1,162 @@
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Production – Breeds and Management Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-purple-600 text-white py-6 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">🐖 PIG PRODUCTION</h1>
+            <p class="text-purple-100">Breeds of pigs and management systems</p>
+        </div>
+    </header>
+
+    <!-- mobile / desktop sidebar -->
+    <aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+        <nav class="p-4 space-y-2">
+            <a href="./agriculture.html" class="block px-3 py-2 rounded hover:bg-gray-700">Return</a>
+            <a href="./pig-production-quiz.html" class="block px-3 py-2 rounded hover:bg-gray-700">Take Exams</a>
+        </nav>
+    </aside>
+
+    <!-- toggle button (mobile) -->
+    <button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+            class="fixed top-4 right-4 z-50 bg-gray-800 text-white px-4 py-2 rounded md:hidden">
+        Menu
+    </button>
+
+    <!-- centered image -->
+    <div class="flex justify-center items-center my-4">
+        <img src="../img/lms.jpg"
+             alt="Illustration"
+             class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+
+        <!-- Introduction Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📚 Introduction</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Pig production is an important livestock enterprise because pigs grow fast, produce large litters, and provide meat and income to farmers. To manage pigs well, farmers must know different breeds and how pigs are kept under different management systems. In this lesson, you will learn breeds of pigs and management systems used in pig production.
+            </p>
+        </section>
+
+        <!-- Video Section -->
+        <section class="max-w-4xl mx-auto px-4 py-6">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson</h2>
+                <div class="aspect-video w-full">
+                    <iframe
+                        class="w-full h-full rounded-lg"
+                        src="https://www.youtube.com/embed/H3T5YtbaDzI"
+                        title="Pig Production Lesson"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breeds of Pigs -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">1️⃣ Breeds of Pigs</h2>
+
+            <p class="text-gray-700 mb-4">
+                A breed is a group of pigs that have the same characteristics such as color, size, body shape, and growth rate.
+            </p>
+
+            <h3 class="text-xl font-semibold mb-2 text-gray-800">✔️ Local breeds</h3>
+            <div class="bg-yellow-50 p-4 rounded-lg mb-4">
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>usually black or brown</li>
+                    <li>small body size</li>
+                    <li>disease resistant</li>
+                    <li>slow growth rate</li>
+                    <li>can survive harsh conditions</li>
+                </ul>
+            </div>
+
+            <h3 class="text-xl font-semibold mb-2 text-gray-800">✔️ Exotic breeds</h3>
+            <div class="bg-green-50 p-4 rounded-lg">
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Large White</li>
+                    <li>Landrace</li>
+                    <li>Duroc</li>
+                    <li>Hampshire</li>
+                    <li>More productive than local breeds</li>
+                    <li>Grow faster and produce more meat</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Management Systems -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">2️⃣ Management Systems for Pig Production</h2>
+
+            <p class="text-gray-700 mb-4">
+                Management systems are ways in which pigs are kept, fed, and housed on a farm.
+            </p>
+
+            <div class="space-y-4">
+
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <p class="font-semibold">🏞️ Extensive system</p>
+                    <ul class="list-disc list-inside text-gray-700 text-sm">
+                        <li>pigs are left to roam freely</li>
+                        <li>low cost of production</li>
+                        <li>less labour is required</li>
+                        <li>high risk of diseases and theft</li>
+                    </ul>
+                </div>
+
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <p class="font-semibold">🌿 Semi–intensive system</p>
+                    <ul class="list-disc list-inside text-gray-700 text-sm">
+                        <li>pigs are kept in pens but allowed to graze sometimes</li>
+                        <li>moderate cost and labour</li>
+                        <li>better control of feeding and breeding</li>
+                    </ul>
+                </div>
+
+                <div class="bg-red-50 p-4 rounded-lg">
+                    <p class="font-semibold">🏠 Intensive system</p>
+                    <ul class="list-disc list-inside text-gray-700 text-sm">
+                        <li>pigs are confined in houses or pens all the time</li>
+                        <li>high cost of housing and feed</li>
+                        <li>fast growth and high production</li>
+                        <li>easy disease control and record keeping</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Summary -->
+        <section class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-4">📝 Summary</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Pigs are kept for meat and income. They exist as local and exotic breeds. Management systems in pig production include extensive, semi-intensive and intensive systems. Each system has its advantages and disadvantages. Understanding breeds and management helps farmers improve pig production and profitability.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-400">© Millennium E-learning Centre</p>
+        </div>
+    </footer>
+
+</body>
+</html>
