@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Enlightenment</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-purple-600 text-white text-center py-6 px-4 shadow-lg sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-3xl font-bold mb-2">💡 The Enlightenment</h1>
+      <p class="text-purple-100">Ideas, thinkers, centres and impact on the modern world</p>
+    </div>
+  </header>
+
+  <!-- SIDE MENU -->
+  <aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform">
+    <nav class="p-4 space-y-2">
+      <a href="./history.html" class="block px-3 py-2 rounded hover:bg-gray-700">Return</a>
+      <a href="./enlightenment-quiz.html" class="block px-3 py-2 rounded hover:bg-gray-700">Take Exams</a>
+    </nav>
+  </aside>
+
+  <!-- MOBILE MENU BUTTON -->
+  <button
+    onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+    class="fixed top-4 left-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+    Menu
+  </button>
+
+  <!-- IMAGE -->
+  <div class="flex justify-center items-center my-4">
+    <img
+      src="../img/lms.jpg"
+      alt="Illustration"
+      class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md" />
+  </div>
+
+  <!-- MAIN -->
+  <main class="max-w-4xl mx-auto px-4 py-8">
+
+    <!-- INTRODUCTION -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-2xl font-bold text-purple-600 mb-4">📘 Introduction</h2>
+      <p>
+        The Enlightenment was an intellectual movement in Europe during the 17th and 18th centuries.
+        It encouraged the use of reason, science, and critical thinking to question tradition, religion,
+        and absolute monarchy. The movement inspired political and social changes that shaped the modern world.
+      </p>
+    </section>
+
+    <!-- OFFICIAL VIDEO TEMPLATE -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson</h2>
+      <div class="aspect-video w-full">
+        <iframe
+          class="w-full h-full rounded-lg"
+          src="https://www.youtube.com/embed/H3T5YtbaDzI"
+          title="The Enlightenment Lesson">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- MEANING -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-xl font-bold text-blue-600 mb-3">📖 Meaning of Enlightenment and philosophes</h2>
+      <ul class="list-disc pl-6">
+        <li><b>Enlightenment</b> – a period when reason and science were used to question authority, tradition, and superstition</li>
+        <li><b>Philosophes</b> – Enlightenment writers and thinkers who spread new ideas through books, salons, and essays</li>
+      </ul>
+    </section>
+
+    <!-- CENTRES -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-xl font-bold text-blue-600 mb-3">📍 Major centres of the Enlightenment</h2>
+      <ul class="list-disc pl-6">
+        <li>Paris (France)</li>
+        <li>England</li>
+        <li>British colonies in the Americas</li>
+        <li>Spanish colonies in the Americas</li>
+      </ul>
+    </section>
+
+    <!-- PERSONALITIES -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-xl font-bold text-blue-600 mb-3">🌟 Outstanding Enlightenment personalities</h2>
+      <ul class="list-disc pl-6">
+        <li><b>Montesquieu</b> – promoted separation of powers</li>
+        <li><b>Voltaire</b> – defended freedom of speech and religion</li>
+        <li><b>Denis Diderot</b> – produced the Encyclopaedia</li>
+        <li><b>Jean-Jacques Rousseau</b> – social contract and “general will”</li>
+        <li><b>Mary Wollstonecraft</b> – argued for women’s rights and education</li>
+      </ul>
+    </section>
+
+    <!-- WOMEN AND MEN -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-xl font-bold text-blue-600 mb-3">👩‍🦰 Views on men and women</h2>
+      <ul class="list-disc pl-6">
+        <li>many thinkers believed women were suited mainly to domestic roles</li>
+        <li><b>Rousseau</b> – believed women should mainly care for children and homes</li>
+        <li><b>Wollstonecraft</b> – believed women are rational and deserve equal education</li>
+      </ul>
+    </section>
+
+    <!-- CONTRIBUTIONS -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-xl font-bold text-blue-600 mb-3">🌍 Contributions of the Enlightenment to the modern world</h2>
+      <ul class="list-disc pl-6">
+        <li>rise of modern democracy and constitutions</li>
+        <li>promotion of individual rights and freedoms</li>
+        <li>separation of church and state</li>
+        <li>growth of modern European feminism</li>
+        <li>encouragement of science and rational thought</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white py-6 px-4 mt-12">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-gray-400">© Millennium E-learning Centre</p>
+    </div>
+  </footer>
+
+</body>
+</html>
