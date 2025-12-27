@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Presentation Software</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-purple-600 text-white py-6 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">📊 USING PRESENTATION SOFTWARE</h1> 
+            <p class="text-purple-100">Creating Engaging Presentations</p>
+        </div>
+    </header>
+
+    <!-- mobile / desktop sidebar -->
+    <aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+        <nav class="p-4 space-y-2">
+            <a href="./computer.html" class="block px-3 py-2 rounded hover:bg-gray-700">Return</a>
+            <a href="./presentation-quiz.html" class="block px-3 py-2 rounded hover:bg-gray-700">Take Exams</a>
+        </nav>
+    </aside>
+
+    <!-- toggle button (mobile) -->
+    <button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+            class="fixed top-4 right-4 z-50 bg-gray-800 text-white px-4 py-2 rounded md:hidden">
+        Menu
+    </button>
+
+    <!-- Video Section - Always on Top -->
+    <section class="max-w-4xl mx-auto px-4 py-6">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson</h2>
+            <div class="aspect-video w-full">
+                <iframe 
+                    class="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/H3T5YtbaDzI" 
+                    title="Using Presentation Software" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        
+        <!-- Definition -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📚 What is Presentation Software?</h2>
+            <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                <p class="text-gray-700 text-lg mb-2">
+                    <strong>Presentation software</strong> is a program used to create, edit, and display information in the form of slides for presentations.
+                </p>
+                <p class="text-gray-700">It helps you communicate ideas visually using text, images, charts, and animations.</p>
+            </div>
+            
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Examples of Presentation Software:</h3>
+            <div class="grid md:grid-cols-2 gap-3">
+                <div class="bg-orange-50 p-3 rounded-lg">
+                    <p class="font-semibold text-orange-800">Microsoft PowerPoint</p>
+                </div>
+                <div class="bg-red-50 p-3 rounded-lg">
+                    <p class="font-semibold text-red-800">Google Slides</p>
+                </div>
+                <div class="bg-blue-50 p-3 rounded-lg">
+                    <p class="font-semibold text-blue-800">Prezi</p>
+                </div>
+                <div class="bg-green-50 p-3 rounded-lg">
+                    <p class="font-semibold text-green-800">LibreOffice Impress</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creating Presentations -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">1️⃣ Creating a Presentation</h2>
+            <div class="space-y-3">
+                <div class="bg-indigo-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-indigo-800 mb-2">Steps:</h3>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-700 ml-4">
+                        <li>Open the presentation software</li>
+                        <li>Click "New Presentation" or "Blank Presentation"</li>
+                        <li>Choose a template or start from scratch</li>
+                        <li>Your first slide appears ready for content</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Managing Slides -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">2️⃣ Managing Slides</h2>
+            
+            <div class="space-y-4">
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-blue-800 mb-2">Adding Slides</h3>
+                    <ul class="list-disc list-inside text-gray-700 ml-4 space-y-1">
+                        <li>Click "New Slide" button or Insert → New Slide</li>
+                        <li>Use shortcut: Ctrl+M</li>
+                        <li>Choose slide layout (Title, Content, Blank, etc.)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-green-800 mb-2">Copying Slides</h3>
+                    <ul class="list-disc list-inside text-gray-700 ml-4 space-y-1">
+                        <li>Right-click on slide → Copy</li>
+                        <li>Or select slide and press Ctrl+C</li>
+                        <li>Paste with Ctrl+V</li>
+                    </ul>
+                </div>
+
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-purple-800 mb-2">Moving Slides</h3>
+                    <ul class="list-disc list-inside text-gray-700 ml-4 space-y-1">
+                        <li>Click and drag slide to new position</li>
+                        <li>Or cut (Ctrl+X) and paste (Ctrl+V)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-yellow-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-yellow-800 mb-2">Hiding Slides</h3>
+                    <ul class="list-disc list-inside text-gray-700 ml-4 space-y-1">
+                        <li>Right-click on slide → Hide Slide</li>
+                        <li>Hidden slides won't show during presentation</li>
+                        <li>Useful for optional content</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Editing Text -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">3️⃣ Editing Text</h2>
+            <div class="bg-pink-50 p-4 rounded-lg">
+                <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                    <li>Click on text box to edit</li>
+                    <li>Type or delete text</li>
+                    <li>Change font, size, and color</li>
+                    <li>Apply bold, italic, or underline</li>
+                    <li>Align text (left, center, right)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Formatting -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">4️⃣ Formatting Slides</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-orange-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-orange-800">Background</h4>
+                    <p class="text-sm text-gray-700">Change colors or add images</p>
+                </div>
+                <div class="bg-red-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-red-800">Themes</h4>
+                    <p class="text-sm text-gray-700">Apply pre-designed styles</p>
+                </div>
+                <div class="bg-blue-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-blue-800">Layout</h4>
+                    <p class="text-sm text-gray-700">Change slide structure</p>
+                </div>
+                <div class="bg-green-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-green-800">Fonts</h4>
+                    <p class="text-sm text-gray-700">Customize text appearance</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inserting Objects -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">5️⃣ Inserting Tables, Objects, and Graphics</h2>
+            <div class="space-y-3">
+                <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-3 rounded-lg">
+                    <p class="font-semibold text-blue-800">Tables: Insert → Table → Choose rows/columns</p>
+                </div>
+                <div class="bg-gradient-to-r from-green-50 to-green-100 p-3 rounded-lg">
+                    <p class="font-semibold text-green-800">Images: Insert → Picture → Select image file</p>
+                </div>
+                <div class="bg-gradient-to-r from-purple-50 to-purple-100 p-3 rounded-lg">
+                    <p class="font-semibold text-purple-800">Charts: Insert → Chart → Choose chart type</p>
+                </div>
+                <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 p-3 rounded-lg">
+                    <p class="font-semibold text-yellow-800">Shapes: Insert → Shapes → Select shape</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Features -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">6️⃣ Advanced Features</h2>
+            
+            <div class="space-y-4">
+                <div class="bg-indigo-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-indigo-800 mb-2">Slide Masters & Templates</h3>
+                    <p class="text-gray-700 text-sm">Control overall design; changes apply to all slides automatically</p>
+                </div>
+
+                <div class="bg-pink-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-pink-800 mb-2">Transitions</h3>
+                    <p class="text-gray-700 text-sm">Effects between slides (Fade, Slide, Zoom)</p>
+                </div>
+
+                <div class="bg-orange-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-orange-800 mb-2">Animations</h3>
+                    <p class="text-gray-700 text-sm">Effects for objects on slides (Fly in, Bounce, Appear)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- File Operations -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">7️⃣ File Operations</h2>
+            <div class="space-y-3">
+                <div class="bg-green-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-green-800">Saving: File → Save or Ctrl+S</h4>
+                </div>
+                <div class="bg-blue-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-blue-800">Printing: File → Print or Ctrl+P</h4>
+                </div>
+                <div class="bg-purple-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-purple-800">Closing: File → Close or Ctrl+W</h4>
+                </div>
+                <div class="bg-red-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-red-800">Running Slideshow: F5 or Slideshow → From Beginning</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shortcuts -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">8️⃣ Useful Shortcuts</h2>
+            <div class="grid md:grid-cols-2 gap-3">
+                <div class="bg-gray-100 p-3 rounded">
+                    <p class="font-semibold text-gray-800">Ctrl+N: New Presentation</p>
+                </div>
+                <div class="bg-gray-100 p-3 rounded">
+                    <p class="font-semibold text-gray-800">Ctrl+M: New Slide</p>
+                </div>
+                <div class="bg-gray-100 p-3 rounded">
+                    <p class="font-semibold text-gray-800">Ctrl+S: Save</p>
+                </div>
+                <div class="bg-gray-100 p-3 rounded">
+                    <p class="font-semibold text-gray-800">Ctrl+P: Print</p>
+                </div>
+                <div class="bg-gray-100 p-3 rounded">
+                    <p class="font-semibold text-gray-800">F5: Start Slideshow</p>
+                </div>
+                <div class="bg-gray-100 p-3 rounded">
+                    <p class="font-semibold text-gray-800">Esc: Exit Slideshow</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary -->
+        <section class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-4">📝 Summary</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Presentation software helps create visual presentations using slides. You can add, edit, copy, move, and hide slides; format text and slides; insert tables, images, and charts; apply themes, transitions, and animations; and run slideshows. Master shortcuts for efficiency. Watch the video for detailed demonstrations.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-400">© Millennium E-learning Centre</p>
+        </div>
+    </footer>
+
+</body>
+</html>
