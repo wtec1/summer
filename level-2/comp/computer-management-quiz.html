@@ -1,0 +1,361 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium E-learning Centre - Online Class</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="/img/WTEC1_LMS_512x512.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+   <!-- Header -->
+    <header class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 flex justify-between text-white py-6 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">Time for test: Take Exams</h1>
+            <p class="text-blue-100">Assessing your learning</p>
+        </div>
+    </header>
+
+      <!-- mobile / desktop sidebar -->
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+  <nav class="p-4 space-y-2">
+    <a href="./management-of-computers.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+  </nav>
+</aside>
+
+<!-- toggle button (mobile) -->
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 right-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+  Menu
+</button>
+
+       <!-- For exams image -->
+            <div class="flex justify-center items-center my-6">
+            <img src="../img/exam.jpg"
+                alt="Illustration"
+                class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+            </div>
+
+            <main class="max-w-4xl mx-auto px-4 py-8">
+
+                <!-- Quiz Container -->
+                <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+                    <h2 class="text-2xl font-bold text-purple-600 mb-4">📝 Management of Computers Quiz</h2>
+                    <p class="text-gray-600 mb-6">Test your understanding of computer hardware connections and system information. Good luck!</p>
+
+                    <form id="quizForm">
+                        
+                        <!-- Question 1 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">1. Which ports are commonly used to connect a keyboard and mouse?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q1" value="a" class="w-4 h-4">
+                                    <span>a) HDMI and VGA</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q1" value="b" class="w-4 h-4">
+                                    <span>b) USB or PS/2</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q1" value="c" class="w-4 h-4">
+                                    <span>c) Ethernet port</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q1" value="d" class="w-4 h-4">
+                                    <span>d) Audio jack</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">2. What does RAM stand for and what is its function?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q2" value="a" class="w-4 h-4">
+                                    <span>a) Random Access Memory - stores permanent data</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q2" value="b" class="w-4 h-4">
+                                    <span>b) Random Access Memory - determines how many applications can run at once</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q2" value="c" class="w-4 h-4">
+                                    <span>c) Read Access Module - controls internet speed</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q2" value="d" class="w-4 h-4">
+                                    <span>d) Rapid Application Memory - manages storage</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">3. How can you access system information on Windows?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q3" value="a" class="w-4 h-4">
+                                    <span>a) By checking the processor chip physically</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q3" value="b" class="w-4 h-4">
+                                    <span>b) Right-click 'This PC' and select 'Properties'</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q3" value="c" class="w-4 h-4">
+                                    <span>c) Open the calculator application</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q3" value="d" class="w-4 h-4">
+                                    <span>d) Check the back of the monitor</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 4 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">4. What is measured in GHz and affects how fast a computer executes tasks?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q4" value="a" class="w-4 h-4">
+                                    <span>a) RAM size</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q4" value="b" class="w-4 h-4">
+                                    <span>b) Processor speed</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q4" value="c" class="w-4 h-4">
+                                    <span>c) Hard disk space</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q4" value="d" class="w-4 h-4">
+                                    <span>d) Screen resolution</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 5 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">5. What does a 64-bit system type indicate?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q5" value="a" class="w-4 h-4">
+                                    <span>a) The size of the hard drive</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q5" value="b" class="w-4 h-4">
+                                    <span>b) The architecture that influences software compatibility and can handle more RAM</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q5" value="c" class="w-4 h-4">
+                                    <span>c) The monitor size</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q5" value="d" class="w-4 h-4">
+                                    <span>d) The number of USB ports</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 6 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">6. Why is it important to check that all cables are firmly connected?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q6" value="a" class="w-4 h-4">
+                                    <span>a) To make the computer look neat</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q6" value="b" class="w-4 h-4">
+                                    <span>b) To prevent malfunctions or power failures</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q6" value="c" class="w-4 h-4">
+                                    <span>c) To increase internet speed</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q6" value="d" class="w-4 h-4">
+                                    <span>d) To improve screen brightness</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 7 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">7. What determines how much data can be stored on a computer?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q7" value="a" class="w-4 h-4">
+                                    <span>a) Processor speed</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q7" value="b" class="w-4 h-4">
+                                    <span>b) RAM size</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q7" value="c" class="w-4 h-4">
+                                    <span>c) Hard disk space</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q7" value="d" class="w-4 h-4">
+                                    <span>d) System type</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 8 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">8. Which of the following is an example of an output device?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q8" value="a" class="w-4 h-4">
+                                    <span>a) Keyboard</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q8" value="b" class="w-4 h-4">
+                                    <span>b) Mouse</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q8" value="c" class="w-4 h-4">
+                                    <span>c) Monitor</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q8" value="d" class="w-4 h-4">
+                                    <span>d) Scanner</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-center mt-8">
+                            <button type="button" onclick="gradeQuiz()" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300">
+                                Submit Quiz
+                            </button>
+                        </div>
+
+                    </form>
+
+                    <!-- Results Section -->
+                    <div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+                </div>
+
+            </main>
+
+    <script>
+        const answers = {
+            q1: 'b',
+            q2: 'b',
+            q3: 'b',
+            q4: 'b',
+            q5: 'b',
+            q6: 'b',
+            q7: 'c',
+            q8: 'c'
+        };
+
+        const explanations = {
+            q1: 'Keyboards and mice are commonly connected using USB or PS/2 ports.',
+            q2: 'RAM (Random Access Memory) determines how many applications can run simultaneously without slowing the system.',
+            q3: 'On Windows, you can access system information by right-clicking "This PC" and selecting "Properties".',
+            q4: 'Processor speed is measured in GHz (gigahertz) and affects how fast the computer executes tasks.',
+            q5: 'A 64-bit system indicates the architecture that influences software compatibility and can handle more RAM than 32-bit systems.',
+            q6: 'Firmly connected cables prevent malfunctions or power failures during operation.',
+            q7: 'Hard disk space determines how much data (applications, documents, media) can be stored on the computer.',
+            q8: 'A monitor is an output device that displays information. Keyboard and mouse are input devices.'
+        };
+
+        function gradeQuiz() {
+            let score = 0;
+            let total = Object.keys(answers).length;
+            let unanswered = [];
+            let incorrectAnswers = [];
+
+            for (let question in answers) {
+                const selected = document.querySelector(`input[name="${question}"]:checked`);
+                if (!selected) {
+                    unanswered.push(question.replace('q', 'Question '));
+                } else if (selected.value === answers[question]) {
+                    score++;
+                } else {
+                    incorrectAnswers.push({
+                        question: question.replace('q', 'Question '),
+                        explanation: explanations[question]
+                    });
+                }
+            }
+
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.classList.remove('hidden');
+
+            const percentage = ((score / total) * 100).toFixed(1);
+            let grade = '';
+            let bgColor = '';
+
+            if (percentage >= 90) {
+                grade = 'A - Excellent!';
+                bgColor = 'bg-green-100 border-green-500';
+            } else if (percentage >= 80) {
+                grade = 'B - Very Good!';
+                bgColor = 'bg-blue-100 border-blue-500';
+            } else if (percentage >= 70) {
+                grade = 'C - Good!';
+                bgColor = 'bg-yellow-100 border-yellow-500';
+            } else if (percentage >= 60) {
+                grade = 'D - Fair';
+                bgColor = 'bg-orange-100 border-orange-500';
+            } else {
+                grade = 'F - Need More Practice';
+                bgColor = 'bg-red-100 border-red-500';
+            }
+
+            let resultHTML = `
+                <div class="${bgColor} border-l-4 p-4">
+                    <h3 class="text-2xl font-bold mb-2">Your Results</h3>
+                    <p class="text-xl mb-2">Score: ${score} out of ${total} (${percentage}%)</p>
+                    <p class="text-xl font-semibold mb-4">Grade: ${grade}</p>
+            `;
+
+            if (unanswered.length > 0) {
+                resultHTML += `
+                    <p class="mt-4 text-red-600 font-semibold">You missed ${unanswered.length} question(s):</p>
+                    <p class="text-red-600">${unanswered.join(', ')}</p>
+                `;
+            }
+
+            if (incorrectAnswers.length > 0) {
+                resultHTML += `
+                    <div class="mt-4 p-4 bg-white rounded">
+                        <p class="font-semibold text-gray-800 mb-2">Review These Topics:</p>
+                `;
+                incorrectAnswers.forEach(item => {
+                    resultHTML += `
+                        <div class="mb-3">
+                            <p class="font-semibold text-red-600">${item.question}:</p>
+                            <p class="text-gray-700 text-sm">${item.explanation}</p>
+                        </div>
+                    `;
+                });
+                resultHTML += `</div>`;
+            }
+
+            resultHTML += `
+                    <button onclick="location.reload()" class="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded transition duration-300">
+                        Retake Quiz
+                    </button>
+                </div>
+            `;
+
+            resultsDiv.innerHTML = resultHTML;
+            resultsDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,273 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angles - JCE Mathematics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" type="image/png" href="../img/WTEC1_LMS_512x512.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-purple-600 text-white text-center py-6 px-4 shadow-lg sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">📐 ANGLES</h1> 
+            <p class="text-purple-100">Master Angle Rules and Problem-Solving Techniques</p>
+        </div>
+    </header>
+
+    <!-- Mobile / Desktop Sidebar -->
+    <aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+        <nav class="p-4 space-y-2">
+           <a href="./maths.html" class="block px-3 py-2 rounded hover:bg-gray-700">Return</a>
+        </nav>
+    </aside>
+
+    <!-- Toggle Button (Mobile) -->
+    <button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+            class="fixed top-4 right-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+        Menu
+    </button>
+
+    <!-- Centered Image -->
+    <div class="flex justify-center items-center my-4">
+        <img src="../img/lms.jpg"
+            alt="Mathematics Illustration"
+            class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+    </div> 
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        
+        <!-- Introduction Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📚 Understanding Angles</h2>
+            <p class="mb-4">An angle is formed when two rays meet at a common point called the vertex. Angles are measured in degrees (°) and are fundamental to geometry. Mastering angle relationships helps solve complex geometric problems.</p>
+        </section>
+
+        <!-- Types of Angles Section -->
+        <section id="types" class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">📊 Types of Angles</h2>
+            
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="p-4 bg-blue-50 rounded-lg">
+                    <h3 class="font-bold mb-2">Acute Angle</h3>
+                    <p class="text-sm">Less than 90°</p>
+                    <p class="text-xs text-gray-600 mt-1">Example: 45°, 60°, 30°</p>
+                </div>
+
+                <div class="p-4 bg-green-50 rounded-lg">
+                    <h3 class="font-bold mb-2">Right Angle</h3>
+                    <p class="text-sm">Exactly 90°</p>
+                    <p class="text-xs text-gray-600 mt-1">Shown with a small square</p>
+                </div>
+
+                <div class="p-4 bg-yellow-50 rounded-lg">
+                    <h3 class="font-bold mb-2">Obtuse Angle</h3>
+                    <p class="text-sm">Between 90° and 180°</p>
+                    <p class="text-xs text-gray-600 mt-1">Example: 120°, 150°, 95°</p>
+                </div>
+
+                <div class="p-4 bg-red-50 rounded-lg">
+                    <h3 class="font-bold mb-2">Straight Angle</h3>
+                    <p class="text-sm">Exactly 180°</p>
+                    <p class="text-xs text-gray-600 mt-1">Forms a straight line</p>
+                </div>
+
+                <div class="p-4 bg-purple-50 rounded-lg">
+                    <h3 class="font-bold mb-2">Reflex Angle</h3>
+                    <p class="text-sm">Between 180° and 360°</p>
+                    <p class="text-xs text-gray-600 mt-1">Example: 270°, 200°, 315°</p>
+                </div>
+
+                <div class="p-4 bg-indigo-50 rounded-lg">
+                    <h3 class="font-bold mb-2">Complete Angle</h3>
+                    <p class="text-sm">Exactly 360°</p>
+                    <p class="text-xs text-gray-600 mt-1">Full revolution/rotation</p>
+                </div>
+            </div>
+        </section>
+
+           <!-- Video Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson</h2>
+            <div class="aspect-video w-full">
+                <iframe 
+                    class="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/Bq1QyT-HZrU" 
+                    title="Angles Video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Angle Rules Section -->
+        <section id="rules" class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">🔑 Important Angle Rules</h2>
+            
+            <div class="space-y-4">
+                <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-600">
+                    <h3 class="font-bold text-lg mb-2">1. Angles on a Straight Line</h3>
+                    <p class="mb-2">Angles on a straight line add up to 180°</p>
+                    <p class="ml-4 font-mono bg-white p-2 rounded">a + b = 180°</p>
+                </div>
+
+                <div class="p-4 bg-green-50 rounded-lg border-l-4 border-green-600">
+                    <h3 class="font-bold text-lg mb-2">2. Angles Around a Point</h3>
+                    <p class="mb-2">Angles around a point add up to 360°</p>
+                    <p class="ml-4 font-mono bg-white p-2 rounded">a + b + c + d = 360°</p>
+                </div>
+
+                <div class="p-4 bg-purple-50 rounded-lg border-l-4 border-purple-600">
+                    <h3 class="font-bold text-lg mb-2">3. Vertically Opposite Angles</h3>
+                    <p class="mb-2">When two lines intersect, vertically opposite angles are equal</p>
+                    <p class="ml-4 font-mono bg-white p-2 rounded">a = c and b = d</p>
+                </div>
+
+                <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-600">
+                    <h3 class="font-bold text-lg mb-2">4. Corresponding Angles (F-angles)</h3>
+                    <p class="mb-2">When a transversal crosses parallel lines, corresponding angles are equal</p>
+                    <p class="ml-4 font-mono bg-white p-2 rounded">a = b (parallel lines)</p>
+                </div>
+
+                <div class="p-4 bg-red-50 rounded-lg border-l-4 border-red-600">
+                    <h3 class="font-bold text-lg mb-2">5. Alternate Angles (Z-angles)</h3>
+                    <p class="mb-2">When a transversal crosses parallel lines, alternate angles are equal</p>
+                    <p class="ml-4 font-mono bg-white p-2 rounded">a = b (parallel lines)</p>
+                </div>
+
+                <div class="p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-600">
+                    <h3 class="font-bold text-lg mb-2">6. Co-interior Angles (C-angles)</h3>
+                    <p class="mb-2">When a transversal crosses parallel lines, co-interior angles add up to 180°</p>
+                    <p class="ml-4 font-mono bg-white p-2 rounded">a + b = 180° (parallel lines)</p>
+                </div>
+
+                <div class="p-4 bg-pink-50 rounded-lg border-l-4 border-pink-600">
+                    <h3 class="font-bold text-lg mb-2">7. Triangle Angle Sum</h3>
+                    <p class="mb-2">The sum of angles in any triangle equals 180°</p>
+                    <p class="ml-4 font-mono bg-white p-2 rounded">a + b + c = 180°</p>
+                </div>
+
+                <div class="p-4 bg-orange-50 rounded-lg border-l-4 border-orange-600">
+                    <h3 class="font-bold text-lg mb-2">8. Exterior Angle of Triangle</h3>
+                    <p class="mb-2">An exterior angle of a triangle equals the sum of the two opposite interior angles</p>
+                    <p class="ml-4 font-mono bg-white p-2 rounded">exterior = a + b</p>
+                </div>
+            </div>
+        </section>
+
+     
+
+        <!-- Examples Section -->
+        <section id="examples" class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">✏️ Worked Examples</h2>
+            
+            <!-- Example 1 -->
+            <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                <h3 class="font-bold text-lg text-purple-600 mb-3">Example 1: Angles on a Straight Line</h3>
+                <p class="mb-2">Two angles on a straight line are in the ratio 2:3. Find both angles.</p>
+                <div class="bg-white p-4 rounded border-l-4 border-green-500">
+                    <p class="font-semibold mb-2">Solution:</p>
+                    <p>Step 1: Let the angles be 2x and 3x</p>
+                    <p class="mt-2">Step 2: Angles on a straight line = 180°</p>
+                    <p class="ml-4">2x + 3x = 180°</p>
+                    <p class="ml-4">5x = 180°</p>
+                    <p class="ml-4">x = 36°</p>
+                    <p class="mt-2">Step 3: Find both angles</p>
+                    <p class="ml-4">First angle = 2x = 2(36°) = 72°</p>
+                    <p class="ml-4">Second angle = 3x = 3(36°) = 108°</p>
+                    <p class="mt-2">Check: 72° + 108° = 180° ✓</p>
+                    <p class="mt-2 font-bold text-green-600">Answer: 72° and 108°</p>
+                </div>
+            </div>
+
+            <!-- Example 2 -->
+            <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                <h3 class="font-bold text-lg text-purple-600 mb-3">Example 2: Parallel Lines and Transversal</h3>
+                <p class="mb-2">Two parallel lines are cut by a transversal. One corresponding angle is 65°. Find the alternate angle and co-interior angle to this angle.</p>
+                <div class="bg-white p-4 rounded border-l-4 border-green-500">
+                    <p class="font-semibold mb-2">Solution:</p>
+                    <p>Given: Corresponding angle = 65°</p>
+                    <p class="mt-2">Step 1: Find alternate angle</p>
+                    <p class="ml-4">Alternate angles are equal (parallel lines)</p>
+                    <p class="ml-4">Alternate angle = 65°</p>
+                    <p class="mt-2">Step 2: Find co-interior angle</p>
+                    <p class="ml-4">Co-interior angles add to 180° (parallel lines)</p>
+                    <p class="ml-4">Co-interior angle = 180° - 65°</p>
+                    <p class="ml-4">Co-interior angle = 115°</p>
+                    <p class="mt-2 font-bold text-green-600">Answer: Alternate angle = 65°, Co-interior angle = 115°</p>
+                </div>
+            </div>
+
+            <!-- Example 3 -->
+            <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                <h3 class="font-bold text-lg text-purple-600 mb-3">Example 3: Triangle and Exterior Angle</h3>
+                <p class="mb-2">In a triangle, two interior angles are 48° and 67°. Find:</p>
+                <p class="ml-4">(a) The third interior angle</p>
+                <p class="ml-4">(b) The exterior angle at the third vertex</p>
+                <div class="bg-white p-4 rounded border-l-4 border-green-500 mt-3">
+                    <p class="font-semibold mb-2">Solution:</p>
+                    <p>(a) Third interior angle:</p>
+                    <p class="ml-4">Sum of angles in triangle = 180°</p>
+                    <p class="ml-4">48° + 67° + third angle = 180°</p>
+                    <p class="ml-4">115° + third angle = 180°</p>
+                    <p class="ml-4">Third angle = 180° - 115° = 65°</p>
+                    <p class="mt-3">(b) Exterior angle at third vertex:</p>
+                    <p class="ml-4">Method 1: Exterior = sum of opposite interior angles</p>
+                    <p class="ml-4">Exterior angle = 48° + 67° = 115°</p>
+                    <p class="mt-2 ml-4">Method 2: Interior + Exterior = 180°</p>
+                    <p class="ml-4">Exterior angle = 180° - 65° = 115°</p>
+                    <p class="mt-2 font-bold text-green-600">Answer: (a) 65° (b) 115°</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assignment Section -->
+        <section id="assignments" class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-red-600 mb-4">📝 Assignment Questions</h2>
+            <p class="mb-4 text-gray-600">Solve the following angle problems. Show all your working:</p>
+            
+            <div class="space-y-4">
+                <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                    <p class="font-semibold">Question 1:</p>
+                    <p class="ml-4">Two angles meet at a point on a straight line. One angle is 3 times larger than the other. Find both angles.</p>
+                </div>
+
+                <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                    <p class="font-semibold">Question 2:</p>
+                    <p class="ml-4">Four angles meet at a point. Three angles are 85°, 120°, and 75°. Find the fourth angle.</p>
+                </div>
+
+                <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                    <p class="font-semibold">Question 3:</p>
+                    <p class="ml-4">Two lines intersect forming vertically opposite angles. If one angle is (3x + 20)° and its vertically opposite angle is (5x - 10)°, find the value of x and the size of each angle.</p>
+                </div>
+
+                <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                    <p class="font-semibold">Question 4:</p>
+                    <p class="ml-4">A transversal cuts two parallel lines. If one alternate angle is 72°, find the corresponding angle and the co-interior angle.</p>
+                </div>
+
+                <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                    <p class="font-semibold">Question 5:</p>
+                    <p class="ml-4">In triangle ABC, angle A = 55° and angle B = 68°. Calculate: (a) angle C, and (b) the exterior angle at vertex C.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-400">© Millennium E-learning Centre</p>
+        </div>
+    </footer>
+
+</body>
+</html>

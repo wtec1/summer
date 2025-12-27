@@ -1,0 +1,349 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2: Essential Mathematical Skills in Chemistry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-purple-600 text-white py-6 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">🔢 UNIT 2: ESSENTIAL MATHEMATICAL SKILLS IN CHEMISTRY</h1> 
+            <p class="text-purple-100">Mastering Calculations and Precision in Chemical Measurements</p>
+        </div>
+    </header>
+
+    <!-- mobile / desktop sidebar -->
+    <aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+        <nav class="p-4 space-y-2">
+            <a href="./chem.html" class="block px-3 py-2 rounded hover:bg-gray-700">Return</a>
+            <a href="./maths-skills-quiz.html" class="block px-3 py-2 rounded hover:bg-gray-700">Take Exams</a>
+        </nav>
+    </aside>
+
+    <!-- toggle button (mobile) -->
+    <button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+            class="fixed top-4 right-4 z-50 bg-gray-800 text-white px-4 py-2 rounded md:hidden">
+        Menu
+    </button>
+
+    <!-- centered image -->
+    <div class="flex justify-center items-center my-4">
+        <img src="../img/lms.jpg"
+            alt="Illustration"
+            class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+    </div> 
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        
+        <!-- Introduction Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📚 Introduction</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Mathematics is the language of chemistry. Whether you're measuring reactants, calculating concentrations, or expressing tiny atomic masses, mathematical skills are essential for accurate scientific work. This unit covers four fundamental mathematical concepts that every chemistry student must master.
+            </p>
+        </section>
+
+        <!-- Video Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson</h2>
+            <div class="aspect-video w-full">
+                <iframe 
+                    class="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/H3T5YtbaDzI" 
+                    title="Mathematical Skills in Chemistry" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Section 1: Standard Form -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">1️⃣ Expressing Numbers in Standard Form</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Standard form (scientific notation) helps us write very large or very small numbers concisely. It consists of a number between 1 and 10 multiplied by a power of 10.
+            </p>
+            
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
+                <p class="font-semibold text-blue-800">Format: a × 10ⁿ</p>
+                <p class="text-blue-700">where 1 ≤ a < 10 and n is an integer</p>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-3 mt-6">a. Expressing Large Numbers</h3>
+            <p class="text-gray-700 mb-3">Move the decimal point from right to left; the power of 10 will be positive.</p>
+            
+            <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                <h4 class="font-semibold mb-2">Examples:</h4>
+                <ul class="space-y-2 text-gray-700">
+                    <li><strong>4500</strong> = 4.5 × 10³</li>
+                    <li><strong>67,413</strong> = 6.7413 × 10⁴</li>
+                    <li><strong>300,000,000</strong> = 3.0 × 10⁸ (speed of light in m/s)</li>
+                    <li><strong>602,000,000,000,000,000,000,000</strong> = 6.02 × 10²³ (Avogadro's number)</li>
+                    <li><strong>12,000</strong> = 1.2 × 10⁴</li>
+                    <li><strong>8,950,000</strong> = 8.95 × 10⁶</li>
+                    <li><strong>750</strong> = 7.5 × 10²</li>
+                    <li><strong>93,000,000</strong> = 9.3 × 10⁷ (distance from Earth to Sun in miles)</li>
+                    <li><strong>1,500,000,000</strong> = 1.5 × 10⁹</li>
+                    <li><strong>25,600</strong> = 2.56 × 10⁴</li>
+                </ul>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-3 mt-6">b. Expressing Small Numbers</h3>
+            <p class="text-gray-700 mb-3">Move the decimal point from left to right; the power of 10 will be negative.</p>
+            
+            <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                <h4 class="font-semibold mb-2">Examples:</h4>
+                <ul class="space-y-2 text-gray-700">
+                    <li><strong>0.00067</strong> = 6.7 × 10⁻⁴</li>
+                    <li><strong>0.00145</strong> = 1.45 × 10⁻³</li>
+                    <li><strong>0.335</strong> = 3.35 × 10⁻¹</li>
+                    <li><strong>0.000000012</strong> = 1.2 × 10⁻⁸ (size of an atom in meters)</li>
+                    <li><strong>0.0456</strong> = 4.56 × 10⁻²</li>
+                    <li><strong>0.000789</strong> = 7.89 × 10⁻⁴</li>
+                    <li><strong>0.0000025</strong> = 2.5 × 10⁻⁶</li>
+                    <li><strong>0.098</strong> = 9.8 × 10⁻²</li>
+                    <li><strong>0.00000000164</strong> = 1.64 × 10⁻⁹ (mass of a proton in grams)</li>
+                    <li><strong>0.000503</strong> = 5.03 × 10⁻⁴</li>
+                </ul>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mt-4">
+                <p class="font-semibold text-yellow-800">💡 Quick Tip:</p>
+                <p class="text-yellow-700">Count how many places you move the decimal. That's your exponent! Moving right = negative exponent; moving left = positive exponent.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Significant Figures -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">2️⃣ Significant Figures</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Significant figures are the digits in a number that carry meaningful information about its precision. They tell us how precise our measurements are.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Rules for Identifying Significant Figures:</h3>
+            <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                    <li><strong>All non-zero digits are significant</strong> (1, 2, 3, 4, 5, 6, 7, 8, 9)</li>
+                    <li><strong>Zeros between non-zero digits are significant</strong></li>
+                    <li><strong>Leading zeros are NOT significant</strong> (zeros before the first non-zero digit)</li>
+                    <li><strong>Trailing zeros after a decimal point are significant</strong></li>
+                    <li><strong>Trailing zeros in whole numbers without decimals are ambiguous</strong> (use scientific notation to clarify)</li>
+                </ol>
+            </div>
+
+            <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                <h4 class="font-semibold mb-3">Examples with Explanations:</h4>
+                <ul class="space-y-3 text-gray-700">
+                    <li><strong>6753</strong> has <span class="text-green-600 font-bold">4 significant figures</span> (all non-zero)</li>
+                    <li><strong>40072</strong> has <span class="text-green-600 font-bold">5 significant figures</span> (zeros between non-zero digits count)</li>
+                    <li><strong>0.0089</strong> has <span class="text-green-600 font-bold">2 significant figures</span> (leading zeros don't count)</li>
+                    <li><strong>9.0</strong> has <span class="text-green-600 font-bold">2 significant figures</span> (trailing zero after decimal counts)</li>
+                    <li><strong>0.00450</strong> has <span class="text-green-600 font-bold">3 significant figures</span> (4, 5, and trailing 0)</li>
+                    <li><strong>100.00</strong> has <span class="text-green-600 font-bold">5 significant figures</span> (all zeros after decimal count)</li>
+                    <li><strong>0.05060</strong> has <span class="text-green-600 font-bold">4 significant figures</span> (5, 0, 6, and trailing 0)</li>
+                    <li><strong>3005</strong> has <span class="text-green-600 font-bold">4 significant figures</span> (zero between non-zero digits counts)</li>
+                    <li><strong>0.000708</strong> has <span class="text-green-600 font-bold">3 significant figures</span> (7, 0, 8)</li>
+                    <li><strong>82.000</strong> has <span class="text-green-600 font-bold">5 significant figures</span> (trailing zeros after decimal count)</li>
+                    <li><strong>500</strong> has <span class="text-green-600 font-bold">1 significant figure</span> (ambiguous; could be 1, 2, or 3)</li>
+                    <li><strong>5.00 × 10²</strong> has <span class="text-green-600 font-bold">3 significant figures</span> (scientific notation clarifies)</li>
+                </ul>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-3 mt-6">Rounding to Significant Figures:</h3>
+            <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                <p class="mb-2 font-semibold">Rule: Look at the digit after your last significant figure</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                    <li>If it's 5 or more → round up</li>
+                    <li>If it's 4 or less → round down</li>
+                </ul>
+                <h4 class="font-semibold mt-4 mb-2">Examples:</h4>
+                <ul class="space-y-2 text-gray-700">
+                    <li><strong>14.628</strong> → 14.63 (4 sig figs) — the 8 causes rounding up</li>
+                    <li><strong>15.473</strong> → 15.47 (4 sig figs) — the 3 means round down</li>
+                    <li><strong>0.006789</strong> → 0.0068 (2 sig figs) — the 8 causes rounding up</li>
+                    <li><strong>125.456</strong> → 125 (3 sig figs) — the 4 means round down</li>
+                    <li><strong>9.9999</strong> → 10.0 (3 sig figs) — rounds up to next whole number</li>
+                    <li><strong>0.04567</strong> → 0.046 (2 sig figs)</li>
+                    <li><strong>3.14159</strong> → 3.14 (3 sig figs)</li>
+                    <li><strong>8765.4</strong> → 8800 (2 sig figs)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 3: Calculations with Significant Figures -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">3️⃣ Expressing Results with Significant Figures</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                When performing calculations, the result should reflect the appropriate precision based on the input values.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Addition and Subtraction:</h3>
+            <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                <p class="font-semibold text-blue-800 mb-2">Rule: Round to the least number of decimal places</p>
+                <div class="bg-white p-3 rounded mt-3">
+                    <h4 class="font-semibold mb-2">Examples:</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>
+                            <strong>2345 + 7800 + 934,456 = 944,601</strong><br>
+                            <span class="text-sm">7800 has the least precision (to the hundreds place)</span><br>
+                            <span class="text-green-600 font-semibold">Answer: 940,000 (2 sig figs)</span>
+                        </li>
+                        <li>
+                            <strong>12.11 + 18.0 + 1.013 = 31.123</strong><br>
+                            <span class="text-sm">18.0 has only 1 decimal place</span><br>
+                            <span class="text-green-600 font-semibold">Answer: 31.1</span>
+                        </li>
+                        <li>
+                            <strong>156.8 - 0.56 = 156.24</strong><br>
+                            <span class="text-sm">156.8 has 1 decimal place</span><br>
+                            <span class="text-green-600 font-semibold">Answer: 156.2</span>
+                        </li>
+                        <li>
+                            <strong>0.0045 + 0.023 + 0.1 = 0.1275</strong><br>
+                            <span class="text-sm">0.1 has only 1 decimal place</span><br>
+                            <span class="text-green-600 font-semibold">Answer: 0.1</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-3 mt-6">Multiplication and Division:</h3>
+            <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                <p class="font-semibold text-blue-800 mb-2">Rule: Round to the least number of significant figures</p>
+                <div class="bg-white p-3 rounded mt-3">
+                    <h4 class="font-semibold mb-2">Examples:</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>
+                            <strong>(2.467 × 465) ÷ 2.7 = 424.635...</strong><br>
+                            <span class="text-sm">2.7 has only 2 sig figs</span><br>
+                            <span class="text-green-600 font-semibold">Answer: 420 (2 sig figs)</span>
+                        </li>
+                        <li>
+                            <strong>6.5 × 8.32 = 54.08</strong><br>
+                            <span class="text-sm">6.5 has 2 sig figs</span><br>
+                            <span class="text-green-600 font-semibold">Answer: 54 (2 sig figs)</span>
+                        </li>
+                        <li>
+                            <strong>125.0 ÷ 2.5 = 50.0</strong><br>
+                            <span class="text-sm">Both have 2 sig figs (2.5) and 4 sig figs (125.0)</span><br>
+                            <span class="text-green-600 font-semibold">Answer: 50 (2 sig figs)</span>
+                        </li>
+                        <li>
+                            <strong>0.0045 × 1200 = 5.4</strong><br>
+                            <span class="text-sm">0.0045 has 2 sig figs; 1200 is ambiguous but assume 2</span><br>
+                            <span class="text-green-600 font-semibold">Answer: 5.4 (2 sig figs)</span>
+                        </li>
+                        <li>
+                            <strong>98.7 ÷ 3.1 = 31.8387...</strong><br>
+                            <span class="text-sm">Both have 3 and 2 sig figs respectively</span><br>
+                            <span class="text-green-600 font-semibold">Answer: 32 (2 sig figs)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mt-4">
+                <p class="font-semibold text-yellow-800">⚠️ Important Note:</p>
+                <p class="text-yellow-700">Exact numbers (like counted items or defined constants) have infinite significant figures and don't limit your answer's precision.</p>
+            </div>
+        </section>
+
+        <!-- Section 4: Accuracy vs Precision -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">4️⃣ Accuracy vs. Precision</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                These two concepts are often confused, but they describe different aspects of measurement quality.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">🎯 Accuracy</h3>
+                    <p class="text-gray-700 mb-3">How close a measurement is to the <strong>true or accepted value</strong>.</p>
+                    <div class="bg-white p-3 rounded">
+                        <p class="font-semibold mb-2">Example:</p>
+                        <p class="text-sm text-gray-700">True mass of object = 30.0g</p>
+                        <p class="text-sm text-gray-700">Your measurement = 29.9g</p>
+                        <p class="text-green-600 font-semibold mt-2">✓ This is ACCURATE</p>
+                    </div>
+                </div>
+
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-purple-800 mb-3">📍 Precision</h3>
+                    <p class="text-gray-700 mb-3">How close repeated measurements are to <strong>each other</strong>.</p>
+                    <div class="bg-white p-3 rounded">
+                        <p class="font-semibold mb-2">Example:</p>
+                        <p class="text-sm text-gray-700">Measurement 1 = 30.01g</p>
+                        <p class="text-sm text-gray-700">Measurement 2 = 30.02g</p>
+                        <p class="text-sm text-gray-700">Measurement 3 = 30.03g</p>
+                        <p class="text-green-600 font-semibold mt-2">✓ This is PRECISE</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Detailed Examples:</h3>
+            <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                <h4 class="font-semibold mb-3">Example 1: Both Accurate and Precise</h4>
+                <p class="text-gray-700 mb-2">True value: 30.0g</p>
+                <p class="text-gray-700">Measurements: 30.01g, 30.02g, 30.03g</p>
+                <p class="text-green-600 font-semibold mt-2">✓ Accurate (close to 30.0g) AND Precise (close to each other)</p>
+
+                <h4 class="font-semibold mb-3 mt-6">Example 2: Precise but Not Accurate</h4>
+                <p class="text-gray-700 mb-2">True value: 30.0g</p>
+                <p class="text-gray-700">Measurements: 35.21g, 35.23g, 35.22g</p>
+                <p class="text-yellow-600 font-semibold mt-2">⚠ Precise (consistent) but NOT Accurate (far from true value)</p>
+
+                <h4 class="font-semibold mb-3 mt-6">Example 3: Accurate but Not Precise</h4>
+                <p class="text-gray-700 mb-2">True value: 30.0g</p>
+                <p class="text-gray-700">Measurements: 28.5g, 31.2g, 29.8g, 30.5g</p>
+                <p class="text-yellow-600 font-semibold mt-2">⚠ Average is Accurate (≈30.0g) but NOT Precise (values scattered)</p>
+
+                <h4 class="font-semibold mb-3 mt-6">Example 4: Neither Accurate nor Precise</h4>
+                <p class="text-gray-700 mb-2">True value: 30.0g</p>
+                <p class="text-gray-700">Measurements: 25.1g, 32.8g, 27.3g, 34.5g</p>
+                <p class="text-red-600 font-semibold mt-2">✗ NOT Accurate (far from true value) AND NOT Precise (scattered)</p>
+            </div>
+
+            <div class="bg-green-50 border-l-4 border-green-500 p-4 mt-4">
+                <p class="font-semibold text-green-800">🎓 Key Takeaway:</p>
+                <p class="text-green-700">In chemistry, we want measurements that are BOTH accurate and precise. Precision alone isn't enough if your instrument has a systematic error!</p>
+            </div>
+        </section>
+
+        
+
+        <!-- Practice Section -->
+        <section class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-4">✏️ Practice Makes Perfect!</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Now that you've learned these essential mathematical skills, it's time to practice! Try solving problems involving standard form conversions, identifying significant figures, performing calculations with proper precision, and distinguishing between accuracy and precision.
+            </p>
+            <div class="bg-white p-4 rounded-lg">
+                <h3 class="font-semibold text-gray-800 mb-2">Quick Practice Questions:</h3>
+                <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                    <li>Express 0.000456 in standard form</li>
+                    <li>How many significant figures are in 0.00780?</li>
+                    <li>Calculate: 12.5 × 0.03 (with correct sig figs)</li>
+                    <li>If measurements are 25.1g, 25.3g, 24.9g and the true value is 25.0g, are they accurate, precise, or both?</li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-400">© Millennium E-learning Centre</p>
+        </div>
+    </footer>
+
+</body>
+</html>

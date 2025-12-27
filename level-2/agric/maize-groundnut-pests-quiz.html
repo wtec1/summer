@@ -1,0 +1,247 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium E-learning Centre - Online Class</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="/img/WTEC1_LMS_512x512.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+   <!-- Header -->
+    <header class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 flex justify-between text-white py-6 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">Time for test: Take Exams</h1>
+            <p class="text-blue-100">Assessing your learning</p>
+        </div>
+    </header>
+
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+  <nav class="p-4 space-y-2">
+    <a href="./maize-groundnuts-pests.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+  </nav>
+</aside>
+
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 right-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+  Menu
+</button>
+
+<div class="flex justify-center items-center my-6">
+<img src="../img/exam.jpg"
+    alt="Illustration"
+    class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+</div>
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+<div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+
+<h2 class="text-2xl font-bold text-purple-600 mb-4">📝 Pests of Maize and Groundnuts Quiz</h2>
+<p class="text-gray-600 mb-6">Test your understanding of major pests and crop losses. Good luck!</p>
+
+<form id="quizForm">
+
+<!-- Repeat same quiz structure with 8 questions -->
+<!-- Questions -->
+<!-- 1 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">1. What are crop pests?</p>
+<label><input type="radio" name="q1" value="a"> a) Fertilizers</label><br>
+<label><input type="radio" name="q1" value="b"> b) Organisms that damage crops</label><br>
+<label><input type="radio" name="q1" value="c"> c) Farm tools</label><br>
+<label><input type="radio" name="q1" value="d"> d) Soil nutrients</label>
+</div>
+
+<!-- 2 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">2. Which of the following is a field pest of maize?</p>
+<label><input type="radio" name="q2" value="a"> a) Maize weevil</label><br>
+<label><input type="radio" name="q2" value="b"> b) Armyworm</label><br>
+<label><input type="radio" name="q2" value="c"> c) Storage beetle</label><br>
+<label><input type="radio" name="q2" value="d"> d) Rat only</label>
+</div>
+
+<!-- 3 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">3. Maize weevils mainly damage:</p>
+<label><input type="radio" name="q3" value="a"> a) Leaves</label><br>
+<label><input type="radio" name="q3" value="b"> b) Roots</label><br>
+<label><input type="radio" name="q3" value="c"> c) Stored grain</label><br>
+<label><input type="radio" name="q3" value="d"> d) Flowers</label>
+</div>
+
+<!-- 4 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">4. Which pest sucks sap and spreads diseases?</p>
+<label><input type="radio" name="q4" value="a"> a) Aphids</label><br>
+<label><input type="radio" name="q4" value="b"> b) Rats</label><br>
+<label><input type="radio" name="q4" value="c"> c) Weevils</label><br>
+<label><input type="radio" name="q4" value="d"> d) Beetles</label>
+</div>
+
+<!-- 5 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">5. Armyworms mainly damage:</p>
+<label><input type="radio" name="q5" value="a"> a) Pods</label><br>
+<label><input type="radio" name="q5" value="b"> b) Leaves</label><br>
+<label><input type="radio" name="q5" value="c"> c) Roots</label><br>
+<label><input type="radio" name="q5" value="d"> d) Flowers</label>
+</div>
+
+<!-- 6 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">6. Which of the following is a storage pest?</p>
+<label><input type="radio" name="q6" value="a"> a) Stalk borer</label><br>
+<label><input type="radio" name="q6" value="b"> b) Maize weevil</label><br>
+<label><input type="radio" name="q6" value="c"> c) Armyworm</label><br>
+<label><input type="radio" name="q6" value="d"> d) Aphid</label>
+</div>
+
+<!-- 7 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">7. Which of the following is a crop loss caused by pests?</p>
+<label><input type="radio" name="q7" value="a"> a) Higher yields</label><br>
+<label><input type="radio" name="q7" value="b"> b) Reduced yield and quality</label><br>
+<label><input type="radio" name="q7" value="c"> c) Improved storage</label><br>
+<label><input type="radio" name="q7" value="d"> d) Stronger plants</label>
+</div>
+
+<!-- 8 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">8. Pests may cause farmers to experience:</p>
+<label><input type="radio" name="q8" value="a"> a) More income</label><br>
+<label><input type="radio" name="q8" value="b"> b) Income loss and food shortage</label><br>
+<label><input type="radio" name="q8" value="c"> c) Free seeds</label><br>
+<label><input type="radio" name="q8" value="d"> d) Higher prices for crops</label>
+</div>
+
+<div class="text-center mt-8">
+<button type="button" onclick="gradeQuiz()" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300">Submit Quiz</button>
+</div>
+
+</form>
+
+<div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+</div>
+</main>
+
+<script>
+const answers = {
+    q1: 'b',
+    q2: 'b',
+    q3: 'c',
+    q4: 'a',
+    q5: 'b',
+    q6: 'b',
+    q7: 'b',
+    q8: 'b'
+};
+
+const explanations = {
+    q1: 'Pests are organisms that damage crops in the field or storage.',
+    q2: 'Armyworms are field pests that destroy maize leaves.',
+    q3: 'Maize weevils bore into and damage stored grain.',
+    q4: 'Aphids suck plant sap and can spread crop diseases.',
+    q5: 'Armyworms mainly feed on leaves causing defoliation.',
+    q6: 'Maize weevils are common storage pests.',
+    q7: 'Pests reduce both crop yield and quality.',
+    q8: 'Pests lead to food shortages and income loss for farmers.'
+};
+
+function gradeQuiz() {
+    let score = 0;
+    let total = Object.keys(answers).length;
+    let unanswered = [];
+    let incorrectAnswers = [];
+
+    for (let question in answers) {
+        const selected = document.querySelector(`input[name="${question}"]:checked`);
+
+        if (!selected) {
+            unanswered.push(question.replace('q', 'Question '));
+        } else if (selected.value === answers[question]) {
+            score++;
+        } else {
+            incorrectAnswers.push({
+                question: question.replace('q', 'Question '),
+                explanation: explanations[question]
+            });
+        }
+    }
+
+    const resultsDiv = document.getElementById('results');
+    resultsDiv.classList.remove('hidden');
+
+    const percentage = ((score / total) * 100).toFixed(1);
+
+    let grade = '';
+    let bgColor = '';
+
+    if (percentage >= 90) {
+        grade = 'A - Excellent!';
+        bgColor = 'bg-green-100 border-green-500';
+    } else if (percentage >= 80) {
+        grade = 'B - Very Good!';
+        bgColor = 'bg-blue-100 border-blue-500';
+    } else if (percentage >= 70) {
+        grade = 'C - Good';
+        bgColor = 'bg-yellow-100 border-yellow-500';
+    } else if (percentage >= 60) {
+        grade = 'D - Fair';
+        bgColor = 'bg-orange-100 border-orange-500';
+    } else {
+        grade = 'F - Needs More Practice';
+        bgColor = 'bg-red-100 border-red-500';
+    }
+
+    let resultHTML = `
+        <div class="${bgColor} border-l-4 p-4">
+            <h3 class="text-2xl font-bold mb-2">Your Results</h3>
+            <p class="text-xl mb-2">Score: ${score} out of ${total} (${percentage}%)</p>
+            <p class="text-xl font-semibold mb-4">Grade: ${grade}</p>
+    `;
+
+    if (unanswered.length > 0) {
+        resultHTML += `
+            <p class="mt-4 text-red-600 font-semibold">Unanswered question(s):</p>
+            <p class="text-red-600">${unanswered.join(', ')}</p>
+        `;
+    }
+
+    if (incorrectAnswers.length > 0) {
+        resultHTML += `
+            <div class="mt-4 p-4 bg-white rounded">
+                <p class="font-semibold text-gray-800 mb-2">Review These:</p>
+        `;
+        incorrectAnswers.forEach(item => {
+            resultHTML += `
+                <div class="mb-3">
+                    <p class="font-semibold text-red-600">${item.question}</p>
+                    <p class="text-gray-700 text-sm">${item.explanation}</p>
+                </div>
+            `;
+        });
+        resultHTML += `</div>`;
+    }
+
+    resultHTML += `
+        <button onclick="location.reload()" class="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded transition duration-300">
+            Retake Quiz
+        </button>
+    `;
+
+    // disable quiz after submit
+    document.querySelectorAll('input[type="radio"]').forEach(input => input.disabled = true);
+
+    resultsDiv.innerHTML = resultHTML;
+
+    resultsDiv.scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+
+</body>
+</html>

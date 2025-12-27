@@ -1,0 +1,119 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heat Transfer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Header -->
+<header class="bg-orange-600 text-center text-white py-6 px-4 shadow-lg">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold mb-2">🔥 HEAT TRANSFER</h1>
+    <p class="text-orange-100">Conduction, Convection and Radiation</p>
+  </div>
+</header>
+
+<!-- Sidebar -->
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform">
+  <nav class="p-4 space-y-2">
+    <a href="./phy.html" class="block px-3 py-2 rounded hover:bg-gray-700">Return</a>
+    <a href="./heat-transfer-quiz.html" class="block px-3 py-2 rounded hover:bg-gray-700">Take Exams</a>
+  </nav>
+</aside>
+
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+  class="fixed top-4 left-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+Menu
+</button>
+
+ <!-- centered image -->
+            <div class="flex justify-center items-center my-4">
+            <img src="../img/lms.jpg"
+                alt="Illustration"
+                class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+            </div> 
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+
+<!-- Introduction -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+  <h2 class="text-2xl font-bold text-orange-600 mb-3">🔍 Introduction</h2>
+  <p>
+    Heat transfer is the movement of heat energy from a hotter region to a colder
+    region. Heat can be transferred through solids, liquids and gases.
+  </p>
+</section>
+
+<!-- Video Section (LOCKED POSITION) -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+  <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson</h2>
+  <div class="aspect-video w-full">
+    <iframe class="w-full h-full rounded-lg"
+      src="https://www.youtube.com/embed/H3T5YtbaDzI"
+      allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- Heat Transfer Methods -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+  <h2 class="text-xl font-bold text-orange-600 mb-3">♨️ Methods of Heat Transfer</h2>
+  <ul class="list-disc pl-6 space-y-1">
+    <li><strong>Conduction:</strong> Transfer of heat through solids without movement of particles.</li>
+    <li><strong>Convection:</strong> Transfer of heat in liquids and gases by movement of particles.</li>
+    <li><strong>Radiation:</strong> Transfer of heat through electromagnetic waves; no medium required.</li>
+  </ul>
+</section>
+
+<!-- Rate of Conduction -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+  <h2 class="text-xl font-bold text-orange-600 mb-3">🔩 Rate of Heat Conduction in Metals</h2>
+  <p>
+    Different metals conduct heat at different rates.
+  </p>
+  <ul class="list-disc pl-6 space-y-1 mt-2">
+    <li>Good conductors: copper, aluminium</li>
+    <li>Poor conductors: iron, steel</li>
+  </ul>
+</section>
+
+<!-- Conduction Experiment -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+  <h2 class="text-xl font-bold text-orange-600 mb-3">🧪 Conduction Experiment (Summary)</h2>
+  <p>
+    Equal lengths of different metal rods are heated at one end.
+    The ends are coated with candle wax.
+  </p>
+  <ul class="list-disc pl-6 space-y-1 mt-2">
+    <li>Wax melts faster on good conductors.</li>
+    <li>Shows different rates of heat conduction.</li>
+  </ul>
+</section>
+
+<!-- Applications -->
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+  <h2 class="text-xl font-bold text-orange-600 mb-3">🏠 Applications of Heat Transfer</h2>
+  <ul class="list-disc pl-6 space-y-2">
+    <li>Black surfaces absorb heat efficiently (solar collectors).</li>
+    <li>Dark clothes absorb more heat than light clothes.</li>
+    <li>White-painted walls reflect heat.</li>
+    <li>Aluminium foil reduces heat loss in food containers.</li>
+    <li>Solar cookers and heaters use radiation.</li>
+    <li>Thermal flasks and cooler boxes reduce heat transfer.</li>
+    <li>Grass-thatched houses reduce heat gain.</li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="bg-gray-800 text-white py-6 text-center">
+  © Millennium E-Learning Centre
+</footer>
+
+</body>
+</html>

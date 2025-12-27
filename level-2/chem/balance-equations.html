@@ -1,0 +1,473 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 3: Balancing Chemical Equations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-purple-600 text-white py-6 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">⚖️ UNIT 3: BALANCING CHEMICAL EQUATIONS</h1> 
+            <p class="text-purple-100">Mastering the Art of Chemical Reactions</p>
+        </div>
+    </header>
+
+    <!-- mobile / desktop sidebar -->
+    <aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+        <nav class="p-4 space-y-2">
+            <a href="./chem.html" class="block px-3 py-2 rounded hover:bg-gray-700">Return</a>
+            <a href="./balancing-quiz.html" class="block px-3 py-2 rounded hover:bg-gray-700">Take Exams</a>
+        </nav>
+    </aside>
+
+    <!-- toggle button (mobile) -->
+    <button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+            class="fixed top-4 right-4 z-50 bg-gray-800 text-white px-4 py-2 rounded md:hidden">
+        Menu
+    </button>
+
+    <!-- centered image -->
+    <div class="flex justify-center items-center my-4">
+        <img src="../img/lms.jpg"
+            alt="Illustration"
+            class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+    </div> 
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        
+        <!-- Introduction Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📚 Introduction</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Chemical equations are like mathematical sentences that describe what happens during a chemical reaction. Just as you balance both sides of a mathematical equation, you must balance chemical equations to obey the Law of Conservation of Mass, which states that matter cannot be created or destroyed in a chemical reaction.
+            </p>
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4">
+                <p class="font-semibold text-blue-800 mb-2">Why Balance Equations?</p>
+                <p class="text-blue-700">The number of atoms of each element must be the same on both sides of the equation. This ensures that no atoms are lost or gained during the reaction.</p>
+            </div>
+        </section>
+
+          <!-- Video Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson</h2>
+            <div class="aspect-video w-full">
+                <iframe 
+                    class="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/H3T5YtbaDzI" 
+                    title="Balancing Chemical Equations" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- What is a Chemical Equation -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">1️⃣ Understanding Chemical Equations</h2>
+            
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Parts of a Chemical Equation:</h3>
+            <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                <p class="mb-3"><strong>Reactants → Products</strong></p>
+                <ul class="space-y-2 text-gray-700 list-disc list-inside">
+                    <li><strong>Reactants:</strong> Substances that start the reaction (on the left side)</li>
+                    <li><strong>Products:</strong> Substances formed by the reaction (on the right side)</li>
+                    <li><strong>Arrow (→):</strong> Means "yields" or "produces"</li>
+                    <li><strong>Plus sign (+):</strong> Separates two or more reactants or products</li>
+                    <li><strong>Coefficients:</strong> Numbers placed before formulas to balance the equation</li>
+                </ul>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-4">
+                <h4 class="font-semibold text-yellow-800 mb-2">Example:</h4>
+                <p class="text-yellow-700 text-lg font-mono">2H₂ + O₂ → 2H₂O</p>
+                <p class="text-yellow-700 mt-2">This reads: "Two molecules of hydrogen gas react with one molecule of oxygen gas to produce two molecules of water."</p>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-3 mt-6">State Symbols:</h3>
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <ul class="space-y-2 text-gray-700">
+                    <li><strong>(s)</strong> = solid</li>
+                    <li><strong>(l)</strong> = liquid</li>
+                    <li><strong>(g)</strong> = gas</li>
+                    <li><strong>(aq)</strong> = aqueous (dissolved in water)</li>
+                </ul>
+                <p class="mt-3 text-gray-700"><strong>Example:</strong> 2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g)</p>
+            </div>
+        </section>
+
+        <!-- The Law of Conservation of Mass -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">2️⃣ The Law of Conservation of Mass</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                The Law of Conservation of Mass states that in any chemical reaction, the total mass of reactants equals the total mass of products. This means atoms are neither created nor destroyed—they are simply rearranged.
+            </p>
+            
+            <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                <h4 class="font-semibold text-blue-800 mb-2">Key Principle:</h4>
+                <p class="text-blue-700">The number of atoms of each element on the reactant side must equal the number of atoms of that element on the product side.</p>
+            </div>
+
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <h4 class="font-semibold mb-2">Example - Unbalanced vs Balanced:</h4>
+                <p class="text-red-600 mb-2"><strong>❌ Unbalanced:</strong> H₂ + O₂ → H₂O</p>
+                <p class="text-sm text-gray-600 mb-3">Left side: 2 H, 2 O | Right side: 2 H, 1 O (Not equal!)</p>
+                
+                <p class="text-green-600 mb-2"><strong>✓ Balanced:</strong> 2H₂ + O₂ → 2H₂O</p>
+                <p class="text-sm text-gray-600">Left side: 4 H, 2 O | Right side: 4 H, 2 O (Equal!)</p>
+            </div>
+        </section>
+
+        <!-- Step-by-Step Method -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">3️⃣ Step-by-Step Method for Balancing Equations</h2>
+            
+            <div class="bg-purple-50 p-4 rounded-lg mb-4">
+                <h3 class="font-semibold text-purple-800 mb-3">Follow These Steps:</h3>
+                <ol class="list-decimal list-inside space-y-3 text-gray-700">
+                    <li><strong>Write the unbalanced equation</strong> with correct chemical formulas</li>
+                    <li><strong>Count the atoms</strong> of each element on both sides</li>
+                    <li><strong>Balance one element at a time</strong> by adding coefficients (never change subscripts!)</li>
+                    <li><strong>Start with the most complex molecule</strong> or the element that appears in only one reactant and one product</li>
+                    <li><strong>Balance hydrogen and oxygen last</strong> (they appear in many compounds)</li>
+                    <li><strong>Check your work</strong> by counting atoms of each element on both sides</li>
+                    <li><strong>Use the smallest whole-number coefficients</strong> possible</li>
+                </ol>
+            </div>
+
+            <div class="bg-red-50 border-l-4 border-red-500 p-4">
+                <p class="font-semibold text-red-800">⚠️ IMPORTANT RULE:</p>
+                <p class="text-red-700">NEVER change the subscripts in chemical formulas! Only add coefficients in front of the formulas. Changing subscripts changes the substance itself.</p>
+            </div>
+        </section>
+
+        <!-- Detailed Examples -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">4️⃣ Detailed Balancing Examples</h2>
+
+            <!-- Example 1 -->
+            <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                <h3 class="text-xl font-semibold text-blue-800 mb-3">Example 1: Combustion of Methane</h3>
+                <p class="mb-3"><strong>Unbalanced:</strong> CH₄ + O₂ → CO₂ + H₂O</p>
+                
+                <div class="bg-white p-3 rounded mb-3">
+                    <p class="font-semibold mb-2">Step 1: Count atoms</p>
+                    <p class="text-sm">Left: C=1, H=4, O=2</p>
+                    <p class="text-sm">Right: C=1, H=2, O=3</p>
+                </div>
+
+                <div class="bg-white p-3 rounded mb-3">
+                    <p class="font-semibold mb-2">Step 2: Balance carbon (already balanced)</p>
+                    <p class="text-sm">CH₄ + O₂ → CO₂ + H₂O</p>
+                </div>
+
+                <div class="bg-white p-3 rounded mb-3">
+                    <p class="font-semibold mb-2">Step 3: Balance hydrogen (4 on left, 2 on right)</p>
+                    <p class="text-sm">CH₄ + O₂ → CO₂ + 2H₂O</p>
+                    <p class="text-xs text-gray-600">Now: H = 4 on both sides</p>
+                </div>
+
+                <div class="bg-white p-3 rounded mb-3">
+                    <p class="font-semibold mb-2">Step 4: Balance oxygen (2 on left, 4 on right)</p>
+                    <p class="text-sm">CH₄ + 2O₂ → CO₂ + 2H₂O</p>
+                    <p class="text-xs text-gray-600">Now: O = 4 on both sides</p>
+                </div>
+
+                <div class="bg-green-100 p-3 rounded">
+                    <p class="font-semibold text-green-800 mb-2">✓ Final Balanced Equation:</p>
+                    <p class="text-lg font-mono text-green-700">CH₄ + 2O₂ → CO₂ + 2H₂O</p>
+                    <p class="text-sm text-gray-600 mt-2">Check: C=1, H=4, O=4 on both sides ✓</p>
+                </div>
+            </div>
+
+            <!-- Example 2 -->
+            <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                <h3 class="text-xl font-semibold text-blue-800 mb-3">Example 2: Synthesis of Ammonia</h3>
+                <p class="mb-3"><strong>Unbalanced:</strong> N₂ + H₂ → NH₃</p>
+                
+                <div class="bg-white p-3 rounded mb-3">
+                    <p class="font-semibold mb-2">Step 1: Count atoms</p>
+                    <p class="text-sm">Left: N=2, H=2</p>
+                    <p class="text-sm">Right: N=1, H=3</p>
+                </div>
+
+                <div class="bg-white p-3 rounded mb-3">
+                    <p class="font-semibold mb-2">Step 2: Balance nitrogen (2 on left, 1 on right)</p>
+                    <p class="text-sm">N₂ + H₂ → 2NH₃</p>
+                    <p class="text-xs text-gray-600">Now: N = 2 on both sides, but H = 2 on left, 6 on right</p>
+                </div>
+
+                <div class="bg-white p-3 rounded mb-3">
+                    <p class="font-semibold mb-2">Step 3: Balance hydrogen (2 on left, 6 on right)</p>
+                    <p class="text-sm">N₂ + 3H₂ → 2NH₃</p>
+                    <p class="text-xs text-gray-600">Now: H = 6 on both sides</p>
+                </div>
+
+                <div class="bg-green-100 p-3 rounded">
+                    <p class="font-semibold text-green-800 mb-2">✓ Final Balanced Equation:</p>
+                    <p class="text-lg font-mono text-green-700">N₂ + 3H₂ → 2NH₃</p>
+                    <p class="text-sm text-gray-600 mt-2">Check: N=2, H=6 on both sides ✓</p>
+                </div>
+            </div>
+
+            <!-- Example 3 -->
+            <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                <h3 class="text-xl font-semibold text-blue-800 mb-3">Example 3: Combustion of Propane</h3>
+                <p class="mb-3"><strong>Unbalanced:</strong> C₃H₈ + O₂ → CO₂ + H₂O</p>
+                
+                <div class="bg-white p-3 rounded mb-3">
+                    <p class="font-semibold mb-2">Step 1: Count atoms</p>
+                    <p class="text-sm">Left: C=3, H=8, O=2</p>
+                    <p class="text-sm">Right: C=1, H=2, O=3</p>
+                </div>
+
+                <div class="bg-white p-3 rounded mb-3">
+                    <p class="font-semibold mb-2">Step 2: Balance carbon (3 on left, 1 on right)</p>
+                    <p class="text-sm">C₃H₈ + O₂ → 3CO₂ + H₂O</p>
+                </div>
+
+                <div class="bg-white p-3 rounded mb-3">
+                    <p class="font-semibold mb-2">Step 3: Balance hydrogen (8 on left, 2 on right)</p>
+                    <p class="text-sm">C₃H₈ + O₂ → 3CO₂ + 4H₂O</p>
+                </div>
+
+                <div class="bg-white p-3 rounded mb-3">
+                    <p class="font-semibold mb-2">Step 4: Balance oxygen (2 on left, 10 on right)</p>
+                    <p class="text-sm">C₃H₈ + 5O₂ → 3CO₂ + 4H₂O</p>
+                </div>
+
+                <div class="bg-green-100 p-3 rounded">
+                    <p class="font-semibold text-green-800 mb-2">✓ Final Balanced Equation:</p>
+                    <p class="text-lg font-mono text-green-700">C₃H₈ + 5O₂ → 3CO₂ + 4H₂O</p>
+                    <p class="text-sm text-gray-600 mt-2">Check: C=3, H=8, O=10 on both sides ✓</p>
+                </div>
+            </div>
+
+            <!-- Example 4 -->
+            <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                <h3 class="text-xl font-semibold text-blue-800 mb-3">Example 4: Formation of Water</h3>
+                <p class="mb-3"><strong>Unbalanced:</strong> H₂ + O₂ → H₂O</p>
+                
+                <div class="bg-white p-3 rounded mb-3">
+                    <p class="font-semibold mb-2">Step 1: Count atoms</p>
+                    <p class="text-sm">Left: H=2, O=2</p>
+                    <p class="text-sm">Right: H=2, O=1</p>
+                </div>
+
+                <div class="bg-white p-3 rounded mb-3">
+                    <p class="font-semibold mb-2">Step 2: Balance oxygen (2 on left, 1 on right)</p>
+                    <p class="text-sm">H₂ + O₂ → 2H₂O</p>
+                    <p class="text-xs text-gray-600">Now: O = 2 on both sides, but H = 2 on left, 4 on right</p>
+                </div>
+
+                <div class="bg-white p-3 rounded mb-3">
+                    <p class="font-semibold mb-2">Step 3: Balance hydrogen (2 on left, 4 on right)</p>
+                    <p class="text-sm">2H₂ + O₂ → 2H₂O</p>
+                </div>
+
+                <div class="bg-green-100 p-3 rounded">
+                    <p class="font-semibold text-green-800 mb-2">✓ Final Balanced Equation:</p>
+                    <p class="text-lg font-mono text-green-700">2H₂ + O₂ → 2H₂O</p>
+                    <p class="text-sm text-gray-600 mt-2">Check: H=4, O=2 on both sides ✓</p>
+                </div>
+            </div>
+
+            <!-- Example 5 -->
+            <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                <h3 class="text-xl font-semibold text-blue-800 mb-3">Example 5: Reaction of Sodium with Water</h3>
+                <p class="mb-3"><strong>Unbalanced:</strong> Na + H₂O → NaOH + H₂</p>
+                
+                <div class="bg-white p-3 rounded mb-3">
+                    <p class="font-semibold mb-2">Step 1: Count atoms</p>
+                    <p class="text-sm">Left: Na=1, H=2, O=1</p>
+                    <p class="text-sm">Right: Na=1, H=3, O=1</p>
+                </div>
+
+                <div class="bg-white p-3 rounded mb-3">
+                    <p class="font-semibold mb-2">Step 2: Balance hydrogen (even numbers work better)</p>
+                    <p class="text-sm">2Na + 2H₂O → 2NaOH + H₂</p>
+                </div>
+
+                <div class="bg-green-100 p-3 rounded">
+                    <p class="font-semibold text-green-800 mb-2">✓ Final Balanced Equation:</p>
+                    <p class="text-lg font-mono text-green-700">2Na + 2H₂O → 2NaOH + H₂</p>
+                    <p class="text-sm text-gray-600 mt-2">Check: Na=2, H=4, O=2 on both sides ✓</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- More Practice Examples -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">5️⃣ More Practice Examples (JCE Level)</h2>
+
+            <div class="space-y-4">
+                <!-- Example 6 -->
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-2">Example 6: Decomposition of Potassium Chlorate</h4>
+                    <p class="text-red-600 mb-1">Unbalanced: KClO₃ → KCl + O₂</p>
+                    <p class="text-green-600">Balanced: 2KClO₃ → 2KCl + 3O₂</p>
+                </div>
+
+                <!-- Example 7 -->
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-2">Example 7: Combustion of Ethanol</h4>
+                    <p class="text-red-600 mb-1">Unbalanced: C₂H₅OH + O₂ → CO₂ + H₂O</p>
+                    <p class="text-green-600">Balanced: C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O</p>
+                </div>
+
+                <!-- Example 8 -->
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-2">Example 8: Reaction of Magnesium with Hydrochloric Acid</h4>
+                    <p class="text-red-600 mb-1">Unbalanced: Mg + HCl → MgCl₂ + H₂</p>
+                    <p class="text-green-600">Balanced: Mg + 2HCl → MgCl₂ + H₂</p>
+                </div>
+
+                <!-- Example 9 -->
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-2">Example 9: Reaction of Aluminum with Oxygen</h4>
+                    <p class="text-red-600 mb-1">Unbalanced: Al + O₂ → Al₂O₃</p>
+                    <p class="text-green-600">Balanced: 4Al + 3O₂ → 2Al₂O₃</p>
+                </div>
+
+                <!-- Example 10 -->
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-2">Example 10: Neutralization Reaction</h4>
+                    <p class="text-red-600 mb-1">Unbalanced: H₂SO₄ + NaOH → Na₂SO₄ + H₂O</p>
+                    <p class="text-green-600">Balanced: H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O</p>
+                </div>
+
+                <!-- Example 11 -->
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-2">Example 11: Photosynthesis</h4>
+                    <p class="text-red-600 mb-1">Unbalanced: CO₂ + H₂O → C₆H₁₂O₆ + O₂</p>
+                    <p class="text-green-600">Balanced: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂</p>
+                </div>
+
+                <!-- Example 12 -->
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-2">Example 12: Reaction of Calcium Carbonate with Acid</h4>
+                    <p class="text-red-600 mb-1">Unbalanced: CaCO₃ + HCl → CaCl₂ + H₂O + CO₂</p>
+                    <p class="text-green-600">Balanced: CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂</p>
+                </div>
+
+                <!-- Example 13 -->
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-2">Example 13: Combustion of Butane</h4>
+                    <p class="text-red-600 mb-1">Unbalanced: C₄H₁₀ + O₂ → CO₂ + H₂O</p>
+                    <p class="text-green-600">Balanced: 2C₄H₁₀ + 13O₂ → 8CO₂ + 10H₂O</p>
+                </div>
+
+                <!-- Example 14 -->
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-2">Example 14: Reaction of Iron with Sulfur</h4>
+                    <p class="text-red-600 mb-1">Unbalanced: Fe + S → FeS</p>
+                    <p class="text-green-600">Balanced: Fe + S → FeS (Already balanced!)</p>
+                </div>
+
+                <!-- Example 15 -->
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-2">Example 15: Decomposition of Hydrogen Peroxide</h4>
+                    <p class="text-red-600 mb-1">Unbalanced: H₂O₂ → H₂O + O₂</p>
+                    <p class="text-green-600">Balanced: 2H₂O₂ → 2H₂O + O₂</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Mistakes -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-red-600 mb-4">⚠️ Common Mistakes to Avoid</h2>
+            
+            <div class="space-y-4">
+                <div class="bg-red-50 border-l-4 border-red-500 p-4">
+                    <p class="font-semibold text-red-800 mb-2">❌ Mistake 1: Changing Subscripts</p>
+                    <p class="text-red-700">Wrong: H₂ + O₂ → H₂O₂ (This creates hydrogen peroxide, not water!)</p>
+                    <p class="text-green-600 mt-1">Correct: 2H₂ + O₂ → 2H₂O (Use coefficients only)</p>
+                </div>
+
+                <div class="bg-red-50 border-l-4 border-red-500 p-4">
+                    <p class="font-semibold text-red-800 mb-2">❌ Mistake 2: Not Using Smallest Whole Numbers</p>
+                    <p class="text-red-700">Wrong: 4H₂ + 2O₂ → 4H₂O (Can be simplified)</p>
+                    <p class="text-green-600 mt-1">Correct: 2H₂ + O₂ → 2H₂O (Simplest form)</p>
+                </div>
+
+                <div class="bg-red-50 border-l-4 border-red-500 p-4">
+                    <p class="font-semibold text-red-800 mb-2">❌ Mistake 3: Forgetting to Check All Elements</p>
+                    <p class="text-red-700">Always count atoms of EVERY element on both sides</p>
+                    <p class="text-green-600 mt-1">Make a table or list to track each element systematically</p>
+                </div>
+
+                <div class="bg-red-50 border-l-4 border-red-500 p-4">
+                    <p class="font-semibold text-red-800 mb-2">❌ Mistake 4: Using Fractions as Final Coefficients</p>
+                    <p class="text-red-700">Wrong: C₃H₈ + 2.5O₂ → 3CO₂ + 4H₂O</p>
+                    <p class="text-green-600 mt-1">Correct: 2C₃H₈ + 10O₂ → 6CO₂ + 8H₂O (Multiply all by 2)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Tips -->
+                <!-- Quick Tips -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-4">💡 Quick Tips for Success</h2>
+            
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-purple-800 mb-2">Tip 1: Start Simple</h3>
+                    <p class="text-gray-700">Begin with elements that appear in only one compound on each side</p>
+                </div>
+
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-purple-800 mb-2">Tip 2: Save H and O for Last</h3>
+                    <p class="text-gray-700">These elements appear in many compounds, so balance them after others</p>
+                </div>
+
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-purple-800 mb-2">Tip 3: Use a Table</h3>
+                    <p class="text-gray-700">Create a table listing each element and count atoms on both sides</p>
+                </div>
+
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-purple-800 mb-2">Tip 4: Double-Check</h3>
+                    <p class="text-gray-700">Always verify your final equation by counting all atoms again</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Section -->
+        <section class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-4">✏️ Practice Makes Perfect!</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Now that you've learned the step-by-step method for balancing chemical equations, it's time to practice! Try balancing these equations on your own, then check your answers.
+            </p>
+            <div class="bg-white p-4 rounded-lg">
+                <h3 class="font-semibold text-gray-800 mb-3">Try These:</h3>
+                <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                    <li>Fe + O₂ → Fe₂O₃</li>
+                    <li>N₂ + O₂ → NO</li>
+                    <li>Ca + O₂ → CaO</li>
+                    <li>Zn + HCl → ZnCl₂ + H₂</li>
+                    <li>C₂H₆ + O₂ → CO₂ + H₂O</li>
+                </ol>
+                <p class="mt-4 text-sm text-gray-600">Hint: Remember to never change subscripts—only add coefficients!</p>
+            </div>
+        </section>
+
+      
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-400">© Millennium E-learning Centre</p>
+        </div>
+    </footer>
+
+</body>
+</html>

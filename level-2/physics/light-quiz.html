@@ -1,0 +1,218 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Light Quiz</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" type="image/png" href="/img/WTEC1_LMS_512x512.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<header class="bg-gradient-to-br from-purple-600 via-indigo-600 to-purple-800 text-center text-white py-6 px-4 shadow-lg">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold mb-2">Time for Test: Take Exams</h1>
+    <p class="text-purple-100">Light — Form 2 (JCE)</p>
+  </div>
+</header>
+
+<!-- sidebar -->
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform">
+  <nav class="p-4 space-y-2">
+    <a href="./light.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+  </nav>
+</aside>
+
+<!-- toggle -->
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 left-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">Menu</button>
+
+<!-- exam image -->
+<div class="flex justify-center items-center my-6">
+  <img src="../img/exam.jpg" alt="Illustration" class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+</div>
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+
+  <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+    <h2 class="text-2xl font-bold text-purple-600 mb-4">💡 Light Quiz</h2>
+    <p class="text-gray-600 mb-6">Answer all questions. Choose the best option. Submit to get instant feedback and explanations.</p>
+
+    <form id="quizForm">
+
+      <!-- Q1 -->
+      <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+        <p class="font-semibold mb-3">1. Light propagation is best shown by which observation?</p>
+        <label><input type="radio" name="q1" value="a"> a) Light bends around obstacles</label><br>
+        <label><input type="radio" name="q1" value="b"> b) Light travels in straight lines</label><br>
+        <label><input type="radio" name="q1" value="c"> c) Light only travels in curves</label><br>
+        <label><input type="radio" name="q1" value="d"> d) Light does not travel</label>
+      </div>
+
+      <!-- Q2 -->
+      <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+        <p class="font-semibold mb-3">2. A shadow forms when light is blocked by a:</p>
+        <label><input type="radio" name="q2" value="a"> a) Transparent object</label><br>
+        <label><input type="radio" name="q2" value="b"> b) Translucent object</label><br>
+        <label><input type="radio" name="q2" value="c"> c) Opaque object</label><br>
+        <label><input type="radio" name="q2" value="d"> d) Source of light</label>
+      </div>
+
+      <!-- Q3 -->
+      <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+        <p class="font-semibold mb-3">3. The darkest central part of a shadow is called the:</p>
+        <label><input type="radio" name="q3" value="a"> a) Penumbra</label><br>
+        <label><input type="radio" name="q3" value="b"> b) Umbra</label><br>
+        <label><input type="radio" name="q3" value="c"> c) Corona</label><br>
+        <label><input type="radio" name="q3" value="d"> d) Spectrum</label>
+      </div>
+
+      <!-- Q4 -->
+      <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+        <p class="font-semibold mb-3">4. Which arrangement gives a penumbra as well as an umbra?</p>
+        <label><input type="radio" name="q4" value="a"> a) Single point light source and small object</label><br>
+        <label><input type="radio" name="q4" value="b"> b) Large extended light source and object</label><br>
+        <label><input type="radio" name="q4" value="c"> c) No light source</label><br>
+        <label><input type="radio" name="q4" value="d"> d) Object is transparent</label>
+      </div>
+
+      <!-- Q5 -->
+      <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+        <p class="font-semibold mb-3">5. A solar eclipse happens when:</p>
+        <label><input type="radio" name="q5" value="a"> a) Earth is between Sun and Moon</label><br>
+        <label><input type="radio" name="q5" value="b"> b) Moon is between Sun and Earth</label><br>
+        <label><input type="radio" name="q5" value="c"> c) Sun is between Earth and Moon</label><br>
+        <label><input type="radio" name="q5" value="d"> d) Moon orbits Earth</label>
+      </div>
+
+      <!-- Q6 -->
+      <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+        <p class="font-semibold mb-3">6. A pinhole camera produces an image that is:</p>
+        <label><input type="radio" name="q6" value="a"> a) Virtual and upright</label><br>
+        <label><input type="radio" name="q6" value="b"> b) Real and inverted</label><br>
+        <label><input type="radio" name="q6" value="c"> c) Virtual and inverted</label><br>
+        <label><input type="radio" name="q6" value="d"> d) Real and upright</label>
+      </div>
+
+      <!-- Q7 -->
+      <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+        <p class="font-semibold mb-3">7. One law of reflection states:</p>
+        <label><input type="radio" name="q7" value="a"> a) Angle of incidence = angle of reflection</label><br>
+        <label><input type="radio" name="q7" value="b"> b) Angle of incidence > angle of reflection</label><br>
+        <label><input type="radio" name="q7" value="c"> c) Incident ray is not in the same plane</label><br>
+        <label><input type="radio" name="q7" value="d"> d) Reflection only occurs on curved surfaces</label>
+      </div>
+
+      <!-- Q8 -->
+      <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+        <p class="font-semibold mb-3">8. Which is a correct characteristic of images in a plane mirror?</p>
+        <label><input type="radio" name="q8" value="a"> a) Image is real</label><br>
+        <label><input type="radio" name="q8" value="b"> b) Image is inverted vertically</label><br>
+        <label><input type="radio" name="q8" value="c"> c) Image is virtual and same size as object</label><br>
+        <label><input type="radio" name="q8" value="d"> d) Image is larger than object</label>
+      </div>
+
+      <!-- Q9 -->
+      <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+        <p class="font-semibold mb-3">9. Refraction is:</p>
+        <label><input type="radio" name="q9" value="a"> a) Bouncing of light</label><br>
+        <label><input type="radio" name="q9" value="b"> b) Splitting of light into colours</label><br>
+        <label><input type="radio" name="q9" value="c"> c) Bending of light when it passes between media</label><br>
+        <label><input type="radio" name="q9" value="d"> d) Absorption of light by a surface</label>
+      </div>
+
+      <!-- Q10 -->
+      <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+        <p class="font-semibold mb-3">10. Why does a stick look bent when placed partly in water?</p>
+        <label><input type="radio" name="q10" value="a"> a) Because light reflects at the surface</label><br>
+        <label><input type="radio" name="q10" value="b"> b) Because light refracts at the water–air boundary</label><br>
+        <label><input type="radio" name="q10" value="c"> c) Because water magnifies the stick</label><br>
+        <label><input type="radio" name="q10" value="d"> d) Because the stick is flexible</label>
+      </div>
+
+      <div class="text-center mt-8">
+        <button type="button" onclick="gradeQuiz()" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg">
+          Submit Quiz
+        </button>
+      </div>
+
+    </form>
+
+    <div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+  </div>
+
+</main>
+
+<script>
+const answers = {
+  q1:'b', q2:'c', q3:'b', q4:'b', q5:'b',
+  q6:'b', q7:'a', q8:'c', q9:'c', q10:'b'
+};
+
+const explanations = {
+  q1:'Experiments with pinholes and straight-ray setups show light travels in straight lines.',
+  q2:'Shadows form where an opaque object blocks the light path.',
+  q3:'Umbra is the fully dark central region of a shadow.',
+  q4:'A large/extended light source produces both umbra and penumbra.',
+  q5:'A solar eclipse occurs when the Moon lies between the Sun and Earth, blocking sunlight.',
+  q6:'A pinhole camera gives a real, inverted image on a screen inside the box.',
+  q7:'One law of reflection: angle of incidence equals angle of reflection (measured from the normal).',
+  q8:'Plane mirror images are virtual, upright and the same size as the object.',
+  q9:'Refraction is the bending of light as it passes from one medium to another due to change in speed.',
+  q10:'Light changes direction at the water–air boundary (refraction), making the stick appear bent.'
+};
+
+function gradeQuiz(){
+  let score=0, unanswered=[], incorrect=[];
+  const total = Object.keys(answers).length;
+
+  for(let q in answers){
+    const sel = document.querySelector(`input[name="${q}"]:checked`);
+    if(!sel) unanswered.push(q.replace('q','Question '));
+    else if(sel.value === answers[q]) score++;
+    else incorrect.push({q:q.replace('q','Question '), e:explanations[q]});
+  }
+
+  const percent = ((score/total)*100).toFixed(1);
+  let grade='F', bg='bg-red-100 border-red-500';
+  if(percent>=90){ grade='A'; bg='bg-green-100 border-green-500' }
+  else if(percent>=80){ grade='B'; bg='bg-blue-100 border-blue-500' }
+  else if(percent>=70){ grade='C'; bg='bg-yellow-100 border-yellow-500' }
+  else if(percent>=60){ grade='D'; bg='bg-orange-100 border-orange-500' }
+
+  let html = `<div class="${bg} border-l-4 p-4">
+    <h3 class="text-xl font-bold">Score: ${score}/${total} (${percent}%)</h3>
+    <p class="font-semibold mb-2">Grade: ${grade}</p>`;
+
+  if(unanswered.length) html += `<p class="text-red-600">Unanswered: ${unanswered.join(', ')}</p>`;
+
+  if(incorrect.length){
+    html += `<div class="mt-3 bg-white p-3 rounded"><p class="font-semibold">Review (correct answers & explanations):</p>`;
+    incorrect.forEach(i=>{
+      // find correct index label letter for display
+      const correctVal = answers[i.q.replace('Question ','q')];
+      let correctLabel = '';
+      const opts = Array.from(document.getElementsByName(i.q.replace('Question ','q')));
+      if(opts.length){
+        const idx = {a: 'a', b:'b', c:'c', d:'d'}[correctVal] || correctVal;
+        correctLabel = idx;
+      }
+      html += `<p class="text-red-600 font-semibold">${i.q}</p><p class="text-sm">${i.e}</p>`;
+    });
+    html += `</div>`;
+  }
+
+  html += `<div class="mt-4"><button onclick="location.reload()" class="bg-purple-600 text-white px-6 py-2 rounded">Retake Quiz</button></div></div>`;
+
+  const r = document.getElementById('results');
+  r.innerHTML = html;
+  r.classList.remove('hidden');
+  r.scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>

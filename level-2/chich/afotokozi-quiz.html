@@ -1,0 +1,217 @@
+
+
+<!DOCTYPE html>
+<html lang="ny">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afotokozi Quiz</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-gradient-to-br from-purple-600 via-indigo-600 to-purple-800 text-center text-white py-6 px-4 shadow-lg">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold mb-2">Time for Test: Take Exams</h1>
+    <p class="text-purple-100">Afotokozi — Chichewa</p>
+  </div>
+</header>
+
+<!-- SIDE MENU -->
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform">
+  <nav class="p-4 space-y-2">
+    <a href="./afotokozi.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+  </nav>
+</aside>
+
+<!-- MOBILE MENU BUTTON -->
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+class="fixed top-4 left-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+  Menu
+</button>
+
+<!-- IMAGE -->
+<div class="flex justify-center items-center my-6">
+  <img src="../img/exam.jpg"
+       alt="Quiz"
+       class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+</div>
+
+<!-- MAIN -->
+<main class="max-w-4xl mx-auto px-4 py-8">
+<div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+
+<h2 class="text-2xl font-bold text-purple-600 mb-4">Afotokozi Quiz</h2>
+<p class="text-gray-600 mb-6">Yankhani mafunso onse. Sankhani yankho loyenera kwambiri.</p>
+
+<form id="quizForm">
+
+<!-- Question 1 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">1. Afotokozi ndi chiyani?</p>
+<label><input type="radio" name="q1" value="a"> a) Mawu a nthawi</label><br>
+<label><input type="radio" name="q1" value="b"> b) Mawu ofotokoza zinthu, anthu kapena malo</label><br>
+<label><input type="radio" name="q1" value="c"> c) Mayina a anthu</label><br>
+<label><input type="radio" name="q1" value="d"> d) Mawu ofunsa</label>
+</div>
+
+<!-- Question 2 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">2. Ndi chitsanzo chanji cha mfotokozi wa maonekedwe?</p>
+<label><input type="radio" name="q2" value="a"> a) Okongola</label><br>
+<label><input type="radio" name="q2" value="b"> b) Asanu</label><br>
+<label><input type="radio" name="q2" value="c"> c) Zathu</label><br>
+<label><input type="radio" name="q2" value="d"> d) Aliyense</label>
+</div>
+
+<!-- Question 3 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">3. “Atsikana khumi” ndi chitsanzo cha mfotokozi wanji?</p>
+<label><input type="radio" name="q3" value="a"> a) Wofunsa</label><br>
+<label><input type="radio" name="q3" value="b"> b) Wowerenga</label><br>
+<label><input type="radio" name="q3" value="c"> c) Woloza</label><br>
+<label><input type="radio" name="q3" value="d"> d) Wa makhalidwe</label>
+</div>
+
+<!-- Question 4 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">4. “Uyu” ndi mfotokozi wanji?</p>
+<label><input type="radio" name="q4" value="a"> a) Wofunsa</label><br>
+<label><input type="radio" name="q4" value="b"> b) Woloza</label><br>
+<label><input type="radio" name="q4" value="c"> c) Waumwini</label><br>
+<label><input type="radio" name="q4" value="d"> d) Wogawa</label>
+</div>
+
+<!-- Question 5 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">5. “Wakuba” ndi chitsanzo cha mfotokozi wanji?</p>
+<label><input type="radio" name="q5" value="a"> a) Wa makhalidwe</label><br>
+<label><input type="radio" name="q5" value="b"> b) Wowerenga</label><br>
+<label><input type="radio" name="q5" value="c"> c) Waumwini</label><br>
+<label><input type="radio" name="q5" value="d"> d) Wopatula</label>
+</div>
+
+<!-- Question 6 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">6. “Zathu” ndi mtundu wanji wa mfotokozi?</p>
+<label><input type="radio" name="q6" value="a"> a) Woloza</label><br>
+<label><input type="radio" name="q6" value="b"> b) Waumwini</label><br>
+<label><input type="radio" name="q6" value="c"> c) Wogawa</label><br>
+<label><input type="radio" name="q6" value="d"> d) Wowerenga</label>
+</div>
+
+<!-- Question 7 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">7. “Aliyense” ndi chitsanzo cha mfotokozi wanji?</p>
+<label><input type="radio" name="q7" value="a"> a) Waumwini</label><br>
+<label><input type="radio" name="q7" value="b"> b) Wogawa</label><br>
+<label><input type="radio" name="q7" value="c"> c) Woloza</label><br>
+<label><input type="radio" name="q7" value="d"> d) Wowerenga</label>
+</div>
+
+<!-- Question 8 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">8. “Nthawi yanji?” ndi mfotokozi wanji?</p>
+<label><input type="radio" name="q8" value="a"> a) Woloza</label><br>
+<label><input type="radio" name="q8" value="b"> b) Wowerenga</label><br>
+<label><input type="radio" name="q8" value="c"> c) Wofunsa</label><br>
+<label><input type="radio" name="q8" value="d"> d) Wopatula</label>
+</div>
+
+<!-- Question 9 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">9. Kusiyana kwa mfotokozi ndi mlowam’malo kumadalira chiyani?</p>
+<label><input type="radio" name="q9" value="a"> a) Kulemera kwa mawu</label><br>
+<label><input type="radio" name="q9" value="b"> b) Ntchito yake m’chiganizo</label><br>
+<label><input type="radio" name="q9" value="c"> c) Kutalika kwa mawu</label><br>
+<label><input type="radio" name="q9" value="d"> d) Kalembedwe ka kalata</label>
+</div>
+
+<!-- Question 10 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">10. Ndi chitsanzo chanji cha mfotokozi wopatula/wachuluka?</p>
+<label><input type="radio" name="q10" value="a"> a) Uyu</label><br>
+<label><input type="radio" name="q10" value="b"> b) Ochepa</label><br>
+<label><input type="radio" name="q10" value="c"> c) Tsiku</label><br>
+<label><input type="radio" name="q10" value="d"> d) Zathu</label>
+</div>
+
+</form>
+
+<div class="text-center mt-8">
+<button onclick="gradeQuiz()" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg">
+Submit Quiz
+</button>
+</div>
+
+<div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+
+</div>
+</main>
+
+<script>
+const answers={
+q1:'b',q2:'a',q3:'b',q4:'b',q5:'a',
+q6:'b',q7:'b',q8:'c',q9:'b',q10:'b'
+};
+
+const explanations={
+q1:'Afotokozi amafotokoza zinthu, anthu kapena malo.',
+q2:'“Okongola” amafotokoza maonekedwe.',
+q3:'“Atsikana khumi” amawonetsa kuchuluka – wowerenga.',
+q4:'“Uyu” ndi woloza.',
+q5:'“Wakuba” amafotokoza khalidwe.',
+q6:'“Zathu” ndi waumwini.',
+q7:'“Aliyense” ndi wogawa.',
+q8:'“Nthawi yanji” ndi wofunsa.',
+q9:'Kusiyana kuli pa ntchito m’chiganizo.',
+q10:'“Ochepa” ndi wopatula/wachuluka.'
+};
+
+function gradeQuiz(){
+let score=0,unanswered=[],incorrect=[];
+let total=Object.keys(answers).length;
+
+for(let q in answers){
+let sel=document.querySelector('input[name="'+q+'"]:checked');
+if(!sel){unanswered.push(q.replace('q','Question '));continue;}
+if(sel.value===answers[q]) score++;
+else incorrect.push({q:q.replace('q','Question '),e:explanations[q]});
+}
+
+let percent=((score/total)*100).toFixed(1);
+let grade='F',bg='bg-red-100 border-red-500';
+if(percent>=90){grade='A';bg='bg-green-100 border-green-500'}
+else if(percent>=80){grade='B';bg='bg-blue-100 border-blue-500'}
+else if(percent>=70){grade='C';bg='bg-yellow-100 border-yellow-500'}
+else if(percent>=60){grade='D';bg='bg-orange-100 border-orange-500'}
+
+let html=`<div class="${bg} border-l-4 p-4">
+<h3 class="text-xl font-bold">Score: ${score}/${total} (${percent}%)</h3>
+<p class="font-semibold mb-2">Grade: ${grade}</p>`;
+
+if(unanswered.length)
+html+=`<p class="text-red-600">Unanswered: ${unanswered.join(', ')}</p>`;
+
+if(incorrect.length){
+html+=`<div class="mt-3 bg-white p-3 rounded">
+<p class="font-semibold">Review:</p>`;
+incorrect.forEach(i=>html+=`<p class="text-red-600">${i.q}</p><p class="text-sm">${i.e}</p>`);
+html+='</div>';
+}
+
+html+=`<button onclick="location.reload()" class="mt-4 bg-purple-600 text-white px-6 py-2 rounded">
+Retake Quiz
+</button></div>`;
+
+const results=document.getElementById('results');
+results.innerHTML=html;
+results.classList.remove('hidden');
+results.scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>

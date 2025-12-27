@@ -1,0 +1,198 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management of Computers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-purple-600 text-white py-6 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">🖥️ MANAGEMENT OF COMPUTERS</h1> 
+            <p class="text-purple-100">Connecting Hardware and Understanding System Information</p>
+        </div>
+    </header>
+
+    <!-- mobile / desktop sidebar -->
+    <aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+        <nav class="p-4 space-y-2">
+            <a href="./computer.html" class="block px-3 py-2 rounded hover:bg-gray-700">Return</a>
+            <a href="./computer-management-quiz.html" class="block px-3 py-2 rounded hover:bg-gray-700">Take Exams</a>
+        </nav>
+    </aside>
+
+    <!-- toggle button (mobile) -->
+    <button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+            class="fixed top-4 right-4 z-50 bg-gray-800 text-white px-4 py-2 rounded md:hidden">
+        Menu
+    </button>
+
+    <!-- centered image -->
+    <div class="flex justify-center items-center my-4">
+        <img src="../img/lms.jpg"
+            alt="Illustration"
+            class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+    </div> 
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        
+        <!-- Introduction Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📚 Introduction</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Proper computer management involves understanding how to connect hardware components correctly and knowing your system's specifications. This knowledge helps ensure safe operation, troubleshoot problems, and make informed decisions about software installation and upgrades.
+            </p>
+        </section>
+
+         <!-- Video Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson</h2>
+            <div class="aspect-video w-full">
+                <iframe 
+                    class="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/H3T5YtbaDzI" 
+                    title="Management of Computers" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Connecting Hardware -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">1️⃣ Connecting Computer Hardware Correctly</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Before using a computer, all hardware components must be properly connected to ensure safe and functional operation.
+            </p>
+            
+            <div class="space-y-4">
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-blue-800 mb-2">⌨️ Input Devices</h3>
+                    <p class="text-gray-700">Connect input devices such as the keyboard and mouse to the appropriate USB or PS/2 ports on the system unit.</p>
+                </div>
+
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-green-800 mb-2">🖥️ Output Devices</h3>
+                    <p class="text-gray-700">Attach output devices like monitors, printers, or speakers to their correct ports (HDMI, VGA, USB, or audio jacks).</p>
+                </div>
+
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-purple-800 mb-2">🔌 Power Connections</h3>
+                    <p class="text-gray-700">Ensure the power cables for both the system unit and monitor are securely plugged into a power source. Use a surge protector when possible.</p>
+                </div>
+
+                <div class="bg-yellow-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-yellow-800 mb-2">💾 Storage Devices</h3>
+                    <p class="text-gray-700">Properly connect storage devices such as external hard drives or flash drives using USB ports.</p>
+                </div>
+
+                <div class="bg-red-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-red-800 mb-2">⚠️ Safety Check</h3>
+                    <p class="text-gray-700">Check that all cables are firmly connected to prevent malfunctions or power failures. Never force connections.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Information -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">2️⃣ Checking System Information</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Understanding and accessing your computer's system information helps users evaluate the system's capability and troubleshoot issues.
+            </p>
+
+            <div class="bg-indigo-50 p-4 rounded-lg mb-4">
+                <h3 class="font-semibold text-indigo-800 mb-2">What is System Information?</h3>
+                <p class="text-gray-700">System information includes details like RAM size, processor type, system architecture, and storage capacity.</p>
+            </div>
+
+            <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                <h3 class="font-semibold text-gray-800 mb-2">How to Access System Information on Windows:</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                    <li>Right-click on 'This PC' and select 'Properties'</li>
+                    <li>Or open the 'System Information' app from the Start menu</li>
+                    <li>Or press Windows key + Pause/Break</li>
+                </ul>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4">
+                <h3 class="font-semibold text-blue-800 mb-2">Why Check System Information?</h3>
+                <ul class="list-disc list-inside space-y-2 text-blue-700 ml-4">
+                    <li>Determine if your computer can support certain applications or operating systems</li>
+                    <li>Detect hardware problems early</li>
+                    <li>Ensure smooth software compatibility</li>
+                    <li>Make informed upgrade decisions</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Key System Components -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">3️⃣ Importance of Key System Components</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Understanding hardware specifications like RAM, processor speed, and disk space is essential for efficient computer use.
+            </p>
+
+            <div class="space-y-4">
+                <div class="bg-gradient-to-r from-purple-100 to-purple-200 p-4 rounded-lg border-l-4 border-purple-600">
+                    <h3 class="font-semibold text-purple-800 mb-2 text-lg">🧠 RAM (Random Access Memory)</h3>
+                    <p class="text-gray-700">Determines how many applications can run at once without slowing down the system. More RAM means better multitasking performance.</p>
+                    <p class="text-sm text-gray-600 mt-2">Example: 4GB, 8GB, 16GB</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-blue-100 to-blue-200 p-4 rounded-lg border-l-4 border-blue-600">
+                    <h3 class="font-semibold text-blue-800 mb-2 text-lg">⚡ Processor Speed</h3>
+                    <p class="text-gray-700">Measured in GHz (gigahertz), affects how fast the computer can execute instructions and tasks. Higher speed means faster processing.</p>
+                    <p class="text-sm text-gray-600 mt-2">Example: 2.4 GHz, 3.6 GHz</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-green-100 to-green-200 p-4 rounded-lg border-l-4 border-green-600">
+                    <h3 class="font-semibold text-green-800 mb-2 text-lg">🔢 System Type (32-bit or 64-bit)</h3>
+                    <p class="text-gray-700">Indicates the architecture and influences software compatibility and performance. 64-bit systems can handle more RAM and run faster.</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-yellow-100 to-yellow-200 p-4 rounded-lg border-l-4 border-yellow-600">
+                    <h3 class="font-semibold text-yellow-800 mb-2 text-lg">🎯 Processor Type</h3>
+                    <p class="text-gray-700">Impacts overall speed and performance of the system. Different processors have different capabilities.</p>
+                    <p class="text-sm text-gray-600 mt-2">Example: Intel Core i5, AMD Ryzen 5</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-red-100 to-red-200 p-4 rounded-lg border-l-4 border-red-600">
+                    <h3 class="font-semibold text-red-800 mb-2 text-lg">💿 Hard Disk Space</h3>
+                    <p class="text-gray-700">Determines how much data can be stored on the computer, including applications, documents, and media files.</p>
+                    <p class="text-sm text-gray-600 mt-2">Example: 500GB, 1TB, 2TB</p>
+                </div>
+            </div>
+
+            <div class="bg-green-50 border-l-4 border-green-500 p-4 mt-6">
+                <p class="font-semibold text-green-800">✅ Benefits of Understanding Specifications:</p>
+                <p class="text-green-700">Understanding these specifications helps users choose the right software, optimize performance, and manage resources efficiently.</p>
+            </div>
+        </section>
+
+        <!-- Summary -->
+        <section class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-4">📝 Summary</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                You have learned how to properly connect computer hardware, access system information, and understand key specifications like RAM, processor speed, and storage capacity. These skills are fundamental to effective computer management. More detailed demonstrations will be covered in the video lesson.
+            </p>
+        </section>
+
+       
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-400">© Millennium E-learning Centre</p>
+        </div>
+    </footer>
+
+</body>
+</html>

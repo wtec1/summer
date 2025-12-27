@@ -1,0 +1,233 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium E-learning Centre - Online Class</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="/img/WTEC1_LMS_512x512.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Header -->
+<header class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 text-white py-6 px-4 text-center shadow-lg">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold mb-2">Time for test: Take Exams</h1>
+        <p class="text-blue-100">Assessing your learning</p>
+    </div>
+</header>
+
+<!-- Side Menu -->
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+    <nav class="p-4 space-y-2">
+        <a href="./seasons.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+    </nav>
+</aside>
+
+<!-- Toggle -->
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 right-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+    Menu
+</button>
+
+<!-- Image -->
+<div class="flex justify-center items-center my-6">
+    <img src="../img/exam.jpg"
+         alt="Illustration"
+         class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+</div>
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+
+<!-- Quiz Container -->
+<div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+    <h2 class="text-2xl font-bold text-purple-600 mb-4">📝 Seasons Quiz</h2>
+    <p class="text-gray-600 mb-6">Answer all questions. Review wrong choices after submitting.</p>
+
+<form id="quizForm">
+
+<!-- Q1 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">1. What is a season?</p>
+<label class="block"><input type="radio" name="q1" value="a"> a) A day with rain</label>
+<label class="block"><input type="radio" name="q1" value="b"> b) A type of climate</label>
+<label class="block"><input type="radio" name="q1" value="c"> c) A period with specific weather conditions</label>
+<label class="block"><input type="radio" name="q1" value="d"> d) A month of the year</label>
+</div>
+
+<!-- Q2 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">2. Which factor mainly causes seasons?</p>
+<label class="block"><input type="radio" name="q2" value="a"> a) Earth’s rotation</label>
+<label class="block"><input type="radio" name="q2" value="b"> b) Distance from the Moon</label>
+<label class="block"><input type="radio" name="q2" value="c"> c) Tilt and revolution of the Earth</label>
+<label class="block"><input type="radio" name="q2" value="d"> d) Ocean currents</label>
+</div>
+
+<!-- Q3 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">3. How many main seasons occur in tropical regions?</p>
+<label class="block"><input type="radio" name="q3" value="a"> a) One</label>
+<label class="block"><input type="radio" name="q3" value="b"> b) Two</label>
+<label class="block"><input type="radio" name="q3" value="c"> c) Three</label>
+<label class="block"><input type="radio" name="q3" value="d"> d) Four</label>
+</div>
+
+<!-- Q4 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">4. Which seasons are experienced in temperate regions?</p>
+<label class="block"><input type="radio" name="q4" value="a"> a) Wet and dry</label>
+<label class="block"><input type="radio" name="q4" value="b"> b) Hot and cold</label>
+<label class="block"><input type="radio" name="q4" value="c"> c) Spring, summer, autumn, winter</label>
+<label class="block"><input type="radio" name="q4" value="d"> d) Rainy and cool</label>
+</div>
+
+<!-- Q5 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">5. Which graph best helps identify seasons?</p>
+<label class="block"><input type="radio" name="q5" value="a"> a) Population graph</label>
+<label class="block"><input type="radio" name="q5" value="b"> b) Bar graph of schools</label>
+<label class="block"><input type="radio" name="q5" value="c"> c) Climatic graph</label>
+<label class="block"><input type="radio" name="q5" value="d"> d) Political map</label>
+</div>
+
+<!-- Q6 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">6. Which is a season in Malawi?</p>
+<label class="block"><input type="radio" name="q6" value="a"> a) Winter</label>
+<label class="block"><input type="radio" name="q6" value="b"> b) Rainy season</label>
+<label class="block"><input type="radio" name="q6" value="c"> c) Autumn</label>
+<label class="block"><input type="radio" name="q6" value="d"> d) Spring</label>
+</div>
+
+<!-- Q7 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">7. Which months form the rainy season in Malawi?</p>
+<label class="block"><input type="radio" name="q7" value="a"> a) May–August</label>
+<label class="block"><input type="radio" name="q7" value="b"> b) September–October</label>
+<label class="block"><input type="radio" name="q7" value="c"> c) November–April</label>
+<label class="block"><input type="radio" name="q7" value="d"> d) January–February only</label>
+</div>
+
+<!-- Q8 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">8. Malawi’s seasons are similar to those of which region?</p>
+<label class="block"><input type="radio" name="q8" value="a"> a) Polar region</label>
+<label class="block"><input type="radio" name="q8" value="b"> b) Temperate region</label>
+<label class="block"><input type="radio" name="q8" value="c"> c) Tropical region</label>
+<label class="block"><input type="radio" name="q8" value="d"> d) Desert region</label>
+</div>
+
+<div class="text-center mt-8">
+<button type="button" onclick="gradeQuiz()"
+class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg">
+Submit Quiz
+</button>
+</div>
+
+</form>
+
+<div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+</div>
+</main>
+
+<script>
+const answers = {
+q1:'c',
+q2:'c',
+q3:'b',
+q4:'c',
+q5:'c',
+q6:'b',
+q7:'c',
+q8:'c'
+};
+
+const explanations = {
+q1:'A season is a period with specific weather conditions.',
+q2:'Seasons are caused by the tilt and revolution of the Earth.',
+q3:'Tropical regions experience wet and dry seasons.',
+q4:'Temperate regions have four seasons.',
+q5:'Climatic graphs show rainfall and temperature.',
+q6:'Malawi has a rainy season.',
+q7:'The rainy season in Malawi runs from November to April.',
+q8:'Malawi lies in the tropical region.'
+};
+
+function gradeQuiz() {
+    let score = 0;
+    let total = Object.keys(answers).length;
+    let unanswered = [];
+    let wrongDetails = [];
+
+    for (let q in answers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (!selected) {
+            unanswered.push(q.replace('q','Question '));
+        } else if (selected.value === answers[q]) {
+            score++;
+        } else {
+            wrongDetails.push({
+                question: q.replace('q','Question '),
+                chosen: selected.parentElement.textContent.trim(),
+                correct: answers[q],
+                explanation: explanations[q]
+            });
+        }
+    }
+
+    const results = document.getElementById('results');
+    results.classList.remove('hidden');
+
+    const percent = ((score/total)*100).toFixed(1);
+    let grade='', bg='';
+
+    if (percent>=90){grade='A - Excellent';bg='bg-green-100 border-green-500';}
+    else if (percent>=80){grade='B - Very Good';bg='bg-blue-100 border-blue-500';}
+    else if (percent>=70){grade='C - Good';bg='bg-yellow-100 border-yellow-500';}
+    else if (percent>=60){grade='D - Fair';bg='bg-orange-100 border-orange-500';}
+    else {grade='F - Need More Practice';bg='bg-red-100 border-red-500';}
+
+    let html = `
+    <div class="${bg} border-l-4 p-4">
+        <h3 class="text-2xl font-bold mb-2">Your Results</h3>
+        <p class="text-xl mb-2">Score: ${score} out of ${total} (${percent}%)</p>
+        <p class="text-xl font-semibold mb-4">Grade: ${grade}</p>
+    `;
+
+    if (unanswered.length>0){
+        html+=`<p class="text-red-600 font-semibold">Unanswered: ${unanswered.join(', ')}</p>`;
+    }
+
+    if (wrongDetails.length>0){
+        html+=`<div class="mt-4 bg-white p-4 rounded">
+        <p class="font-semibold mb-2">Incorrect Answers Review:</p>`;
+        wrongDetails.forEach(w=>{
+            html+=`
+            <div class="mb-3">
+                <p class="font-semibold text-red-600">${w.question}</p>
+                <p class="text-sm">Your choice: ${w.chosen}</p>
+                <p class="text-sm text-green-700">Correct answer: ${w.correct}</p>
+                <p class="text-xs text-gray-600">${w.explanation}</p>
+            </div>`;
+        });
+        html+='</div>';
+    }
+
+    html+=`
+        <button onclick="location.reload()"
+        class="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded">
+        Retake Quiz
+        </button>
+    </div>`;
+
+    results.innerHTML = html;
+    results.scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>

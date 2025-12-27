@@ -1,0 +1,144 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- always change title -->
+    <title>Electrostatics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-purple-600 text-white text-center py-6 px-4 shadow-lg sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto">
+
+            <!-- always change h1 and p tag text -->
+            <h1 class="text-3xl font-bold mb-2">⚡ ELECTROSTATICS</h1> 
+            <p class="text-purple-100">Understanding Electric Charges and Their Effects</p>
+        </div>
+    </header>
+
+    <!-- mobile / desktop sidebar -->
+    <aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform">
+      <nav class="p-4 space-y-2">
+        <a href="./phy.html" class="block px-3 py-2 rounded hover:bg-gray-700">Return</a>
+        <a href="./electrostatics-quiz.html" class="block px-3 py-2 rounded hover:bg-gray-700">Take Exams</a>
+      </nav>
+    </aside>
+
+    <!-- toggle button (mobile) -->
+    <button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+            class="fixed top-4 left-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+      Menu
+    </button>
+
+    <!-- centered image -->
+    <div class="flex justify-center items-center my-4">
+        <img src="../img/lms.jpg"
+            alt="Illustration"
+            class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+    </div> 
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        
+        <!-- Introduction Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-4">🔍 Introduction</h2>
+            <p>
+                Electrostatics is the study of electric charges at rest. It explains how charges exist
+                in matter, how objects become charged, and how charged objects interact.
+                Many everyday phenomena such as lightning, electric shocks, and photocopying
+                are explained using electrostatics.
+            </p>
+        </section>
+
+        <!-- Video Section (must remain after introduction) -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson 1 is coming</h2>
+            <div class="aspect-video w-full">
+                <iframe 
+                    class="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/H3T5YtbaDzI" 
+                    title="Electrostatics Lesson Video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Content Sections -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">⚛️ Existence of Charges in Matter</h2>
+            <p>
+                Matter is made up of atoms. Each atom contains a nucleus with positively charged protons
+                and neutral neutrons, surrounded by negatively charged electrons.
+                An object becomes charged when it gains or loses electrons.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">➕➖ Types and Units of Charge</h2>
+            <ul class="list-disc pl-6 mb-3">
+                <li>There are two types of electric charges: positive and negative.</li>
+                <li>Like charges repel while unlike charges attract.</li>
+                <li>The SI unit of electric charge is the coulomb (C).</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">⚡ Charging Objects</h2>
+            <p class="mb-3">
+                Objects can be charged through the transfer of electrons using different methods.
+            </p>
+            <ul class="list-disc pl-6">
+                <li><strong>Friction:</strong> Rubbing materials together transfers electrons.</li>
+                <li><strong>Contact:</strong> Touching a charged object transfers charge.</li>
+                <li><strong>Induction:</strong> Charging without direct contact.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">🧲 Conductors and Insulators</h2>
+            <p>
+                Conductors allow electrons to move freely, while insulators restrict electron movement.
+                Metals are good conductors, while materials such as plastic and rubber are insulators.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">📏 Electrostatic Force</h2>
+            <ul class="list-disc pl-6">
+                <li>The force increases with an increase in the magnitude of charges.</li>
+                <li>The force decreases as the distance between charges increases.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">🌩️ Applications and Dangers</h2>
+            <p class="mb-3">
+                Electrostatics is used in photocopiers, spray painting, and dust removal.
+                However, it can also be dangerous.
+            </p>
+            <p>
+                Lightning is a large electrostatic discharge. Earthing and lightning conductors
+                are used to safely transfer excess charge to the ground.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-400">© Millennium E-learning Centre</p>
+        </div>
+    </footer>
+
+</body>
+</html>

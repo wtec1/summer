@@ -1,0 +1,232 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium E-learning Centre - Online Class</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="/img/WTEC1_LMS_512x512.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Header -->
+<header class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 text-white py-6 px-4 text-center shadow-lg">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold mb-2">Time for test: Take Exams</h1>
+        <p class="text-blue-100">Assessing your learning</p>
+    </div>
+</header>
+
+<!-- Side Menu -->
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+    <nav class="p-4 space-y-2">
+        <a href="./hydro-power.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+    </nav>
+</aside>
+
+<!-- Toggle -->
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 right-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+    Menu
+</button>
+
+<!-- Image -->
+<div class="flex justify-center items-center my-6">
+    <img src="../img/exam.jpg"
+         alt="Illustration"
+         class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+</div>
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+
+<!-- Quiz Container -->
+<div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+<h2 class="text-2xl font-bold text-purple-600 mb-4">📝 Hydro-Electric Power in Malawi Quiz</h2>
+<p class="text-gray-600 mb-6">Answer all questions. Incorrect choices will be fully reviewed after submission.</p>
+
+<form id="quizForm">
+
+<!-- Q1 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">1. What is the main river used for hydro-electric power generation in Malawi?</p>
+<label class="block"><input type="radio" name="q1" value="a"> a) Zambezi</label>
+<label class="block"><input type="radio" name="q1" value="b"> b) Ruo</label>
+<label class="block"><input type="radio" name="q1" value="c"> c) Shire</label>
+<label class="block"><input type="radio" name="q1" value="d"> d) Bua</label>
+</div>
+
+<!-- Q2 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">2. Which of the following is a hydro-electric power station in Malawi?</p>
+<label class="block"><input type="radio" name="q2" value="a"> a) Kariba</label>
+<label class="block"><input type="radio" name="q2" value="b"> b) Nkula</label>
+<label class="block"><input type="radio" name="q2" value="c"> c) Cahora Bassa</label>
+<label class="block"><input type="radio" name="q2" value="d"> d) Kainji</label>
+</div>
+
+<!-- Q3 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">3. Which factor is ideal for hydro-electric power generation?</p>
+<label class="block"><input type="radio" name="q3" value="a"> a) Flat land</label>
+<label class="block"><input type="radio" name="q3" value="b"> b) Fast-flowing rivers</label>
+<label class="block"><input type="radio" name="q3" value="c"> c) Desert climate</label>
+<label class="block"><input type="radio" name="q3" value="d"> d) Sandy soil</label>
+</div>
+
+<!-- Q4 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">4. Why were Nkula and Tedzani located on the Shire River?</p>
+<label class="block"><input type="radio" name="q4" value="a"> a) Presence of coal</label>
+<label class="block"><input type="radio" name="q4" value="b"> b) Steep gradient and reliable water flow</label>
+<label class="block"><input type="radio" name="q4" value="c"> c) Near large towns</label>
+<label class="block"><input type="radio" name="q4" value="d"> d) Flat terrain</label>
+</div>
+
+<!-- Q5 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">5. What happens immediately after water turns the turbines?</p>
+<label class="block"><input type="radio" name="q5" value="a"> a) Water evaporates</label>
+<label class="block"><input type="radio" name="q5" value="b"> b) Generators produce electricity</label>
+<label class="block"><input type="radio" name="q5" value="c"> c) Power is distributed to homes</label>
+<label class="block"><input type="radio" name="q5" value="d"> d) Electricity is stored</label>
+</div>
+
+<!-- Q6 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">6. Which structure is used to increase voltage before transmission?</p>
+<label class="block"><input type="radio" name="q6" value="a"> a) Turbine</label>
+<label class="block"><input type="radio" name="q6" value="b"> b) Generator</label>
+<label class="block"><input type="radio" name="q6" value="c"> c) Transformer</label>
+<label class="block"><input type="radio" name="q6" value="d"> d) Dam wall</label>
+</div>
+
+<!-- Q7 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">7. Which is a major challenge to hydro-electric power in Malawi?</p>
+<label class="block"><input type="radio" name="q7" value="a"> a) Excess rainfall</label>
+<label class="block"><input type="radio" name="q7" value="b"> b) Siltation from deforestation</label>
+<label class="block"><input type="radio" name="q7" value="c"> c) Too many power stations</label>
+<label class="block"><input type="radio" name="q7" value="d"> d) Strong winds</label>
+</div>
+
+<!-- Q8 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">8. One solution to hydro-electric power challenges is to:</p>
+<label class="block"><input type="radio" name="q8" value="a"> a) Cut more trees</label>
+<label class="block"><input type="radio" name="q8" value="b"> b) Protect river catchment areas</label>
+<label class="block"><input type="radio" name="q8" value="c"> c) Increase power vandalism</label>
+<label class="block"><input type="radio" name="q8" value="d"> d) Depend only on generators</label>
+</div>
+
+<div class="text-center mt-8">
+<button type="button" onclick="gradeQuiz()"
+class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg">
+Submit Quiz
+</button>
+</div>
+
+</form>
+
+<div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+</div>
+</main>
+
+<script>
+const answers = {
+q1:'c',
+q2:'b',
+q3:'b',
+q4:'b',
+q5:'b',
+q6:'c',
+q7:'b',
+q8:'b'
+};
+
+const explanations = {
+q1:'Most hydro-electric power in Malawi is generated from the Shire River.',
+q2:'Nkula is one of the major hydro-electric power stations in Malawi.',
+q3:'Fast-flowing rivers provide the energy needed to turn turbines.',
+q4:'Nkula and Tedzani were built where the river has a steep gradient and reliable flow.',
+q5:'When turbines rotate, generators immediately produce electricity.',
+q6:'Transformers increase voltage for efficient transmission.',
+q7:'Deforestation causes siltation, reducing water flow and turbine efficiency.',
+q8:'Protecting catchment areas maintains water levels and reduces siltation.'
+};
+
+function gradeQuiz() {
+    let score = 0;
+    let total = Object.keys(answers).length;
+    let unanswered = [];
+    let wrongDetails = [];
+
+    for (let q in answers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (!selected) {
+            unanswered.push(q.replace('q','Question '));
+        } else if (selected.value === answers[q]) {
+            score++;
+        } else {
+            wrongDetails.push({
+                question: q.replace('q','Question '),
+                chosen: selected.parentElement.textContent.trim(),
+                correct: answers[q],
+                explanation: explanations[q]
+            });
+        }
+    }
+
+    const results = document.getElementById('results');
+    results.classList.remove('hidden');
+
+    const percent = ((score / total) * 100).toFixed(1);
+    let grade='', bg='';
+
+    if (percent >= 90) { grade = 'A - Excellent'; bg = 'bg-green-100 border-green-500'; }
+    else if (percent >= 80) { grade = 'B - Very Good'; bg = 'bg-blue-100 border-blue-500'; }
+    else if (percent >= 70) { grade = 'C - Good'; bg = 'bg-yellow-100 border-yellow-500'; }
+    else if (percent >= 60) { grade = 'D - Fair'; bg = 'bg-orange-100 border-orange-500'; }
+    else { grade = 'F - Need More Practice'; bg = 'bg-red-100 border-red-500'; }
+
+    let html = `
+    <div class="${bg} border-l-4 p-4">
+        <h3 class="text-2xl font-bold mb-2">Your Results</h3>
+        <p class="text-xl mb-2">Score: ${score} out of ${total} (${percent}%)</p>
+        <p class="text-xl font-semibold mb-4">Grade: ${grade}</p>
+    `;
+
+    if (unanswered.length > 0) {
+        html += `<p class="text-red-600 font-semibold">Unanswered: ${unanswered.join(', ')}</p>`;
+    }
+
+    if (wrongDetails.length > 0) {
+        html += `<div class="mt-4 bg-white p-4 rounded">
+                 <p class="font-semibold mb-2">Review Incorrect Answers:</p>`;
+        wrongDetails.forEach(w => {
+            html += `
+            <div class="mb-3">
+                <p class="font-semibold text-red-600">${w.question}</p>
+                <p class="text-sm">Your choice: ${w.chosen}</p>
+                <p class="text-sm text-green-700">Correct answer: ${w.correct}</p>
+                <p class="text-xs text-gray-600">${w.explanation}</p>
+            </div>`;
+        });
+        html += `</div>`;
+    }
+
+    html += `
+        <button onclick="location.reload()"
+        class="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded">
+        Retake Quiz
+        </button>
+    </div>`;
+
+    results.innerHTML = html;
+    results.scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>

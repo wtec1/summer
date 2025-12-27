@@ -1,0 +1,204 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Reformation Quiz</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" type="image/png" href="/img/WTEC1_LMS_512x512.png">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<header class="bg-gradient-to-br from-purple-600 via-indigo-600 to-purple-800 text-center text-white py-6 px-4 shadow-lg">
+<div class="max-w-4xl mx-auto">
+<h1 class="text-3xl font-bold mb-2">Time for Test: Take Exams</h1>
+<p class="text-purple-100">The Reformation — JCE</p>
+</div>
+</header>
+
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform">
+  <nav class="p-4 space-y-2">
+    <a href="./reformation.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+  </nav>
+</aside>
+
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+class="fixed top-4 left-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+  Menu
+</button>
+
+<div class="flex justify-center items-center my-6">
+  <img src="../img/exam.jpg"
+       alt="Illustration"
+       class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+</div>
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+
+<div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+<h2 class="text-2xl font-bold text-purple-600 mb-4">The Reformation Quiz</h2>
+<p class="text-gray-600 mb-6">Answer all questions. Choose the best option.</p>
+
+<form id="quizForm">
+
+<!-- 10 questions -->
+
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">1. What does the word “Reformation” mean?</p>
+<label><input type="radio" name="q1" value="a"> a) Splitting of Europe</label><br>
+<label><input type="radio" name="q1" value="b"> b) Reforming the Church</label><br>
+<label><input type="radio" name="q1" value="c"> c) War in Europe</label><br>
+<label><input type="radio" name="q1" value="d"> d) Discovery of new lands</label>
+</div>
+
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">2. Who started the Protestant Reformation in Germany?</p>
+<label><input type="radio" name="q2" value="a"> a) John Calvin</label><br>
+<label><input type="radio" name="q2" value="b"> b) Martin Luther</label><br>
+<label><input type="radio" name="q2" value="c"> c) Henry VIII</label><br>
+<label><input type="radio" name="q2" value="d"> d) John Knox</label>
+</div>
+
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">3. What did Martin Luther write in 1517?</p>
+<label><input type="radio" name="q3" value="a"> a) Ten Commandments</label><br>
+<label><input type="radio" name="q3" value="b"> b) 39 Articles</label><br>
+<label><input type="radio" name="q3" value="c"> c) 95 Theses</label><br>
+<label><input type="radio" name="q3" value="d"> d) Apostles’ Creed</label>
+</div>
+
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">4. Which invention helped spread Reformation ideas?</p>
+<label><input type="radio" name="q4" value="a"> a) Steam engine</label><br>
+<label><input type="radio" name="q4" value="b"> b) Printing press</label><br>
+<label><input type="radio" name="q4" value="c"> c) Telephone</label><br>
+<label><input type="radio" name="q4" value="d"> d) Compass</label>
+</div>
+
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">5. Which country was the main centre of the Reformation?</p>
+<label><input type="radio" name="q5" value="a"> a) France</label><br>
+<label><input type="radio" name="q5" value="b"> b) Italy</label><br>
+<label><input type="radio" name="q5" value="c"> c) Germany</label><br>
+<label><input type="radio" name="q5" value="d"> d) Spain</label>
+</div>
+
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">6. Why were many German princes against the Pope?</p>
+<label><input type="radio" name="q6" value="a"> a) They wanted church land and power</label><br>
+<label><input type="radio" name="q6" value="b"> b) They were Muslims</label><br>
+<label><input type="radio" name="q6" value="c"> c) They feared education</label><br>
+<label><input type="radio" name="q6" value="d"> d) They disliked Germany</label>
+</div>
+
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">7. Who spread the Reformation to Scotland?</p>
+<label><input type="radio" name="q7" value="a"> a) John Knox</label><br>
+<label><input type="radio" name="q7" value="b"> b) John Calvin</label><br>
+<label><input type="radio" name="q7" value="c"> c) Ulrich Zwingli</label><br>
+<label><input type="radio" name="q7" value="d"> d) Loyola</label>
+</div>
+
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">8. What was the Counter-Reformation?</p>
+<label><input type="radio" name="q8" value="a"> a) A political war</label><br>
+<label><input type="radio" name="q8" value="b"> b) Catholic response to the Reformation</label><br>
+<label><input type="radio" name="q8" value="c"> c) Scientific revolution</label><br>
+<label><input type="radio" name="q8" value="d"> d) Discovery of America</label>
+</div>
+
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">9. Which of the following was an effect of the Reformation?</p>
+<label><input type="radio" name="q9" value="a"> a) Europe united into one church</label><br>
+<label><input type="radio" name="q9" value="b"> b) Decline of church political power</label><br>
+<label><input type="radio" name="q9" value="c"> c) End of education</label><br>
+<label><input type="radio" name="q9" value="d"> d) Fall of Europe</label>
+</div>
+
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">10. Which two main groups emerged after the Reformation?</p>
+<label><input type="radio" name="q10" value="a"> a) Muslims and Jews</label><br>
+<label><input type="radio" name="q10" value="b"> b) Catholics and Protestants</label><br>
+<label><input type="radio" name="q10" value="c"> c) Africans and Europeans</label><br>
+<label><input type="radio" name="q10" value="d"> d) Kings and nobles</label>
+</div>
+
+</form>
+
+<div class="text-center mt-8">
+<button onclick="gradeQuiz()" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg">
+Submit Quiz
+</button>
+</div>
+
+<div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+
+</div>
+</main>
+
+<script>
+const answers={
+q1:'b', q2:'b', q3:'c', q4:'b', q5:'c',
+q6:'a', q7:'a', q8:'b', q9:'b', q10:'b'
+};
+
+const explanations={
+q1:'Reformation means reforming the Church.',
+q2:'Martin Luther led the German Reformation.',
+q3:'The 95 Theses criticised indulgences.',
+q4:'The printing press helped spread ideas.',
+q5:'Germany was the main centre of reform.',
+q6:'Princes wanted church wealth and independence.',
+q7:'John Knox spread reform to Scotland.',
+q8:'It was the Catholic response to reform.',
+q9:'The church lost political power in many countries.',
+q10:'Europe divided into Catholic and Protestant groups.'
+};
+
+function gradeQuiz(){
+let score=0,unanswered=[],incorrect=[];
+let total=Object.keys(answers).length;
+
+for(let q in answers){
+let s=document.querySelector('input[name="'+q+'"]:checked');
+if(!s){unanswered.push(q.replace('q','Question '));continue;}
+if(s.value===answers[q])score++;
+else incorrect.push({q:q.replace('q','Question '),e:explanations[q]});
+}
+
+let percent=((score/total)*100).toFixed(1);
+let grade='F',bg='bg-red-100 border-red-500';
+
+if(percent>=90){grade='A';bg='bg-green-100 border-green-500'}
+else if(percent>=80){grade='B';bg='bg-blue-100 border-blue-500'}
+else if(percent>=70){grade='C';bg='bg-yellow-100 border-yellow-500'}
+else if(percent>=60){grade='D';bg='bg-orange-100 border-orange-500'}
+
+let html=`<div class="${bg} border-l-4 p-4">
+<h3 class="text-xl font-bold">Score: ${score}/${total} (${percent}%)</h3>
+<p class="font-semibold mb-2">Grade: ${grade}</p>`;
+
+if(unanswered.length)html+=`<p class="text-red-600">Unanswered: ${unanswered.join(', ')}</p>`;
+
+if(incorrect.length){
+html+=`<div class="mt-3 bg-white p-3 rounded"><p class="font-semibold">Review:</p>`;
+incorrect.forEach(i=>html+=`<p class="text-red-600">${i.q}</p><p class="text-sm">${i.e}</p>`);
+html+='</div>';
+}
+
+html+=`<button onclick="location.reload()" class="mt-4 bg-purple-600 text-white px-6 py-2 rounded">
+Retake Quiz
+</button></div>`;
+
+const r=document.getElementById('results');
+r.innerHTML=html;
+r.classList.remove('hidden');
+r.scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+
+
+<!DOCTYPE html>
+<html lang="ny">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alowam’malo Quiz</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<header class="bg-gradient-to-br from-purple-600 via-indigo-600 to-purple-800 text-center text-white py-6 px-4 shadow-lg">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold mb-2">Time for Test: Take Exams</h1>
+    <p class="text-purple-100">Alowam’malo — Chichewa</p>
+  </div>
+</header>
+
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform">
+  <nav class="p-4 space-y-2">
+    <a href="./alowa-malo.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+  </nav>
+</aside>
+
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+class="fixed top-4 left-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+  Menu
+</button>
+
+<div class="flex justify-center items-center my-6">
+  <img src="../img/exam.jpg"
+       alt="Quiz image"
+       class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+</div>
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+<div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+
+<h2 class="text-2xl font-bold text-purple-600 mb-4">Alowam’malo Quiz</h2>
+<p class="text-gray-600 mb-6">Yankhani mafunso onse. Sankhani yankho loyenera kwambiri.</p>
+
+<form id="quizForm">
+
+<!-- 1 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">1. Alowam’malo ndi chiyani?</p>
+<label><input type="radio" name="q1" value="a"> a) Mawu a nthawi</label><br>
+<label><input type="radio" name="q1" value="b"> b) Mawu amene amagwiritsidwa ntchito m'malo mwa dzina</label><br>
+<label><input type="radio" name="q1" value="c"> c) Mayina a anthu</label><br>
+<label><input type="radio" name="q1" value="d"> d) Mawu a maphunziro</label>
+</div>
+
+<!-- 2 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">2. Ndi iti mwa mawu awa yomwe ili alowam’malo?</p>
+<label><input type="radio" name="q2" value="a"> a) Phiri</label><br>
+<label><input type="radio" name="q2" value="b"> b) Ine</label><br>
+<label><input type="radio" name="q2" value="c"> c) Munda</label><br>
+<label><input type="radio" name="q2" value="d"> d) Galu</label>
+</div>
+
+<!-- 3 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">3. “Ichi” ndi chitsanzo cha mlowam’malo wanji?</p>
+<label><input type="radio" name="q3" value="a"> a) Wofunsa</label><br>
+<label><input type="radio" name="q3" value="b"> b) Woloza</label><br>
+<label><input type="radio" name="q3" value="c"> c) Wogawa</label><br>
+<label><input type="radio" name="q3" value="d"> d) Wotsindika</label>
+</div>
+
+<!-- 4 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">4. “Ndadya ziwiri zokha” uli m’gulu liti?</p>
+<label><input type="radio" name="q4" value="a"> a) Wofunsa</label><br>
+<label><input type="radio" name="q4" value="b"> b) Wodzichitira</label><br>
+<label><input type="radio" name="q4" value="c"> c) Wowerengera</label><br>
+<label><input type="radio" name="q4" value="d"> d) Woloza</label>
+</div>
+
+<!-- 5 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">5. Mu ganizo ili: “Amayi akufuna iwe upite nawo”, alowam’malo akugwira ntchito yanji?</p>
+<label><input type="radio" name="q5" value="a"> a) Kuitanira</label><br>
+<label><input type="radio" name="q5" value="b"> b) Kukhala mwininkhani</label><br>
+<label><input type="radio" name="q5" value="c"> c) Kukhala pamtherankhani wachindunji</label><br>
+<label><input type="radio" name="q5" value="d"> d) Kukhala mtsirizitsi</label>
+</div>
+
+<!-- 6 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">6. Ndi iti yomwe ili mlowam’malo odzichitira?</p>
+<label><input type="radio" name="q6" value="a"> a) Aliyense</label><br>
+<label><input type="radio" name="q6" value="b"> b) Wadzimenya yekha</label><br>
+<label><input type="radio" name="q6" value="c"> c) Izi</label><br>
+<label><input type="radio" name="q6" value="d"> d) Zathu</label>
+</div>
+
+</form>
+
+<div class="text-center mt-8">
+<button onclick="gradeQuiz()" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg">
+Submit Quiz
+</button>
+</div>
+
+<div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+
+</div>
+</main>
+
+<script>
+const answers={
+q1:'b',
+q2:'b',
+q3:'b',
+q4:'c',
+q5:'c',
+q6:'b'
+};
+
+const explanations={
+q1:'Alowam’malo amagwiritsidwa ntchito m'malo mwa dzina.',
+q2:'“Ine” ndi mlowam’malo.',
+q3:'“Ichi” ndi mlowam’malo woloza.',
+q4:'Uwu ndi mlowam’malo wowerengera.',
+q5:'Akunena munthu wachindunji – pamtherankhani wachindunji.',
+q6:'“Wadzimenya yekha” ndi mlowam’malo odzichitira.'
+};
+
+function gradeQuiz(){
+let score=0,unanswered=[],incorrect=[];
+let total=Object.keys(answers).length;
+
+for(let q in answers){
+let s=document.querySelector('input[name="'+q+'"]:checked');
+if(!s){unanswered.push(q.replace('q','Question '));continue;}
+if(s.value===answers[q])score++;
+else incorrect.push({q:q.replace('q','Question '),e:explanations[q]});
+}
+
+let percent=((score/total)*100).toFixed(1);
+let grade='F',bg='bg-red-100 border-red-500';
+
+if(percent>=90){grade='A';bg='bg-green-100 border-green-500'}
+else if(percent>=80){grade='B';bg='bg-blue-100 border-blue-500'}
+else if(percent>=70){grade='C';bg='bg-yellow-100 border-yellow-500'}
+else if(percent>=60){grade='D';bg='bg-orange-100 border-orange-500'}
+
+let html=`<div class="${bg} border-l-4 p-4">
+<h3 class="text-xl font-bold">Score: ${score}/${total} (${percent}%)</h3>
+<p class="font-semibold mb-2">Grade: ${grade}</p>`;
+
+if(unanswered.length)
+html+=`<p class="text-red-600">Unanswered: ${unanswered.join(', ')}</p>`;
+
+if(incorrect.length){
+html+=`<div class="mt-3 bg-white p-3 rounded">
+<p class="font-semibold">Review:</p>`;
+incorrect.forEach(i=>html+=`<p class="text-red-600">${i.q}</p><p class="text-sm">${i.e}</p>`);
+html+='</div>';
+}
+
+html+=`<button onclick="location.reload()" class="mt-4 bg-purple-600 text-white px-6 py-2 rounded">
+Retake Quiz
+</button></div>`;
+
+const r=document.getElementById('results');
+r.innerHTML=html;
+r.classList.remove('hidden');
+r.scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>

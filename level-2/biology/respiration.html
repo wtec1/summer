@@ -1,0 +1,206 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- always change title -->
+    <title>Respiratory System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-purple-600 text-center sticky top-0 z-50 text-white py-6 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">🫁 THE RESPIRATORY SYSTEM</h1> 
+            <p class="text-purple-100">Structure, Functions, Breathing and Respiratory Health</p>
+        </div>
+    </header>
+
+    <!-- mobile / desktop sidebar -->
+    <aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform">
+      <nav class="p-4 space-y-2">
+        <a href="./bio.html" class="block px-3 py-2 rounded hover:bg-gray-700">Return</a>
+        <a href="./respiration-quiz.html" class="block px-3 py-2 rounded hover:bg-gray-700">Take Exams</a>
+      </nav>
+    </aside>
+
+    <!-- toggle button (mobile) -->
+    <button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+            class="fixed top-4 left-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+      Menu
+    </button>
+
+    <!-- centered image -->
+    <div class="flex justify-center items-center my-4">
+        <img src="../img/lms.jpg"
+            alt="Respiratory System Illustration"
+            class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+    </div> 
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        
+        <!-- Introduction Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-3">🔍 Introduction</h2>
+            <p>
+                The respiratory system is a group of organs that enables breathing by allowing oxygen to enter
+                the body and carbon dioxide to be removed. It is essential for energy production and survival.
+            </p>
+        </section>
+
+          <!-- Video Section (must remain after introduction) -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson</h2>
+            <div class="aspect-video w-full">
+                <iframe 
+                    class="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/ZB7uA5o0mS4" 
+                    title="Respiratory System Video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Components -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">🧠 Components of the Respiratory System</h2>
+            <ul class="list-disc pl-6 space-y-1">
+                <li><strong>Nasal passage:</strong> Filters, warms, and moistens air using mucus and cilia.</li>
+                <li><strong>Epiglottis:</strong> Prevents food from entering the trachea.</li>
+                <li><strong>Larynx:</strong> Voice box; produces sound.</li>
+                <li><strong>Trachea:</strong> Windpipe supported by cartilage rings.</li>
+                <li><strong>Bronchi:</strong> Two tubes leading air into each lung.</li>
+                <li><strong>Alveoli:</strong> Tiny air sacs for gas exchange.</li>
+                <li><strong>Lungs:</strong> Organs that contain bronchi and alveoli.</li>
+                <li><strong>Diaphragm:</strong> Muscle controlling chest volume.</li>
+                <li><strong>Intercostal muscles:</strong> Move the rib cage during breathing.</li>
+            </ul>
+        </section>
+
+        <!-- Functions -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">⚙️ Functions of the Respiratory System</h2>
+            <ul class="list-disc pl-6 space-y-1">
+                <li>Breathing for gas exchange</li>
+                <li>Filtering dust and pathogens</li>
+                <li>Warming and moistening air</li>
+                <li>Supplying oxygen for cellular respiration</li>
+                <li>Removing carbon dioxide from the body</li>
+            </ul>
+        </section>
+
+        <!-- Breathing Mechanism -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">🔄 Breathing Mechanism</h2>
+            <p><strong>Inspiration (Inhalation):</strong></p>
+            <ul class="list-disc pl-6 mb-3">
+                <li>Diaphragm contracts and moves down</li>
+                <li>Intercostal muscles contract</li>
+                <li>Rib cage moves up and out</li>
+                <li>Air enters the lungs</li>
+            </ul>
+
+            <p><strong>Expiration (Exhalation):</strong></p>
+            <ul class="list-disc pl-6">
+                <li>Diaphragm relaxes and moves up</li>
+                <li>Intercostal muscles relax</li>
+                <li>Rib cage moves down and in</li>
+                <li>Air is forced out of the lungs</li>
+            </ul>
+        </section>
+
+        <!-- Lung Volumes -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📊 Lung Capacity and Volumes</h2>
+            <ul class="list-disc pl-6 space-y-1">
+                <li><strong>Tidal volume:</strong> ~500 ml</li>
+                <li><strong>Vital capacity:</strong> ~4600 ml</li>
+                <li><strong>Residual volume:</strong> ~1200 ml</li>
+                <li><strong>Total lung capacity:</strong> ~5800 ml</li>
+            </ul>
+        </section>
+
+        <!-- Inhaled vs Exhaled -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">🌬️ Composition of Inhaled and Exhaled Air</h2>
+            <ul class="list-disc pl-6 space-y-1">
+                <li>Oxygen: 21% → 16%</li>
+                <li>Carbon dioxide: 0.04% → 4%</li>
+                <li>Nitrogen: remains ~79%</li>
+                <li>Water vapour: increases in exhaled air</li>
+            </ul>
+        </section>
+
+          <!-- Video Section (must remain after introduction) -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson</h2>
+            <div class="aspect-video w-full">
+                <iframe 
+                    class="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/59knV9PJ3Rs" 
+                    title="Respiratory System Video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Artificial Ventilation -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">🚑 Artificial Ventilation (Resuscitation)</h2>
+            <ul class="list-disc pl-6 space-y-1">
+                <li>Clear the airway</li>
+                <li>Pinch the nose</li>
+                <li>Blow air into the mouth</li>
+                <li>Chest should rise and fall</li>
+                <li>Continue until breathing resumes</li>
+            </ul>
+        </section>
+
+        <!-- Diseases -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-red-600 mb-4">⚠️ Common Respiratory Problems</h2>
+            <ul class="list-disc pl-6 space-y-1">
+                <li>Common cold</li>
+                <li>Pneumonia</li>
+                <li>Tuberculosis (TB)</li>
+                <li>Asthma</li>
+                <li>Lung cancer</li>
+                <li>Carbon monoxide poisoning</li>
+            </ul>
+        </section>
+
+        <!-- Prevention -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">🛡️ Prevention of Respiratory Diseases</h2>
+            <ul class="list-disc pl-6 space-y-1">
+                <li>Avoid smoking</li>
+                <li>Ensure proper ventilation</li>
+                <li>Use protective masks</li>
+                <li>Maintain good hygiene</li>
+                <li>Get vaccinated</li>
+            </ul>
+        </section>
+
+      
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-400">© Millennium E-learning Centre</p>
+        </div>
+    </footer>
+
+</body>
+</html>

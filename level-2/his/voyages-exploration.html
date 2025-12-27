@@ -1,0 +1,162 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voyages of Exploration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-purple-600 text-white text-center py-6 px-4 shadow-lg sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-3xl font-bold mb-2">🌍 Voyages of Exploration</h1>
+      <p class="text-purple-100">Meaning, reasons, explorers, routes and results</p>
+    </div>
+  </header>
+
+  <!-- SIDE MENU -->
+  <aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform">
+    <nav class="p-4 space-y-2">
+      <a href="./history.html" class="block px-3 py-2 rounded hover:bg-gray-700">Return</a>
+      <a href="./voyages-of-exploration-quiz.html" class="block px-3 py-2 rounded hover:bg-gray-700">Take Exams</a>
+    </nav>
+  </aside>
+
+  <!-- MENU BUTTON -->
+  <button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+          class="fixed top-4 left-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+    Menu
+  </button>
+
+  <!-- IMAGE -->
+  <div class="flex justify-center items-center my-4">
+    <img src="../img/lms.jpg"
+         alt="Voyages of Exploration"
+         class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md" />
+  </div>
+
+  <!-- MAIN -->
+  <main class="max-w-4xl mx-auto px-4 py-8">
+
+    <!-- INTRODUCTION -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-2xl font-bold text-purple-600 mb-4">📘 Introduction</h2>
+      <p>
+        The voyages of exploration were long sea journeys made by Europeans between the 15th and 17th centuries
+        to discover new lands, sea routes, and trading opportunities. These journeys led to contact between Europe,
+        Africa, Asia and the Americas and changed world history.
+      </p>
+    </section>
+
+    <!-- VIDEO TEMPLATE (official) -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson</h2>
+      <div class="aspect-video w-full">
+        <iframe class="w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/H3T5YtbaDzI"
+                title="Voyages of Exploration Lesson"></iframe>
+      </div>
+    </section>
+
+    <!-- MEANING -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-xl font-bold text-blue-600 mb-3">📖 Meaning of voyages of exploration</h2>
+      <p>
+        Voyages of exploration were long-distance sea journeys made to discover new lands, trade routes,
+        and knowledge about the world beyond Europe.
+      </p>
+    </section>
+
+    <!-- WHY PORTUGAL LED -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-xl font-bold text-blue-600 mb-3">🇵🇹 Why the Portuguese took the lead</h2>
+      <ul class="list-disc pl-6">
+        <li>favourable geographical position facing the Atlantic Ocean</li>
+        <li>advances in maritime technology (compass, astrolabe, caravel)</li>
+        <li>Portugal was politically stable and at peace</li>
+        <li>influence and encouragement of Prince Henry the Navigator</li>
+      </ul>
+    </section>
+
+    <!-- ROLE OF PRINCE HENRY -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-xl font-bold text-blue-600 mb-3">⚓ Role of Prince Henry the Navigator</h2>
+      <ul class="list-disc pl-6">
+        <li>planned and financed voyages</li>
+        <li>established a school of navigation</li>
+        <li>trained sailors, map makers and captains</li>
+        <li>collected and compiled maps and travel reports</li>
+      </ul>
+    </section>
+
+    <!-- PORTUGUESE EXPLORERS -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-xl font-bold text-blue-600 mb-3">🚢 Portuguese attempts to reach India</h2>
+      <ul class="list-disc pl-6">
+        <li><b>Diego Cam</b> – explored West African coast</li>
+        <li><b>Bartholomew Diaz</b> – reached Cape of Good Hope</li>
+        <li><b>Vasco da Gama</b> – reached India in 1498</li>
+      </ul>
+      <p class="mt-2">They sailed around Africa to find a sea route to India.</p>
+    </section>
+
+    <!-- RESULTS OF PORTUGUESE VOYAGES -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-xl font-bold text-blue-600 mb-3">🌍 Results of Portuguese voyages</h2>
+      <ul class="list-disc pl-6">
+        <li>discovery of a sea route to India</li>
+        <li>spread of Christianity</li>
+        <li>beginning of Trans-Atlantic slave trade</li>
+        <li>decline of the Zanj civilization on East African coast</li>
+      </ul>
+    </section>
+
+    <!-- SPANISH ATTEMPTS -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-xl font-bold text-blue-600 mb-3">🇪🇸 Spanish attempts to find western route</h2>
+      <ul class="list-disc pl-6">
+        <li><b>Christopher Columbus</b></li>
+        <li><b>Amerigo Vespucci</b></li>
+        <li><b>Ferdinand Magellan</b></li>
+      </ul>
+      <p class="mt-2">
+        They sailed west across the Atlantic to reach Asia, but instead reached the Americas.
+      </p>
+      <ul class="list-disc pl-6 mt-2">
+        <li>discovery of the New World (Americas)</li>
+        <li>proved the world is round</li>
+        <li>opened western route towards Asia</li>
+      </ul>
+    </section>
+
+    <!-- ENGLISH ATTEMPTS -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-xl font-bold text-blue-600 mb-3">🇬🇧 English attempts to reach India</h2>
+      <p>They searched for north-eastern and north-western sea routes to India.</p>
+      <ul class="list-disc pl-6 mt-2">
+        <li>John Davis</li>
+        <li>Richard Willoughby</li>
+        <li>Martin Frobisher</li>
+        <li>John Hawkins</li>
+        <li>Sir Francis Drake</li>
+      </ul>
+      <p class="mt-2">They produced more accurate world maps and discovered new lands.</p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white py-6 px-4 mt-12">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-gray-400">© Millennium E-learning Centre</p>
+    </div>
+  </footer>
+
+</body>
+</html>

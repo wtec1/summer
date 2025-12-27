@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium E-learning Centre - Online Class</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="/img/WTEC1_LMS_512x512.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Header -->
+<header class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 text-white py-6 px-4 text-center shadow-lg">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold mb-2">Time for test: Take Exams</h1>
+        <p class="text-blue-100">Assessing your learning</p>
+    </div>
+</header>
+
+<!-- Side Menu -->
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+    <nav class="p-4 space-y-2">
+        <a href="./rivers-east-central-africa.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+    </nav>
+</aside>
+
+<!-- Toggle -->
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 right-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+    Menu
+</button>
+
+<!-- Image -->
+<div class="flex justify-center items-center my-6">
+    <img src="../img/exam.jpg"
+         alt="Illustration"
+         class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+</div>
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+
+<!-- Quiz -->
+<div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+<h2 class="text-2xl font-bold text-purple-600 mb-4">📝 Rivers of East and Central Africa Quiz</h2>
+<p class="text-gray-600 mb-6">Choose the correct answer. Review mistakes after submission.</p>
+
+<form id="quizForm">
+
+<!-- Q1 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">1. Which river is the longest in East and Central Africa?</p>
+<label class="block"><input type="radio" name="q1" value="a"> a) Kagera</label>
+<label class="block"><input type="radio" name="q1" value="b"> b) Rufiji</label>
+<label class="block"><input type="radio" name="q1" value="c"> c) Zambezi</label>
+<label class="block"><input type="radio" name="q1" value="d"> d) Shire</label>
+</div>
+
+<!-- Q2 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">2. Victoria Falls is found on which river?</p>
+<label class="block"><input type="radio" name="q2" value="a"> a) Kafue</label>
+<label class="block"><input type="radio" name="q2" value="b"> b) Zambezi</label>
+<label class="block"><input type="radio" name="q2" value="c"> c) Luangwa</label>
+<label class="block"><input type="radio" name="q2" value="d"> d) Rufiji</label>
+</div>
+
+<!-- Q3 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">3. Which river is the only outlet of Lake Malawi?</p>
+<label class="block"><input type="radio" name="q3" value="a"> a) Kagera</label>
+<label class="block"><input type="radio" name="q3" value="b"> b) Shire</label>
+<label class="block"><input type="radio" name="q3" value="c"> c) Lukuga</label>
+<label class="block"><input type="radio" name="q3" value="d"> d) Katonga</label>
+</div>
+
+<!-- Q4 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">4. The largest river in Tanzania is:</p>
+<label class="block"><input type="radio" name="q4" value="a"> a) Malagarasi</label>
+<label class="block"><input type="radio" name="q4" value="b"> b) Rufiji</label>
+<label class="block"><input type="radio" name="q4" value="c"> c) Kagera</label>
+<label class="block"><input type="radio" name="q4" value="d"> d) Lukuga</label>
+</div>
+
+<!-- Q5 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">5. Which river is the largest flowing into Lake Victoria?</p>
+<label class="block"><input type="radio" name="q5" value="a"> a) Katonga</label>
+<label class="block"><input type="radio" name="q5" value="b"> b) Kagera</label>
+<label class="block"><input type="radio" name="q5" value="c"> c) Shire</label>
+<label class="block"><input type="radio" name="q5" value="d"> d) Malagarasi</label>
+</div>
+
+<!-- Q6 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">6. Which river flows through Kafue National Park?</p>
+<label class="block"><input type="radio" name="q6" value="a"> a) Luangwa</label>
+<label class="block"><input type="radio" name="q6" value="b"> b) Zambezi</label>
+<label class="block"><input type="radio" name="q6" value="c"> c) Kafue</label>
+<label class="block"><input type="radio" name="q6" value="d"> d) Rufiji</label>
+</div>
+
+<!-- Q7 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">7. Which river forms part of the Burundi–Tanzania border?</p>
+<label class="block"><input type="radio" name="q7" value="a"> a) Kagera</label>
+<label class="block"><input type="radio" name="q7" value="b"> b) Lukuga</label>
+<label class="block"><input type="radio" name="q7" value="c"> c) Malagarasi</label>
+<label class="block"><input type="radio" name="q7" value="d"> d) Katonga</label>
+</div>
+
+<!-- Q8 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">8. One importance of rivers in the region is:</p>
+<label class="block"><input type="radio" name="q8" value="a"> a) Desert formation</label>
+<label class="block"><input type="radio" name="q8" value="b"> b) Hydroelectric power generation</label>
+<label class="block"><input type="radio" name="q8" value="c"> c) Soil erosion only</label>
+<label class="block"><input type="radio" name="q8" value="d"> d) Climate change</label>
+</div>
+
+<div class="text-center mt-8">
+<button type="button" onclick="gradeQuiz()"
+class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg">
+Submit Quiz
+</button>
+</div>
+
+</form>
+
+<div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+</div>
+</main>
+
+<script>
+const answers = {
+q1:'c',
+q2:'b',
+q3:'b',
+q4:'b',
+q5:'b',
+q6:'c',
+q7:'c',
+q8:'b'
+};
+
+const explanations = {
+q1:'The Zambezi River is the longest at about 3,540 km.',
+q2:'Victoria Falls lies on the Zambezi River.',
+q3:'The Shire River is the only outlet of Lake Malawi.',
+q4:'The Rufiji River is the largest river in Tanzania.',
+q5:'Kagera River is the largest river entering Lake Victoria.',
+q6:'Kafue River flows through Kafue National Park.',
+q7:'Malagarasi River forms part of the Burundi–Tanzania border.',
+q8:'Rivers provide hydroelectric power, transport, and water.'
+};
+
+function gradeQuiz() {
+    let score = 0;
+    let total = Object.keys(answers).length;
+    let wrongDetails = [];
+
+    for (let q in answers) {
+        const sel = document.querySelector(`input[name="${q}"]:checked`);
+        if (sel && sel.value === answers[q]) score++;
+        else if (sel) {
+            wrongDetails.push({
+                question: q.replace('q','Question '),
+                chosen: sel.parentElement.textContent.trim(),
+                correct: answers[q],
+                explanation: explanations[q]
+            });
+        }
+    }
+
+    const results = document.getElementById('results');
+    results.classList.remove('hidden');
+
+    let html = `<h3 class="text-xl font-bold mb-2">Score: ${score} / ${total}</h3>`;
+
+    if (wrongDetails.length > 0) {
+        html += `<div class="mt-4 bg-white p-4 rounded">
+                 <p class="font-semibold mb-2">Review Incorrect Answers:</p>`;
+        wrongDetails.forEach(w=>{
+            html += `
+            <div class="mb-3">
+                <p class="font-semibold text-red-600">${w.question}</p>
+                <p class="text-sm">Your choice: ${w.chosen}</p>
+                <p class="text-sm text-green-700">Correct: ${w.correct}</p>
+                <p class="text-xs text-gray-600">${w.explanation}</p>
+            </div>`;
+        });
+        html += `</div>`;
+    }
+
+    html += `<button onclick="location.reload()"
+             class="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded">
+             Retake Quiz</button>`;
+
+    results.innerHTML = html;
+    results.scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium E-learning Centre - Online Class</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="/img/WTEC1_LMS_512x512.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Header -->
+<header class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 text-white py-6 px-4 text-center shadow-lg">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold mb-2">Time for test: Take Exams</h1>
+        <p class="text-blue-100">Assessing your learning</p>
+    </div>
+</header>
+
+<!-- Side Menu -->
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+    <nav class="p-4 space-y-2">
+        <a href="./soil.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+    </nav>
+</aside>
+
+<!-- Toggle -->
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 right-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+    Menu
+</button>
+
+<!-- Image -->
+<div class="flex justify-center items-center my-6">
+    <img src="../img/exam.jpg"
+         alt="Illustration"
+         class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+</div>
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+
+<!-- Quiz Container -->
+<div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+<h2 class="text-2xl font-bold text-purple-600 mb-4">📝 Soil Quiz</h2>
+<p class="text-gray-600 mb-6">Answer all questions. Wrong choices will be shown after submission.</p>
+
+<form id="quizForm">
+
+<!-- Q1 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">1. What is soil?</p>
+<label class="block"><input type="radio" name="q1" value="a"> a) A type of rock only</label>
+<label class="block"><input type="radio" name="q1" value="b"> b) Loose material supporting plant growth</label>
+<label class="block"><input type="radio" name="q1" value="c"> c) Water mixed with sand</label>
+<label class="block"><input type="radio" name="q1" value="d"> d) Dead plants only</label>
+</div>
+
+<!-- Q2 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">2. Which soil type drains water quickly?</p>
+<label class="block"><input type="radio" name="q2" value="a"> a) Clay soil</label>
+<label class="block"><input type="radio" name="q2" value="b"> b) Loamy soil</label>
+<label class="block"><input type="radio" name="q2" value="c"> c) Sandy soil</label>
+<label class="block"><input type="radio" name="q2" value="d"> d) Silty soil</label>
+</div>
+
+<!-- Q3 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">3. Which soil type is best for agriculture?</p>
+<label class="block"><input type="radio" name="q3" value="a"> a) Sandy soil</label>
+<label class="block"><input type="radio" name="q3" value="b"> b) Clay soil</label>
+<label class="block"><input type="radio" name="q3" value="c"> c) Loamy soil</label>
+<label class="block"><input type="radio" name="q3" value="d"> d) Rocky soil</label>
+</div>
+
+<!-- Q4 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">4. What is a soil profile?</p>
+<label class="block"><input type="radio" name="q4" value="a"> a) A soil map</label>
+<label class="block"><input type="radio" name="q4" value="b"> b) A vertical section of soil layers</label>
+<label class="block"><input type="radio" name="q4" value="c"> c) A soil experiment</label>
+<label class="block"><input type="radio" name="q4" value="d"> d) A soil type</label>
+</div>
+
+<!-- Q5 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">5. Which layer of soil is rich in humus?</p>
+<label class="block"><input type="radio" name="q5" value="a"> a) Parent rock</label>
+<label class="block"><input type="radio" name="q5" value="b"> b) Subsoil</label>
+<label class="block"><input type="radio" name="q5" value="c"> c) Topsoil</label>
+<label class="block"><input type="radio" name="q5" value="d"> d) Bedrock</label>
+</div>
+
+<!-- Q6 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">6. One importance of soil is that it:</p>
+<label class="block"><input type="radio" name="q6" value="a"> a) Causes erosion</label>
+<label class="block"><input type="radio" name="q6" value="b"> b) Supports plant growth</label>
+<label class="block"><input type="radio" name="q6" value="c"> c) Pollutes water</label>
+<label class="block"><input type="radio" name="q6" value="d"> d) Prevents rainfall</label>
+</div>
+
+<!-- Q7 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">7. Which activity leads to soil erosion?</p>
+<label class="block"><input type="radio" name="q7" value="a"> a) Tree planting</label>
+<label class="block"><input type="radio" name="q7" value="b"> b) Overgrazing</label>
+<label class="block"><input type="radio" name="q7" value="c"> c) Mulching</label>
+<label class="block"><input type="radio" name="q7" value="d"> d) Crop rotation</label>
+</div>
+
+<!-- Q8 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">8. Which is a way of conserving soil?</p>
+<label class="block"><input type="radio" name="q8" value="a"> a) Bush burning</label>
+<label class="block"><input type="radio" name="q8" value="b"> b) Terracing</label>
+<label class="block"><input type="radio" name="q8" value="c"> c) Overgrazing</label>
+<label class="block"><input type="radio" name="q8" value="d"> d) Deforestation</label>
+</div>
+
+<div class="text-center mt-8">
+<button type="button" onclick="gradeQuiz()"
+class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg">
+Submit Quiz
+</button>
+</div>
+
+</form>
+
+<div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+</div>
+</main>
+
+<script>
+const answers = {
+q1:'b',
+q2:'c',
+q3:'c',
+q4:'b',
+q5:'c',
+q6:'b',
+q7:'b',
+q8:'b'
+};
+
+const explanations = {
+q1:'Soil is loose material that supports plant growth.',
+q2:'Sandy soil has large particles and drains water quickly.',
+q3:'Loamy soil is fertile and good for farming.',
+q4:'A soil profile shows soil layers vertically.',
+q5:'Topsoil contains humus and nutrients.',
+q6:'Soil supports plant growth.',
+q7:'Overgrazing removes vegetation cover.',
+q8:'Terracing reduces soil erosion.'
+};
+
+function gradeQuiz() {
+    let score = 0;
+    let total = Object.keys(answers).length;
+    let unanswered = [];
+    let wrongDetails = [];
+
+    for (let q in answers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (!selected) {
+            unanswered.push(q.replace('q','Question '));
+        } else if (selected.value === answers[q]) {
+            score++;
+        } else {
+            wrongDetails.push({
+                question: q.replace('q','Question '),
+                chosen: selected.parentElement.textContent.trim(),
+                correct: answers[q],
+                explanation: explanations[q]
+            });
+        }
+    }
+
+    const results = document.getElementById('results');
+    results.classList.remove('hidden');
+
+    const percent = ((score/total)*100).toFixed(1);
+    let grade='', bg='';
+
+    if (percent>=90){grade='A - Excellent';bg='bg-green-100 border-green-500';}
+    else if (percent>=80){grade='B - Very Good';bg='bg-blue-100 border-blue-500';}
+    else if (percent>=70){grade='C - Good';bg='bg-yellow-100 border-yellow-500';}
+    else if (percent>=60){grade='D - Fair';bg='bg-orange-100 border-orange-500';}
+    else {grade='F - Need More Practice';bg='bg-red-100 border-red-500';}
+
+    let html = `
+    <div class="${bg} border-l-4 p-4">
+        <h3 class="text-2xl font-bold mb-2">Your Results</h3>
+        <p class="text-xl mb-2">Score: ${score} out of ${total} (${percent}%)</p>
+        <p class="text-xl font-semibold mb-4">Grade: ${grade}</p>
+    `;
+
+    if (unanswered.length>0){
+        html+=`<p class="text-red-600 font-semibold">Unanswered: ${unanswered.join(', ')}</p>`;
+    }
+
+    if (wrongDetails.length>0){
+        html+=`<div class="mt-4 bg-white p-4 rounded">
+        <p class="font-semibold mb-2">Incorrect Answers Review:</p>`;
+        wrongDetails.forEach(w=>{
+            html+=`
+            <div class="mb-3">
+                <p class="font-semibold text-red-600">${w.question}</p>
+                <p class="text-sm">Your choice: ${w.chosen}</p>
+                <p class="text-sm text-green-700">Correct answer: ${w.correct}</p>
+                <p class="text-xs text-gray-600">${w.explanation}</p>
+            </div>`;
+        });
+        html+='</div>';
+    }
+
+    html+=`
+        <button onclick="location.reload()"
+        class="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded">
+        Retake Quiz
+        </button>
+    </div>`;
+
+    results.innerHTML = html;
+    results.scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>

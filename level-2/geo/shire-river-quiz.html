@@ -1,0 +1,234 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium E-learning Centre - Online Class</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="/img/WTEC1_LMS_512x512.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Header -->
+<header class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 flex justify-between text-center text-white py-6 px-4 shadow-lg">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold mb-2">Time for test: Take Exams</h1>
+        <p class="text-blue-100">Assessing your learning</p>
+    </div>
+</header>
+
+<!-- Sidebar -->
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+  <nav class="p-4 space-y-2">
+    <a href="./shire-river.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+  </nav>
+</aside>
+
+<!-- Toggle -->
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 right-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+  Menu
+</button>
+
+<!-- Image -->
+<div class="flex justify-center items-center my-6">
+    <img src="../img/exam.jpg"
+         alt="Illustration"
+         class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+</div>
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+
+<!-- Quiz Container -->
+<div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+<h2 class="text-2xl font-bold text-purple-600 mb-4">📝 The Shire River Quiz</h2>
+<p class="text-gray-600 mb-6">Answer all questions. Review your mistakes after submission.</p>
+
+<form id="quizForm">
+
+<!-- Q1 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">1. Which is the most important river in Malawi?</p>
+<label class="block"><input type="radio" name="q1" value="a"> a) Bua River</label>
+<label class="block"><input type="radio" name="q1" value="b"> b) Ruo River</label>
+<label class="block"><input type="radio" name="q1" value="c"> c) Shire River</label>
+<label class="block"><input type="radio" name="q1" value="d"> d) Dwangwa River</label>
+</div>
+
+<!-- Q2 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">2. Where does the Shire River flow from?</p>
+<label class="block"><input type="radio" name="q2" value="a"> a) Lake Tanganyika</label>
+<label class="block"><input type="radio" name="q2" value="b"> b) Lake Victoria</label>
+<label class="block"><input type="radio" name="q2" value="c"> c) Lake Malawi</label>
+<label class="block"><input type="radio" name="q2" value="d"> d) Zambezi River</label>
+</div>
+
+<!-- Q3 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">3. In which direction does the Shire River flow?</p>
+<label class="block"><input type="radio" name="q3" value="a"> a) Northwards</label>
+<label class="block"><input type="radio" name="q3" value="b"> b) Southwards</label>
+<label class="block"><input type="radio" name="q3" value="c"> c) Eastwards</label>
+<label class="block"><input type="radio" name="q3" value="d"> d) Westwards</label>
+</div>
+
+<!-- Q4 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">4. Which waterfall is found along the Shire River?</p>
+<label class="block"><input type="radio" name="q4" value="a"> a) Murchison Falls</label>
+<label class="block"><input type="radio" name="q4" value="b"> b) Victoria Falls</label>
+<label class="block"><input type="radio" name="q4" value="c"> c) Kapichira Falls</label>
+<label class="block"><input type="radio" name="q4" value="d"> d) Tugela Falls</label>
+</div>
+
+<!-- Q5 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">5. Which is NOT an importance of the Shire River?</p>
+<label class="block"><input type="radio" name="q5" value="a"> a) Hydroelectric power</label>
+<label class="block"><input type="radio" name="q5" value="b"> b) Irrigation</label>
+<label class="block"><input type="radio" name="q5" value="c"> c) Desert formation</label>
+<label class="block"><input type="radio" name="q5" value="d"> d) Fishing</label>
+</div>
+
+<!-- Q6 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">6. Which activity takes place along the Shire River?</p>
+<label class="block"><input type="radio" name="q6" value="a"> a) Mining</label>
+<label class="block"><input type="radio" name="q6" value="b"> b) Fishing</label>
+<label class="block"><input type="radio" name="q6" value="c"> c) Oil drilling</label>
+<label class="block"><input type="radio" name="q6" value="d"> d) Snow farming</label>
+</div>
+
+<!-- Q7 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">7. Which problem affects activities along the Shire River?</p>
+<label class="block"><input type="radio" name="q7" value="a"> a) Flooding</label>
+<label class="block"><input type="radio" name="q7" value="b"> b) Earthquakes</label>
+<label class="block"><input type="radio" name="q7" value="c"> c) Volcanoes</label>
+<label class="block"><input type="radio" name="q7" value="d"> d) Glaciation</label>
+</div>
+
+<!-- Q8 -->
+<div class="mb-6 p-4 bg-gray-50 rounded-lg">
+<p class="font-semibold mb-3">8. Which is the best way of protecting the Shire River?</p>
+<label class="block"><input type="radio" name="q8" value="a"> a) Deforestation</label>
+<label class="block"><input type="radio" name="q8" value="b"> b) Pollution</label>
+<label class="block"><input type="radio" name="q8" value="c"> c) Tree planting</label>
+<label class="block"><input type="radio" name="q8" value="d"> d) Overfishing</label>
+</div>
+
+<!-- Submit -->
+<div class="text-center mt-8">
+<button type="button" onclick="gradeQuiz()"
+class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg">
+Submit Quiz
+</button>
+</div>
+
+</form>
+
+<div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+</div>
+</main>
+
+<script>
+const answers = {
+q1:'c',
+q2:'c',
+q3:'b',
+q4:'c',
+q5:'c',
+q6:'b',
+q7:'a',
+q8:'c'
+};
+
+const explanations = {
+q1:'The Shire River is the most important river in Malawi.',
+q2:'The Shire River flows out of Lake Malawi.',
+q3:'The Shire River flows southwards.',
+q4:'Kapichira Falls is found along the Shire River.',
+q5:'The Shire River does not cause desert formation.',
+q6:'Fishing is a major activity along the Shire River.',
+q7:'Flooding affects activities along the Shire River.',
+q8:'Tree planting helps protect the river and its banks.'
+};
+
+function gradeQuiz() {
+    let score = 0;
+    let total = Object.keys(answers).length;
+    let unanswered = [];
+    let wrongDetails = [];
+
+    for (let q in answers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (!selected) {
+            unanswered.push(q.replace('q','Question '));
+        } else if (selected.value === answers[q]) {
+            score++;
+        } else {
+            wrongDetails.push({
+                question: q.replace('q','Question '),
+                chosen: selected.nextSibling.textContent.trim(),
+                correct: answers[q],
+                explanation: explanations[q]
+            });
+        }
+    }
+
+    const results = document.getElementById('results');
+    results.classList.remove('hidden');
+
+    const percent = ((score/total)*100).toFixed(1);
+    let grade='', bg='';
+
+    if (percent>=90){grade='A - Excellent';bg='bg-green-100 border-green-500';}
+    else if (percent>=80){grade='B - Very Good';bg='bg-blue-100 border-blue-500';}
+    else if (percent>=70){grade='C - Good';bg='bg-yellow-100 border-yellow-500';}
+    else if (percent>=60){grade='D - Fair';bg='bg-orange-100 border-orange-500';}
+    else {grade='F - Need More Practice';bg='bg-red-100 border-red-500';}
+
+    let html = `
+    <div class="${bg} border-l-4 p-4">
+        <h3 class="text-2xl font-bold mb-2">Your Results</h3>
+        <p class="text-xl mb-2">Score: ${score} out of ${total} (${percent}%)</p>
+        <p class="text-xl font-semibold mb-4">Grade: ${grade}</p>
+    `;
+
+    if (unanswered.length>0){
+        html += `<p class="text-red-600">Unanswered: ${unanswered.join(', ')}</p>`;
+    }
+
+    if (wrongDetails.length>0){
+        html += `<div class="mt-4 bg-white p-4 rounded">
+        <p class="font-semibold mb-2">Incorrect Answers:</p>`;
+        wrongDetails.forEach(w=>{
+            html+=`
+            <div class="mb-3">
+                <p class="font-semibold text-red-600">${w.question}</p>
+                <p class="text-sm">Your choice: ${w.chosen}</p>
+                <p class="text-sm text-green-700">Correct answer: ${w.correct}</p>
+                <p class="text-xs text-gray-600">${w.explanation}</p>
+            </div>`;
+        });
+        html+='</div>';
+    }
+
+    html+=`
+        <button onclick="location.reload()"
+        class="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded">
+        Retake Quiz
+        </button>
+    </div>`;
+
+    results.innerHTML = html;
+    results.scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>

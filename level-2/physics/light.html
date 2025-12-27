@@ -1,0 +1,215 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- always change title -->
+    <title>Light</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-purple-600 text-white text-center py-6 px-4 shadow-lg sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">💡 LIGHT</h1> 
+            <p class="text-purple-100">Propagation, Reflection and Refraction of Light</p>
+        </div>
+    </header>
+
+    <!-- mobile / desktop sidebar -->
+    <aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform">
+      <nav class="p-4 space-y-2">
+        <a href="./phy.html" class="block px-3 py-2 rounded hover:bg-gray-700">Return</a>
+        <a href="./light-quiz.html" class="block px-3 py-2 rounded hover:bg-gray-700">Take Exams</a>
+      </nav>
+    </aside>
+
+    <!-- toggle button (mobile) -->
+    <button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+            class="fixed top-4 left-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+      Menu
+    </button>
+
+    <!-- centered image -->
+    <div class="flex justify-center items-center my-4">
+        <img src="../img/lms.jpg"
+            alt="Illustration"
+            class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+    </div> 
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        
+        <!-- Introduction Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-purple-600 mb-4">🔍 Introduction</h2>
+            <p>
+                Light is a form of energy that enables us to see objects. This topic explains how light
+                travels, how shadows and eclipses are formed, and how light behaves when it is reflected
+                or refracted.
+            </p>
+        </section>
+
+        <!-- Video Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson 1 is coming</h2>
+            <div class="aspect-video w-full">
+                <iframe 
+                    class="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/H3T5YtbaDzI" 
+                    title="Light Lesson Video" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Propagation of Light -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">➡️ Propagation of Light</h2>
+            <p class="mb-3">
+                Light travels in straight lines. This can be shown using experiments such as aligning
+                pinholes or observing shadows formed by opaque objects.
+            </p>
+            <p>
+                When an object blocks light, a shadow is formed behind it, showing that light does not
+                bend around corners.
+            </p>
+        </section>
+
+        <!-- Shadows -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">🌑 Formation of Shadows</h2>
+            <p class="mb-3">
+                Shadows are formed when light from a source is blocked by an opaque object.
+            </p>
+            <ul class="list-disc pl-6">
+                <li><strong>Umbra:</strong> The dark central part of a shadow.</li>
+                <li><strong>Penumbra:</strong> The partially dark outer region.</li>
+            </ul>
+            <p class="mt-3">
+                Ray diagrams are used to show how the umbra and penumbra are formed.
+            </p>
+        </section>
+
+        <!-- Eclipses -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">🌍 Eclipses</h2>
+            <p class="mb-3">
+                An eclipse occurs when one celestial body blocks light from another.
+            </p>
+            <ul class="list-disc pl-6">
+                <li><strong>Solar eclipse:</strong> The Moon blocks sunlight from reaching the Earth.</li>
+                <li><strong>Lunar eclipse:</strong> The Earth blocks sunlight from reaching the Moon.</li>
+            </ul>
+            <p class="mt-3">
+                Ray diagrams are used to explain how both solar and lunar eclipses occur.
+            </p>
+        </section>
+
+        <!-- Pinhole Camera -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">📷 Pinhole Camera</h2>
+            <p class="mb-3">
+                A pinhole camera works on the principle that light travels in straight lines.
+                It forms a real, inverted image on a screen.
+            </p>
+            <p>
+                Ray diagrams are used to show image formation, and magnification can be calculated
+                using image and object distances.
+            </p>
+        </section>
+
+        <!-- Reflection -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">🪞 Reflection of Light</h2>
+            <p class="mb-3">
+                Reflection is the bouncing back of light when it strikes a surface such as a plane mirror.
+            </p>
+            <p>
+                Plane mirrors reflect light regularly and produce clear images.
+            </p>
+        </section>
+
+        <!-- Laws of Reflection -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">📐 Laws of Reflection</h2>
+            <ul class="list-disc pl-6">
+                <li>The angle of incidence equals the angle of reflection.</li>
+                <li>The incident ray, reflected ray, and normal lie in the same plane.</li>
+            </ul>
+        </section>
+
+        <!-- Images by Plane Mirrors -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">🖼️ Images Formed by Plane Mirrors</h2>
+            <ul class="list-disc pl-6">
+                <li>The image is virtual and upright.</li>
+                <li>The image is the same size as the object.</li>
+                <li>The image is laterally inverted.</li>
+                <li>The image is the same distance behind the mirror as the object is in front.</li>
+            </ul>
+        </section>
+
+        <!-- Applications of Reflection -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">🔍 Applications of Reflection</h2>
+            <ul class="list-disc pl-6">
+                <li>Mirrors for personal grooming.</li>
+                <li>Periscopes for viewing over obstacles.</li>
+                <li>Reflectors in vehicles and road signs.</li>
+            </ul>
+        </section>
+
+        <!-- Refraction -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">🌊 Refraction of Light</h2>
+            <p>
+                Refraction is the bending of light when it passes from one medium to another
+                due to a change in speed.
+            </p>
+        </section>
+
+        <!-- Spectrum -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">🌈 Formation of a Spectrum</h2>
+            <p>
+                A spectrum is formed when white light passes through a prism and splits into
+                its component colours. This explains the formation of a rainbow.
+            </p>
+        </section>
+
+        <!-- Apparent Depth -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">💧 Apparent Depth</h2>
+            <p>
+                Apparent depth occurs when an object under water appears closer to the surface
+                than it really is due to refraction.
+            </p>
+        </section>
+
+        <!-- Bent Object -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold text-blue-600 mb-3">🪵 Bent Object in Water</h2>
+            <p>
+                An object appears bent when partially submerged in water because light rays
+                change direction as they move from water to air.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-400">© Millennium E-learning Centre</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+

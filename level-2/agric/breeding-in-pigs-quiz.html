@@ -1,0 +1,228 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium E-learning Centre - Online Class</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="/img/WTEC1_LMS_512x512.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Header -->
+<header class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 flex justify-between text-white py-6 px-4 shadow-lg">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold mb-2">Time for test: Take Exams</h1>
+        <p class="text-blue-100">Assessing your learning</p>
+    </div>
+</header>
+
+<!-- Sidebar -->
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+  <nav class="p-4 space-y-2">
+    <a href="./breeding-in-pigs.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+  </nav>
+</aside>
+
+<!-- Toggle Button -->
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 right-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+  Menu
+</button>
+
+<!-- Exam Image -->
+<div class="flex justify-center items-center my-6">
+<img src="../img/exam.jpg"
+    alt="Illustration"
+    class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+</div>
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+
+<!-- Quiz Container -->
+<div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+    <h2 class="text-2xl font-bold text-purple-600 mb-4">📝 Pig Husbandry Practices Quiz</h2>
+    <p class="text-gray-600 mb-6">Test your understanding of breeding in pigs and pig housing qualities.</p>
+
+    <form id="quizForm">
+
+        <!-- Question 1 -->
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+            <p class="font-semibold mb-3">1. What is breeding in pigs?</p>
+            <label><input type="radio" name="q1" value="a"> a) Feeding pigs only</label><br>
+            <label><input type="radio" name="q1" value="b"> b) Producing young pigs through reproduction</label><br>
+            <label><input type="radio" name="q1" value="c"> c) Building pig houses</label><br>
+            <label><input type="radio" name="q1" value="d"> d) Treating sick pigs</label>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+            <p class="font-semibold mb-3">2. What is the gestation period of pigs?</p>
+            <label><input type="radio" name="q2" value="a"> a) 60 days</label><br>
+            <label><input type="radio" name="q2" value="b"> b) 90 days</label><br>
+            <label><input type="radio" name="q2" value="c"> c) 114 days</label><br>
+            <label><input type="radio" name="q2" value="d"> d) 200 days</label>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+            <p class="font-semibold mb-3">3. The term ‘farrowing’ means:</p>
+            <label><input type="radio" name="q3" value="a"> a) Feeding pigs</label><br>
+            <label><input type="radio" name="q3" value="b"> b) Castrating piglets</label><br>
+            <label><input type="radio" name="q3" value="c"> c) Giving birth in pigs</label><br>
+            <label><input type="radio" name="q3" value="d"> d) Selling pigs</label>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+            <p class="font-semibold mb-3">4. What is weaning?</p>
+            <label><input type="radio" name="q4" value="a"> a) Removing tails</label><br>
+            <label><input type="radio" name="q4" value="b"> b) Separating piglets from the sow</label><br>
+            <label><input type="radio" name="q4" value="c"> c) Vaccinating piglets</label><br>
+            <label><input type="radio" name="q4" value="d"> d) Feeding sow only</label>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+            <p class="font-semibold mb-3">5. Which of the following is a quality of a good pig house?</p>
+            <label><input type="radio" name="q5" value="a"> a) Poor ventilation</label><br>
+            <label><input type="radio" name="q5" value="b"> b) Dirty floor</label><br>
+            <label><input type="radio" name="q5" value="c"> c) Well ventilated and dry</label><br>
+            <label><input type="radio" name="q5" value="d"> d) Leaking roof</label>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+            <p class="font-semibold mb-3">6. Why is castration done in pigs?</p>
+            <label><input type="radio" name="q6" value="a"> a) To increase diseases</label><br>
+            <label><input type="radio" name="q6" value="b"> b) To stop pigs from eating</label><br>
+            <label><input type="radio" name="q6" value="c"> c) To prevent unwanted breeding and improve meat quality</label><br>
+            <label><input type="radio" name="q6" value="d"> d) To make pigs run faster</label>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+            <p class="font-semibold mb-3">7. Which feature helps keep pigs healthy in a house?</p>
+            <label><input type="radio" name="q7" value="a"> a) Damp dirty floor</label><br>
+            <label><input type="radio" name="q7" value="b"> b) Poor drainage</label><br>
+            <label><input type="radio" name="q7" value="c"> c) Proper drainage and easy cleaning</label><br>
+            <label><input type="radio" name="q7" value="d"> d) No roof</label>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+            <p class="font-semibold mb-3">8. Why must a pig house be secure and strong?</p>
+            <label><input type="radio" name="q8" value="a"> a) To let pigs escape</label><br>
+            <label><input type="radio" name="q8" value="b"> b) To keep predators and thieves away</label><br>
+            <label><input type="radio" name="q8" value="c"> c) To make pigs slow</label><br>
+            <label><input type="radio" name="q8" value="d"> d) For decoration only</label>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center mt-8">
+            <button type="button" onclick="gradeQuiz()" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300">
+                Submit Quiz
+            </button>
+        </div>
+
+    </form>
+
+    <div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+</div>
+
+</main>
+
+<script>
+const answers = {
+    q1:'b',
+    q2:'c',
+    q3:'c',
+    q4:'b',
+    q5:'c',
+    q6:'c',
+    q7:'c',
+    q8:'b'
+};
+
+const explanations = {
+    q1:'Breeding is the process of producing piglets.',
+    q2:'Pig gestation is about 114 days (3 months, 3 weeks, 3 days).',
+    q3:'Farrowing means giving birth in pigs.',
+    q4:'Weaning is separating piglets from the sow.',
+    q5:'A good pig house must be dry and well ventilated.',
+    q6:'Castration prevents unwanted breeding and improves meat quality.',
+    q7:'Good drainage and easy cleaning keep pigs healthy.',
+    q8:'Strong houses protect pigs from predators and thieves.'
+};
+
+function gradeQuiz() {
+    let score = 0;
+    let total = Object.keys(answers).length;
+    let unanswered = [];
+    let incorrectAnswers = [];
+
+    for (let q in answers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (!selected) {
+            unanswered.push(q.replace('q','Question '));
+        } else if (selected.value === answers[q]) {
+            score++;
+        } else {
+            incorrectAnswers.push({
+                question: q.replace('q','Question '),
+                explanation: explanations[q]
+            });
+        }
+    }
+
+    const resultsDiv = document.getElementById('results');
+    resultsDiv.classList.remove('hidden');
+
+    const percentage = ((score / total) * 100).toFixed(1);
+
+    let grade = '';
+    let bgColor = '';
+
+    if (percentage >= 90){ grade='A - Excellent!'; bgColor='bg-green-100 border-green-500';}
+    else if (percentage >= 80){ grade='B - Very Good!'; bgColor='bg-blue-100 border-blue-500';}
+    else if (percentage >= 70){ grade='C - Good'; bgColor='bg-yellow-100 border-yellow-500';}
+    else if (percentage >= 60){ grade='D - Fair'; bgColor='bg-orange-100 border-orange-500';}
+    else { grade='F - Needs More Practice'; bgColor='bg-red-100 border-red-500';}
+
+    let html = `
+    <div class="${bgColor} border-l-4 p-4">
+        <h3 class="text-2xl font-bold mb-2">Your Results</h3>
+        <p class="text-xl mb-2">Score: ${score} out of ${total} (${percentage}%)</p>
+        <p class="text-xl font-semibold mb-4">Grade: ${grade}</p>
+    `;
+
+    if (unanswered.length > 0){
+        html += `<p class="text-red-600 font-semibold">Unanswered: ${unanswered.join(', ')}</p>`;
+    }
+
+    if (incorrectAnswers.length > 0){
+        html += `<div class="mt-4 p-4 bg-white rounded">
+                 <p class="font-semibold mb-2">Review these:</p>`;
+        incorrectAnswers.forEach(item=>{
+            html += `<p class="text-red-600 font-semibold">${item.question}</p>
+                     <p class="text-gray-700 text-sm mb-2">${item.explanation}</p>`;
+        });
+        html += `</div>`;
+    }
+
+    html += `
+        <button onclick="location.reload()" class="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded">
+            Retake Quiz
+        </button>
+    `;
+
+    resultsDiv.innerHTML = html;
+    resultsDiv.scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>

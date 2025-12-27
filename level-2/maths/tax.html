@@ -1,0 +1,233 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxation - JCE Mathematics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" type="image/png" href="../img/WTEC1_LMS_512x512.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-purple-600 text-white text-center py-6 px-4 shadow-lg sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">💰 TAXATION</h1> 
+            <p class="text-purple-100">Learn How to Calculate Tax, Discounts, and Net Amounts</p>
+        </div>
+    </header>
+
+    <!-- Mobile / Desktop Sidebar -->
+    <aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+        <nav class="p-4 space-y-2">
+            <a href="./maths.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back</a>
+          
+        </nav>
+    </aside>
+
+    <!-- Toggle Button (Mobile) -->
+    <button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+            class="fixed top-4 right-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+        Menu
+    </button>
+
+    <!-- Centered Image -->
+    <div class="flex justify-center items-center my-4">
+        <img src="../img/lms.jpg"
+            alt="Mathematics Illustration"
+            class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+    </div> 
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        
+        <!-- Introduction Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📚 Understanding Taxation</h2>
+            <p class="mb-4">Taxation is a crucial life skill that helps us understand how much we pay or receive when buying goods, earning income, or receiving discounts. Tax is usually expressed as a percentage of the original amount.</p>
+            
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 mb-4">
+                <h3 class="font-bold text-lg mb-2">Key Formulas:</h3>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><strong>Tax Amount:</strong> Original Price × (Tax Rate ÷ 100)</li>
+                    <li><strong>Final Price (with tax):</strong> Original Price + Tax Amount</li>
+                    <li><strong>Discount Amount:</strong> Original Price × (Discount Rate ÷ 100)</li>
+                    <li><strong>Sale Price:</strong> Original Price - Discount Amount</li>
+                    <li><strong>Net Amount (after tax):</strong> Gross Amount - Tax Amount</li>
+                </ul>
+            </div>
+
+            <div class="bg-green-50 border-l-4 border-green-600 p-4">
+                <h3 class="font-bold text-lg mb-2">Quick Tips:</h3>
+                <ul class="list-disc list-inside space-y-2">
+                    <li>VAT (Value Added Tax) is commonly 16.5% in Malawi</li>
+                    <li>Discount reduces the price; tax increases it</li>
+                    <li>Always express percentages as decimals when calculating</li>
+                    <li>Net means "after deductions" while gross means "before deductions"</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">📹 Video Lesson (From Unique classes)</h2>
+            <div class="aspect-video w-full">
+                <iframe 
+                    class="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/rmdZqy-gOJc" 
+                    title="Taxation Video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Examples Section -->
+        <section id="examples" class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">✏️ Worked Examples</h2>
+            
+            <!-- Example 1 -->
+            <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                <h3 class="font-bold text-lg text-purple-600 mb-3">Example 1: Calculate VAT</h3>
+                <p class="mb-2">A laptop costs K250,000. If VAT is charged at 16.5%, calculate:</p>
+                <p class="ml-4">(a) The VAT amount</p>
+                <p class="ml-4">(b) The total price including VAT</p>
+                <div class="bg-white p-4 rounded border-l-4 border-green-500 mt-3">
+                    <p class="font-semibold mb-2">Solution:</p>
+                    <p>(a) VAT Amount:</p>
+                    <p class="ml-4">VAT = 250,000 × (16.5 ÷ 100)</p>
+                    <p class="ml-4">VAT = 250,000 × 0.165</p>
+                    <p class="ml-4">VAT = K41,250</p>
+                    <p class="mt-2">(b) Total Price:</p>
+                    <p class="ml-4">Total = Original Price + VAT</p>
+                    <p class="ml-4">Total = 250,000 + 41,250</p>
+                    <p class="ml-4">Total = K291,250</p>
+                    <p class="mt-2 font-bold text-green-600">Answer: (a) K41,250 (b) K291,250</p>
+                </div>
+            </div>
+
+            <!-- Example 2 -->
+            <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                <h3 class="font-bold text-lg text-purple-600 mb-3">Example 2: Calculate Discount</h3>
+                <p class="mb-2">A pair of shoes originally costs K18,000. The shop offers a 25% discount. Calculate:</p>
+                <p class="ml-4">(a) The discount amount</p>
+                <p class="ml-4">(b) The sale price</p>
+                <div class="bg-white p-4 rounded border-l-4 border-green-500 mt-3">
+                    <p class="font-semibold mb-2">Solution:</p>
+                    <p>(a) Discount Amount:</p>
+                    <p class="ml-4">Discount = 18,000 × (25 ÷ 100)</p>
+                    <p class="ml-4">Discount = 18,000 × 0.25</p>
+                    <p class="ml-4">Discount = K4,500</p>
+                    <p class="mt-2">(b) Sale Price:</p>
+                    <p class="ml-4">Sale Price = Original Price - Discount</p>
+                    <p class="ml-4">Sale Price = 18,000 - 4,500</p>
+                    <p class="ml-4">Sale Price = K13,500</p>
+                    <p class="mt-2 font-bold text-green-600">Answer: (a) K4,500 (b) K13,500</p>
+                </div>
+            </div>
+
+            <!-- Example 3 -->
+            <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                <h3 class="font-bold text-lg text-purple-600 mb-3">Example 3: Income Tax Calculation</h3>
+                <p class="mb-2">John earns a gross salary of K120,000 per month. He pays 15% income tax. Calculate:</p>
+                <p class="ml-4">(a) The tax deducted</p>
+                <p class="ml-4">(b) His net salary (take-home pay)</p>
+                <div class="bg-white p-4 rounded border-l-4 border-green-500 mt-3">
+                    <p class="font-semibold mb-2">Solution:</p>
+                    <p>(a) Tax Deducted:</p>
+                    <p class="ml-4">Tax = 120,000 × (15 ÷ 100)</p>
+                    <p class="ml-4">Tax = 120,000 × 0.15</p>
+                    <p class="ml-4">Tax = K18,000</p>
+                    <p class="mt-2">(b) Net Salary:</p>
+                    <p class="ml-4">Net Salary = Gross Salary - Tax</p>
+                    <p class="ml-4">Net Salary = 120,000 - 18,000</p>
+                    <p class="ml-4">Net Salary = K102,000</p>
+                    <p class="mt-2 font-bold text-green-600">Answer: (a) K18,000 (b) K102,000</p>
+                </div>
+            </div>
+
+            <!-- Example 4 -->
+            <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                <h3 class="font-bold text-lg text-purple-600 mb-3">Example 4: Reverse Calculation (Finding Original Price)</h3>
+                <p class="mb-2">After adding 16.5% VAT, a phone costs K93,200. What was the original price before VAT?</p>
+                <div class="bg-white p-4 rounded border-l-4 border-green-500 mt-3">
+                    <p class="font-semibold mb-2">Solution:</p>
+                    <p>Let original price = P</p>
+                    <p>Price with VAT = P + 16.5% of P</p>
+                    <p class="ml-4">93,200 = P + 0.165P</p>
+                    <p class="ml-4">93,200 = 1.165P</p>
+                    <p class="ml-4">P = 93,200 ÷ 1.165</p>
+                    <p class="ml-4">P = K80,000</p>
+                    <p class="mt-2">Verification: VAT = 80,000 × 0.165 = 13,200</p>
+                    <p class="ml-4">Total = 80,000 + 13,200 = 93,200 ✓</p>
+                    <p class="mt-2 font-bold text-green-600">Answer: K80,000</p>
+                </div>
+            </div>
+
+            <!-- Example 5 -->
+            <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                <h3 class="font-bold text-lg text-purple-600 mb-3">Example 5: Multiple Calculations</h3>
+                <p class="mb-2">A television has a marked price of K150,000. During a sale, it gets a 20% discount, then 16.5% VAT is added to the discounted price. Calculate the final price.</p>
+                <div class="bg-white p-4 rounded border-l-4 border-green-500 mt-3">
+                    <p class="font-semibold mb-2">Solution:</p>
+                    <p>Step 1: Calculate discount:</p>
+                    <p class="ml-4">Discount = 150,000 × 0.20 = K30,000</p>
+                    <p class="ml-4">Price after discount = 150,000 - 30,000 = K120,000</p>
+                    <p class="mt-2">Step 2: Calculate VAT on discounted price:</p>
+                    <p class="ml-4">VAT = 120,000 × 0.165 = K19,800</p>
+                    <p class="mt-2">Step 3: Final price:</p>
+                    <p class="ml-4">Final Price = 120,000 + 19,800</p>
+                    <p class="ml-4">Final Price = K139,800</p>
+                    <p class="mt-2 font-bold text-green-600">Answer: K139,800</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assignment Section -->
+        <section id="assignments" class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-red-600 mb-4">📝 Assignment Questions</h2>
+            <p class="mb-4 text-gray-600">Solve the following taxation problems. Show all your working:</p>
+            
+            <div class="space-y-4">
+                <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                    <p class="font-semibold">Question 1:</p>
+                    <p class="ml-4">A bicycle costs K45,000. Calculate the VAT at 16.5% and the total price including VAT.</p>
+                </div>
+
+                <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                    <p class="font-semibold">Question 2:</p>
+                    <p class="ml-4">A dress originally costs K12,000. During a sale, it has a 30% discount. What is the sale price?</p>
+                </div>
+
+                <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                    <p class="font-semibold">Question 3:</p>
+                    <p class="ml-4">Mary earns K85,000 per month. If she pays 12% income tax, what is her net salary?</p>
+                </div>
+
+                <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                    <p class="font-semibold">Question 4:</p>
+                    <p class="ml-4">After adding VAT at 16.5%, a refrigerator costs K116,500. What was the price before VAT?</p>
+                </div>
+
+                <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                    <p class="font-semibold">Question 5:</p>
+                    <p class="ml-4">A sofa has a marked price of K200,000. It receives a 15% discount, then 16.5% VAT is added to the discounted price. Calculate the final price a customer will pay.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-400">© Millennium E-learning Centre</p>
+        </div>
+    </footer>
+
+</body>
+</html>
