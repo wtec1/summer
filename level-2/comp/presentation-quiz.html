@@ -1,0 +1,276 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium E-learning Centre - Online Class</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="/img/WTEC1_LMS_512x512.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+   <header class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 flex justify-between text-white py-6 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">Time for test: Take Exams</h1>
+            <p class="text-blue-100">Assessing your learning</p>
+        </div>
+    </header>
+
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+  <nav class="p-4 space-y-2">
+    <a href="./presentation-software.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+  </nav>
+</aside>
+
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 right-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+  Menu
+</button>
+
+<div class="flex justify-center items-center my-6">
+<img src="../img/exam.jpg" alt="Illustration" class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+</div>
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+<div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+    <h2 class="text-2xl font-bold text-purple-600 mb-4">📝 Presentation Software Quiz</h2>
+    <p class="text-gray-600 mb-6">Test your understanding of presentation software. Good luck!</p>
+
+    <form id="quizForm">
+        
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+            <p class="font-semibold text-gray-800 mb-3">1. What is presentation software?</p>
+            <div class="space-y-2">
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q1" value="a" class="w-4 h-4">
+                    <span>a) Software for editing photos</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q1" value="b" class="w-4 h-4">
+                    <span>b) Software for creating and displaying information in slides</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q1" value="c" class="w-4 h-4">
+                    <span>c) Software for browsing the internet</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q1" value="d" class="w-4 h-4">
+                    <span>d) Software for playing videos</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+            <p class="font-semibold text-gray-800 mb-3">2. Which is an example of presentation software?</p>
+            <div class="space-y-2">
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q2" value="a" class="w-4 h-4">
+                    <span>a) Microsoft Word</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q2" value="b" class="w-4 h-4">
+                    <span>b) Microsoft PowerPoint</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q2" value="c" class="w-4 h-4">
+                    <span>c) Adobe Photoshop</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q2" value="d" class="w-4 h-4">
+                    <span>d) Google Chrome</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+            <p class="font-semibold text-gray-800 mb-3">3. What shortcut key adds a new slide?</p>
+            <div class="space-y-2">
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q3" value="a" class="w-4 h-4">
+                    <span>a) Ctrl+N</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q3" value="b" class="w-4 h-4">
+                    <span>b) Ctrl+M</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q3" value="c" class="w-4 h-4">
+                    <span>c) Ctrl+S</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q3" value="d" class="w-4 h-4">
+                    <span>d) Ctrl+P</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+            <p class="font-semibold text-gray-800 mb-3">4. How do you hide a slide?</p>
+            <div class="space-y-2">
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q4" value="a" class="w-4 h-4">
+                    <span>a) Delete the slide</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q4" value="b" class="w-4 h-4">
+                    <span>b) Right-click → Hide Slide</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q4" value="c" class="w-4 h-4">
+                    <span>c) Press Esc</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q4" value="d" class="w-4 h-4">
+                    <span>d) Close the presentation</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+            <p class="font-semibold text-gray-800 mb-3">5. What are slide transitions?</p>
+            <div class="space-y-2">
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q5" value="a" class="w-4 h-4">
+                    <span>a) Effects within a slide</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q5" value="b" class="w-4 h-4">
+                    <span>b) Effects between slides</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q5" value="c" class="w-4 h-4">
+                    <span>c) Text formatting options</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q5" value="d" class="w-4 h-4">
+                    <span>d) Slide backgrounds</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+            <p class="font-semibold text-gray-800 mb-3">6. What key starts a slideshow from the beginning?</p>
+            <div class="space-y-2">
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q6" value="a" class="w-4 h-4">
+                    <span>a) F1</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q6" value="b" class="w-4 h-4">
+                    <span>b) F5</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q6" value="c" class="w-4 h-4">
+                    <span>c) Esc</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q6" value="d" class="w-4 h-4">
+                    <span>d) Enter</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+            <p class="font-semibold text-gray-800 mb-3">7. What are slide masters used for?</p>
+            <div class="space-y-2">
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q7" value="a" class="w-4 h-4">
+                    <span>a) Deleting slides</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q7" value="b" class="w-4 h-4">
+                    <span>b) Controlling overall design that applies to all slides</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q7" value="c" class="w-4 h-4">
+                    <span>c) Printing slides</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q7" value="d" class="w-4 h-4">
+                    <span>d) Saving presentations</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+            <p class="font-semibold text-gray-800 mb-3">8. How do you insert a table in a presentation?</p>
+            <div class="space-y-2">
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q8" value="a" class="w-4 h-4">
+                    <span>a) File → Table</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q8" value="b" class="w-4 h-4">
+                    <span>b) Insert → Table</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q8" value="c" class="w-4 h-4">
+                    <span>c) Edit → Table</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q8" value="d" class="w-4 h-4">
+                    <span>d) View → Table</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <button type="button" onclick="gradeQuiz()" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300">
+                Submit Quiz
+            </button>
+        </div>
+
+    </form>
+
+    <div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+</div>
+</main>
+
+<script>
+const answers = {q1:'b',q2:'b',q3:'b',q4:'b',q5:'b',q6:'b',q7:'b',q8:'b'};
+const explanations = {
+    q1:'Presentation software is used to create and display information in the form of slides for presentations.',
+    q2:'Microsoft PowerPoint is a popular example of presentation software. Others include Google Slides and Prezi.',
+    q3:'Ctrl+M is the shortcut to add a new slide in most presentation software.',
+    q4:'To hide a slide, right-click on it and select "Hide Slide". It won\'t show during presentation but remains in the file.',
+    q5:'Slide transitions are effects that occur between slides, like fade, slide, or zoom.',
+    q6:'F5 starts the slideshow from the beginning. Esc exits the slideshow.',
+    q7:'Slide masters control the overall design and formatting that applies to all slides automatically.',
+    q8:'To insert a table, go to Insert → Table, then choose the number of rows and columns.'
+};
+
+function gradeQuiz() {
+    let score = 0, total = Object.keys(answers).length, unanswered = [], incorrectAnswers = [];
+    for (let q in answers) {
+        const sel = document.querySelector(`input[name="${q}"]:checked`);
+        if (!sel) unanswered.push(q.replace('q','Question '));
+        else if (sel.value === answers[q]) score++;
+        else incorrectAnswers.push({question:q.replace('q','Question '),explanation:explanations[q]});
+    }
+    const resultsDiv = document.getElementById('results');
+    resultsDiv.classList.remove('hidden');
+    const pct = ((score/total)*100).toFixed(1);
+    let grade='', bgColor='';
+    if (pct>=90) {grade='A - Excellent!';bgColor='bg-green-100 border-green-500';}
+    else if (pct>=80) {grade='B - Very Good!';bgColor='bg-blue-100 border-blue-500';}
+    else if (pct>=70) {grade='C - Good!';bgColor='bg-yellow-100 border-yellow-500';}
+    else if (pct>=60) {grade='D - Fair';bgColor='bg-orange-100 border-orange-500';}
+    else {grade='F - Need More Practice';bgColor='bg-red-100 border-red-500';}
+    
+    let html=`<div class="${bgColor} border-l-4 p-4"><h3 class="text-2xl font-bold mb-2">Your Results</h3>
+    <p class="text-xl mb-2">Score: ${score} out of ${total} (${pct}%)</p><p class="text-xl font-semibold mb-4">Grade: ${grade}</p>`;
+    if (unanswered.length>0) html+=`<p class="mt-4 text-red-600 font-semibold">You missed ${unanswered.length} question(s):</p><p class="text-red-600">${unanswered.join(', ')}</p>`;
+    if (incorrectAnswers.length>0) {
+        html+=`<div class="mt-4 p-4 bg-white rounded"><p class="font-semibold text-gray-800 mb-2">Review These Topics:</p>`;
+        incorrectAnswers.forEach(item=>{html+=`<div class="mb-3"><p class="font-semibold text-red-600">${item.question}:</p><p class="text-gray-700 text-sm">${item.explanation}</p></div>`;});
+        html+=`</div>`;
+    }
+    html+=`<button onclick="location.reload()" class="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded transition duration-300">Retake Quiz</button></div>`;
+    resultsDiv.innerHTML=html;
+    resultsDiv.scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body>
+</html>

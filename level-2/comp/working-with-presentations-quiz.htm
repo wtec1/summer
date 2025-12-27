@@ -1,0 +1,286 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium E-learning Centre - Online Class</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="/img/WTEC1_LMS_512x512.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+   <!-- Header -->
+    <header class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 flex justify-between text-white py-6 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">Time for test: Take Exams</h1>
+            <p class="text-blue-100">Assessing your learning</p>
+        </div>
+    </header>
+
+      <!-- mobile / desktop sidebar -->
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+  <nav class="p-4 space-y-2">
+    <a href="./working-with-presentations.htm" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+  </nav>
+</aside>
+
+<!-- toggle button (mobile) -->
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 right-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+  Menu
+</button>
+
+       <!-- For exams image -->
+            <div class="flex justify-center items-center my-6">
+            <img src="../img/exam.jpg"
+                alt="Illustration"
+                class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+            </div>
+
+            <main class="max-w-4xl mx-auto px-4 py-8">
+
+                <!-- Quiz Container -->
+                <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+                    <h2 class="text-2xl font-bold text-purple-600 mb-4">📝 Working with Presentation Software Quiz</h2>
+                    <p class="text-gray-600 mb-6">Test your knowledge. Good luck!</p>
+
+                    <form id="quizForm">
+                        
+                        <!-- Question 1 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">1. What shortcut key saves a presentation?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q1" value="a" class="w-4 h-4">
+                                    <span>a) Ctrl+P</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q1" value="b" class="w-4 h-4">
+                                    <span>b) Ctrl+S</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q1" value="c" class="w-4 h-4">
+                                    <span>c) Ctrl+M</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q1" value="d" class="w-4 h-4">
+                                    <span>d) F5</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">2. How do you insert a table in a presentation?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q2" value="a" class="w-4 h-4">
+                                    <span>a) File → Table</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q2" value="b" class="w-4 h-4">
+                                    <span>b) Insert → Table</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q2" value="c" class="w-4 h-4">
+                                    <span>c) View → Table</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q2" value="d" class="w-4 h-4">
+                                    <span>d) Format → Table</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">3. What does Ctrl+P do?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q3" value="a" class="w-4 h-4">
+                                    <span>a) Paste</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q3" value="b" class="w-4 h-4">
+                                    <span>b) Print</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q3" value="c" class="w-4 h-4">
+                                    <span>c) Play slideshow</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q3" value="d" class="w-4 h-4">
+                                    <span>d) Properties</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 4 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">4. What are themes used for in presentations?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q4" value="a" class="w-4 h-4">
+                                    <span>a) Closing presentations</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q4" value="b" class="w-4 h-4">
+                                    <span>b) Applying pre-designed styles to all slides</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q4" value="c" class="w-4 h-4">
+                                    <span>c) Printing slides</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q4" value="d" class="w-4 h-4">
+                                    <span>d) Deleting slides</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 5 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">5. Which key starts a slideshow from the beginning?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q5" value="a" class="w-4 h-4">
+                                    <span>a) Ctrl+S</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q5" value="b" class="w-4 h-4">
+                                    <span>b) Esc</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q5" value="c" class="w-4 h-4">
+                                    <span>c) F5</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q5" value="d" class="w-4 h-4">
+                                    <span>d) Enter</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-center mt-8">
+                            <button type="button" onclick="gradeQuiz()" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300">
+                                Submit Quiz
+                            </button>
+                        </div>
+
+                    </form>
+
+                    <!-- Results Section -->
+                    <div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+                </div>
+
+            </main>
+
+    <script>
+        const answers = {
+            q1: 'b',
+            q2: 'b',
+            q3: 'b',
+            q4: 'b',
+            q5: 'c'
+        };
+
+        const explanations = {
+            q1: 'Ctrl+S is the shortcut to save a presentation.',
+            q2: 'To insert a table, go to Insert → Table, then choose the number of rows and columns.',
+            q3: 'Ctrl+P opens the print dialog to print your presentation.',
+            q4: 'Themes apply pre-designed styles including colors, fonts, and layouts to all slides consistently.',
+            q5: 'F5 starts the slideshow from the beginning. Esc exits the slideshow.'
+        };
+
+        function gradeQuiz() {
+            let score = 0;
+            let total = Object.keys(answers).length;
+            let unanswered = [];
+            let incorrectAnswers = [];
+
+            for (let question in answers) {
+                const selected = document.querySelector(`input[name="${question}"]:checked`);
+                if (!selected) {
+                    unanswered.push(question.replace('q', 'Question '));
+                } else if (selected.value === answers[question]) {
+                    score++;
+                } else {
+                    incorrectAnswers.push({
+                        question: question.replace('q', 'Question '),
+                        explanation: explanations[question]
+                    });
+                }
+            }
+
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.classList.remove('hidden');
+
+            const percentage = ((score / total) * 100).toFixed(1);
+            let grade = '';
+            let bgColor = '';
+
+            if (percentage >= 90) {
+                grade = 'A - Excellent!';
+                bgColor = 'bg-green-100 border-green-500';
+            } else if (percentage >= 80) {
+                grade = 'B - Very Good!';
+                bgColor = 'bg-blue-100 border-blue-500';
+            } else if (percentage >= 70) {
+                grade = 'C - Good!';
+                bgColor = 'bg-yellow-100 border-yellow-500';
+            } else if (percentage >= 60) {
+                grade = 'D - Fair';
+                bgColor = 'bg-orange-100 border-orange-500';
+            } else {
+                grade = 'F - Need More Practice';
+                bgColor = 'bg-red-100 border-red-500';
+            }
+
+            let resultHTML = `
+                <div class="${bgColor} border-l-4 p-4">
+                    <h3 class="text-2xl font-bold mb-2">Your Results</h3>
+                    <p class="text-xl mb-2">Score: ${score} out of ${total} (${percentage}%)</p>
+                    <p class="text-xl font-semibold mb-4">Grade: ${grade}</p>
+            `;
+
+            if (unanswered.length > 0) {
+                resultHTML += `
+                    <p class="mt-4 text-red-600 font-semibold">You missed ${unanswered.length} question(s):</p>
+                    <p class="text-red-600">${unanswered.join(', ')}</p>
+                `;
+            }
+
+            if (incorrectAnswers.length > 0) {
+                resultHTML += `
+                    <div class="mt-4 p-4 bg-white rounded">
+                        <p class="font-semibold text-gray-800 mb-2">Review These Topics:</p>
+                `;
+                incorrectAnswers.forEach(item => {
+                    resultHTML += `
+                        <div class="mb-3">
+                            <p class="font-semibold text-red-600">${item.question}:</p>
+                            <p class="text-gray-700 text-sm">${item.explanation}</p>
+                        </div>
+                    `;
+                });
+                resultHTML += `</div>`;
+            }
+
+            resultHTML += `
+                    <button onclick="location.reload()" class="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded transition duration-300">
+                        Retake Quiz
+                    </button>
+                </div>
+            `;
+
+            resultsDiv.innerHTML = resultHTML;
+            resultsDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
